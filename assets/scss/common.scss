@@ -1,0 +1,78 @@
+@import 'helpers/variables';
+@import 'helpers/mixins';
+@import 'helpers/functions';
+
+@import 'base/reset';
+@import 'base/font';
+@import 'vendors/swiper';
+
+@import 'layout/header';
+@import 'layout/sidebar';
+@import 'layout/footer';
+@import 'layout/layout';
+
+@import 'pages/main/main';
+
+
+
+body {
+	font-size: vw(22);
+	-ms-overflow-style: none; 
+	overflow-x: hidden;
+}
+// ::-webkit-scrollbar { 
+// 	display: none;
+// }
+/* common */
+select.select {
+	// padding: 5px 20px 5px 10px;
+	padding: vw(5) vw(20) vw(5) vw(10);
+	border-radius: 0;
+	-webkit-appearance: none;
+	border-radius: 0;
+	border: vw(1) solid #c9c9c9;	
+}
+/* IE 에서 Select box 화살표 제거 */
+select.select::-ms-expand {
+	display: none;
+}
+input {
+	outline: none;
+}
+
+a {
+	text-decoration: none;
+	color:#000;
+}
+
+.noscroll {
+	scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+.noscroll::-webkit-scrollbar {
+    display: none;
+}
+
+/* IE 에서 Select box 화살표 제거 */
+.cus_select::-ms-expand {
+	display: none;
+}
+
+.pc {
+	display: none !important;
+}
+.m {
+	display: block !important;
+}
+.pc_f {
+	display: none !important;
+}
+.m_f {
+	display: flex !important;
+}
+
+
+/* pc layout common */
+@include desktop {
+	
+}
