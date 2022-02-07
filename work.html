@@ -1,0 +1,385 @@
+<!DOCTYPE html> 
+<html lang="ko">
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<TITLE>한우리 올림피아드</TITLE>
+<script type="text/javascript" src="assets/js/jquery-3.4.1.min.js"></script>
+
+<style type='text/css'>
+body{ margin:0; background:#ccc; } 
+ul, li, table, h3,h1{ margin:0;padding:0; }
+h3{ color:#333; margin:20px; }
+table{ width:100%; border:0; font-size:15px; border-collapse:collapse; margin-top:20px; table-layout:fixed; } 
+table tr th{ font-weight:normal; height:30px; background:#333; color:#fff; border:1px solid #666; }
+table tr td{ text-align:left; padding:10px; background:#f1f2f4; color:#666; height:20px; border:1px solid #666;  }
+table tr .link_url, table tr .link_css, table tr .link_html{ cursor:pointer; }
+table tr td.ac{ text-align:center; width:150px; }
+a,a:visited{ color:#666; text-decoration:none; }
+a:hover{ text-decoration:underline; color:#000; }
+.siteNavi{ width:100%; height:40px; background:#000; overflow:hidden; }
+.siteNavi li{ padding:0 10px; height:38px; background:#333; overflow:hidden; float:left; color:#fff; text-align:center; font-size:12px; line-height:38px; border:1px solid #41619b; cursor:pointer; }
+.siteNavi li span{ font-weight:normal; }
+.siteNavi li.on{ background:#fff; color:#333; font-weight:bold; }
+.header h1{ width:100%; line-height:57px; font-size:25px; color:#333; text-align:left; text-indent:20px; }
+select{ position:absolute; left:400px; top:15px; font-size:20px; width:400px; }
+</style> 
+</HEAD> 
+<BODY>    
+	<div class="wrapper">
+		<div class="header" style="height:auto;"><!-- cls:header -->
+			<h1>한우리 올림피아드 개편</h1>
+		</div><!-- //cls:header -->
+		<div class="contents sub"> 
+			<ul class="siteNavi">
+				<li class="on">전체<span class="num"></span></li>
+				<li>메인<span class="num"></span></li>
+				<li>대회안내<span class="num"></span></li>
+				<li>회원정보<span class="num"></span></li>
+				<li>도서구입<span class="num"></span></li>
+				<li>시험접수<span class="num"></span></li>
+				<li>결과발표<span class="num"></span></li>
+				<li>내정보<span class="num"></span></li>
+				<li>고객센터<span class="num"></span></li>
+				<li>한우리소개<span class="num"></span></li>
+				<li>추가페이지<span class="num"></span></li>
+			</ul>
+			<table> 
+				<colgroup>
+					<col width="" />
+					<col width="" />
+					<col width="" />
+					<col width="150" />
+					<col width="150" />
+				</colgroup>
+				<thead>
+					<tr>
+						<th>1Depth</th><th>2Depth</th><th>URL</th><th>날짜</th><th>작업자</th>
+					</tr>
+				</thead>
+				<tbody>
+				<!-- 메인 -->
+				<tr class="m01">
+					<td>메인</td>
+					<td>-</td>
+					<td><a href="main/main.html" target="_blank">main/main.html</a></td>
+					<td class="ac"></td>
+					<td class="ac"></td>
+				</tr>
+				<!-- 대회안내 -->
+				<tr class="m02">
+					<td>대회안내</td>
+					<td>대회개요</td>
+					<td><a href="contest/attention.html" target="_blank">contest/attention.html</a></td>
+					<td class="ac"></td>
+					<td class="ac"></td>
+				</tr>
+				<tr class="m02">
+					<td></td>
+					<td>유의사항</td>
+					<td><a href="contest/info.html" target="_blank">contest/info.html</a></td>
+					<td class="ac"></td>
+					<td class="ac"></td>
+				</tr>
+				<tr class="m02">
+					<td></td>
+					<td>예시문제</td>
+					<td><a href="contest/sample.html" target="_blank">contest/sample.html</a></td>
+					<td class="ac"></td>
+					<td class="ac"></td>
+				</tr>
+							
+				<!-- 회원정보 -->				
+				<tr class="m03">
+					<td>회원정보</td>
+					<td>로그인</td>
+					<td><a href="member/login.html" target="_blank">member/login.html</a></td>
+					<td class="ac"></td>
+					<td class="ac"></td>
+				</tr>
+				<tr class="m03">
+					<td></td>
+					<td>회원가입</td>
+					<td><a href="member/create.html" target="_blank">member/create.html</a></td>
+					<td class="ac"></td>
+					<td class="ac"></td>
+				</tr>+
+				<tr class="m03">
+					<td></td>
+					<td>아이디찾기</td>
+					<td><a href="member/findid.html" target="_blank">member/findid.html</a></td>
+					<td class="ac"></td>
+					<td class="ac"></td>
+				</tr>
+				<tr class="m03">
+					<td></td>
+					<td>비밀번호찾기</td>
+					<td><a href="member/findpw.html" target="_blank">member/findpw.html</a></td>
+					<td class="ac"></td>
+					<td class="ac"></td>
+				</tr>
+				<tr class="m03">
+					<td></td>
+					<td>개인정보취급방침</td>
+					<td><a href="member/privacy.html" target="_blank">member/privacy.html</a></td>
+					<td class="ac"></td>
+					<td class="ac"></td>
+				</tr>
+				<tr class="m03">
+					<td></td>
+					<td>이용안내</td>
+					<td><a href="member/provision.html" target="_blank">member/provision.html</a></td>
+					<td class="ac"></td>
+					<td class="ac"></td>
+				</tr>
+
+				<!-- 도서구입 -->
+				<tr class="m04">
+					<td>도서구입</td>
+					<td>구입안내</td>
+					<td><a href="book/book.html" target="_blank">book/book.html</a></td>
+					<td class="ac"></td>
+					<td class="ac"></td>
+				</tr>
+				<tr class="m04">
+					<td></td>
+					<td>도서구입</td>
+					<td><a href="book/books1.html" target="_blank">book/books1.html</a></td>
+					<td class="ac"></td>
+					<td class="ac"></td>
+				</tr>
+				<tr class="m04">
+					<td></td>
+					<td>주문확인</td>
+					<td><a href="book/books2.html" target="_blank">book/books2.html</a></td>
+					<td class="ac"></td>
+					<td class="ac"></td>
+				</tr>
+				<tr class="m04">
+					<td></td>
+					<td>주문수정</td>
+					<td><a href="" target="_blank">book/books3.html</a></td>
+					<td class="ac"></td>
+					<td class="ac">book1복사 별도 퍼블리싱 불필요</td>
+				</tr>
+				<tr class="m04">
+					<td></td>
+					<td>구입완료</td>
+					<td><a href="book/books4.html" target="_blank">book/books4.html</a></td>
+					<td class="ac"></td>
+					<td class="ac"></td>
+				</tr>
+				<!-- 시험접수 -->
+				<tr class="m05">
+					<td>시험접수</td>
+					<td>접수안내</td>
+					<td><a href="app/app.html" target="_blank">app/app.html</a></td>
+					<td class="ac"></td>
+					<td class="ac"></td>
+				</tr>
+				<tr class="m05">
+					<td></td>
+					<td>시험접수</td>
+					<td><a href="app/apps1.html" target="_blank">app/apps1.html</a></td>
+					<td class="ac"></td>
+					<td class="ac"></td>
+				</tr>
+				<tr class="m05">
+					<td></td>
+					<td>접수확인</td>
+					<td><a href="app/apps2.html" target="_blank">app/apps2.html</a></td>
+					<td class="ac"></td>
+					<td class="ac"></td>
+				</tr>
+				<tr class="m05">
+					<td></td>
+					<td>접수정보 수정</td>
+					<td><a href="" target="_blank">app/apps3.html</a></td>
+					<td class="ac"></td>
+					<td class="ac">apps1 복사 / 별도 퍼블리싱 불필요</td>
+				</tr>
+				<tr class="m05">
+					<td></td>
+					<td>접수완료</td>
+					<td><a href="app/apps4.html" target="_blank">app/apps4.html</a></td>
+					<td class="ac"></td>
+					<td class="ac"></td>
+				</tr>
+				<!-- result-->
+				<tr class="m06">
+					<td>결과발표</td>
+					<td></td>
+					<td><a href="result/result.html" target="_blank">result/result.html</a></td>
+					<td class="ac"></td>
+					<td class="ac"></td>
+				</tr>
+				
+				<!-- 내정보 -->
+				<tr class="m07">
+					<td>내정보</td>
+					<td>도서주문조회 - 목록</td>
+					<td><a href="myinfo/mybook.html" target="_blank">myinfo/mybook.html</a></td>
+					<td class="ac"></td>
+					<td class="ac"></td>
+				</tr>
+				<tr class="m07">
+					<td></td>
+					<td>도서주문조회 - 상세</td>
+					<td><a href="myinfo/mybookview.html" target="_blank">myinfo/mybookview.html</a></td>
+					<td class="ac"></td>
+					<td class="ac"></td>
+				</tr>
+				<tr class="m07">
+					<td></td>
+					<td>접수확인 - 목록</td>
+					<td><a href="myinfo/myapp.html" target="_blank">myinfo/myapp.html</a></td>
+					<td class="ac"></td>
+					<td class="ac"></td>
+				</tr>
+				<tr class="m07">
+					<td></td>
+					<td>접수확인 - 상세</td>
+					<td><a href="myinfo/myappview.html" target="_blank">myinfo/myappview.html</a></td>
+					<td class="ac"></td>
+					<td class="ac"></td>
+				</tr>
+				<tr class="m07">
+					<td></td>
+					<td>응시표 - 목록</td>
+					<td><a href="myinfo/form.html" target="_blank">myinfo/form.html</a></td>
+					<td class="ac"></td>
+					<td class="ac"></td>
+				</tr>
+				<tr class="m07">
+					<td></td>
+					<td>응시표 - 상세</td>
+					<td><a href="myinfo/formview.html" target="_blank">myinfo/formview.html</a></td>
+					<td class="ac"></td>
+					<td class="ac"></td>
+				</tr>
+				<tr class="m07">
+					<td></td>
+					<td>시험환불 - 목록</td>
+					<td><a href="myinfo/refund.html" target="_blank">myinfo/refund.html</a></td>
+					<td class="ac"></td>
+					<td class="ac"></td>
+				</tr>
+				<tr class="m07">
+					<td></td>
+					<td>시험환불 - 상세</td>
+					<td><a href="myinfo/refundview.html" target="_blank">myinfo/refundview.html</a></td>
+					<td class="ac"></td>
+					<td class="ac"></td>
+				</tr>
+				<tr class="m07">
+					<td></td>
+					<td>결과 - 목록</td>
+					<td><a href="myinfo/myresult.html" target="_blank">myinfo/myresult.html</a></td>
+					<td class="ac"></td>
+					<td class="ac"></td>
+				</tr>
+				<tr class="m07">
+					<td></td>
+					<td>결과 - 상세</td>
+					<td><a href="myinfo/myresultview.html" target="_blank">myinfo/myresultview.html</a></td>
+					<td class="ac"></td>
+					<td class="ac"></td>
+				</tr>
+				<tr class="m07">
+					<td></td>
+					<td>결과 - 평가지</td>
+					<td><a href="myinfo/evaluation.html" target="_blank">myinfo/evaluation.html</a></td>
+					<td class="ac"></td>
+					<td class="ac"></td>
+				</tr>
+				<tr class="m07">
+					<td></td>
+					<td>결과 - 평가지 인쇄</td>
+					<td><a href="myinfo/evaluation_p.html" target="_blank">myinfo/evaluation_p.html</a></td>
+					<td class="ac"></td>
+					<td class="ac"></td>
+				</tr>
+				<!-- 고객센터-->
+				<tr class="m08">
+					<td>고객센터</td>
+					<td>공지사항 - 목록</td>
+					<td><a href="cs/notice.html" target="_blank">cs/notice.html</a></td>
+					<td class="ac"></td>
+					<td class="ac"></td>
+				</tr>
+				<tr class="m08">
+					<td></td>
+					<td>공지사항 - 목록</td>
+					<td><a href="cs/noticeview.html" target="_blank">cs/noticeview.html</a></td>
+					<td class="ac"></td>
+					<td class="ac"></td>
+				</tr>
+				<tr class="m08">
+					<td></td>
+					<td>자주묻는질문</td>
+					<td><a href="cs/faq.html" target="_blank">cs/faq.html</a></td>
+					<td class="ac"></td>
+					<td class="ac"></td>
+				</tr>
+
+				<!-- 한우리소개-->
+				<tr class="m09">
+					<td>한우리소개</td>
+					<td>인사말</td>
+					<td><a href="hanuri/greeting.html" target="_blank">greeting</a></td>
+					<td class="ac"></td>
+					<td class="ac"></td>
+				</tr>
+				<tr class="m09">
+					<td></td>
+					<td>설립목적</td>
+					<td><a href="hanuri/purpose.html" target="_blank">purpose.html</a></td>
+					<td class="ac"></td>
+					<td class="ac"></td>
+				</tr>
+				<tr class="m09">
+					<td></td>
+					<td>연혁</td>
+					<td><a href="hanuri/history.html" target="_blank">history</a></td>
+					<td class="ac"></td>
+					<td class="ac"></td>
+				</tr>
+				<tr class="m09">
+					<td></td>
+					<td>위치안내</td>
+					<td><a href="hanuri/location.html" target="_blank">location.html</a></td>
+					<td class="ac"></td>
+					<td class="ac"></td>
+				</tr>
+				</tbody>
+			</table>
+		</div> 
+	</div>  
+</BODY>
+
+<script>
+    $(function(){
+        listTable(".siteNavi li", ".siteNavi li .num");
+    });
+    function listTable(cls, num){
+		var work = $("tbody tr");
+        $(num).each(function(z){
+            if(z===0){
+                $(num).eq(z).text("("+work.length+"p)");
+            }else{
+                $(num).eq(z).text("("+$('.m0'+z).length+"p)");
+            }
+        });
+        $("body").on("click",cls, function(){
+            $(cls).removeClass("on");
+            $(this).addClass("on");
+            $("table tbody tr").hide();
+            if($(this).index() === 0){
+                $("table tbody tr").show();
+            }else{
+                $(".m0"+$(this).index()).show();
+            }
+        });
+    }
+</script>
+
+</HTML>
