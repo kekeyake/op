@@ -20,7 +20,9 @@ $(function () {
     if ($('.main_banner').length) {
         var swiper = new Swiper(".main_banner", {
             loop: true,
-            spaceBetween: 10,
+            pagination: {
+                el: ".main_banner .swiper-pagination",
+              },
         });
     }    
     

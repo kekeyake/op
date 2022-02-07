@@ -1,8 +1,57 @@
+.consult_call {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: #FFCB40;
+    span {
+        height: vw(56);
+        display: flex;
+        align-items: center;
+        font-size: vw(20);
+        font-weight: 500;
+        color:#000;
+        padding-right:vw(47);
+        background: url(../img/ico_phone.svg) no-repeat 100% 50% / vw(36);
+        letter-spacing: -0.05em;
+    }
+}
 footer.footer {
     background: #444;
-    padding-bottom: vw(35);
     text-align: center;
-    
+    .inner {
+        padding:vw(15);
+        letter-spacing: -0.05em;
+        p {
+            color:#bbb;
+            font-size: vw(13);
+        }
+        .link_list {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: vw(10);
+            a {
+                color:#eee;
+                font-size: vw(14);
+                font-weight: 500;
+                &::after {
+                    content: '';
+                    display: inline-block;
+                    width: 1px;
+                    height: vw(10);
+                    margin:0 vw(10);
+                    background-color: #777;
+                }
+                &:last-child::after {
+                    display: none;
+                }
+            }
+        }
+        .copyright {
+            margin-top: vw(10);
+        }
+    }
 }
 @include desktop {
     

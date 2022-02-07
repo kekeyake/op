@@ -8,10 +8,23 @@ header.header {
         justify-content: space-between;
         align-items: center;
         padding:vw(15) vw(17);
+        .logo {
+            width: vw(150);
+            img {
+                width: 100%;
+            }
+        }
         ._menu {
             width: vw(27);
             height: vw(18);
             background:url(../img/ico_menu.svg) no-repeat 0 0 / 100%;
+        }
+        .btn_user {
+            width: vw(28);
+            height: vw(28);
+            img {
+                width: 100%;
+            }
         }
     }
 }

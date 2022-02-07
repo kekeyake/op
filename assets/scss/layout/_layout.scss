@@ -1,6 +1,67 @@
 button {
     all: unset;
 }
+.btn {
+    &.__top {
+        position: fixed;
+        right: vw(17);
+        bottom: vw(50);
+        width: vw(40);
+        height: vw(40);
+        background: url(../img/btn_top.svg) no-repeat 0 0 / cover;
+    }
+}
+.btn_main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: vw(51);
+    border: 2px solid #000;
+    box-sizing: border-box;
+    box-shadow: 1px 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: #FFCB40;
+    span {
+        font-size: vw(20);
+        font-weight: 700;
+        color:#000;
+        padding-right: vw(15);
+        background: url(../img/ico_polygon.svg) no-repeat 100% 50% / vw(10);
+        letter-spacing: -0.05em;
+    }
+    & + .btn_main {
+        margin-top: vw(12);
+    }
+    &.puple {
+        background-color: #A475FF;
+    }
+}
+.btn_submit {
+    display: flex;
+    width: 100%;
+    height: vw(48);
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    &.puple {
+        background-color: $color_puple3;
+    }
+    &.gray {
+        background-color: #999;
+    }
+    &.orange {
+        background-color: $color_orange2;
+        > span {
+            color:#000;
+        }
+    }
+    > span {
+        font-size: vw(18);
+        font-weight: 700;
+        color:#fff;
+    }
+}
 @include desktop {
 
     

@@ -3,6 +3,7 @@
         ($pixels * 100) / $viewport
     }vw;
 }
+
 @function px($pixels) {
     @return #{
         $pixels * 2
