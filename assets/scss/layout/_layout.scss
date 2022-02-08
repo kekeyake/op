@@ -28,7 +28,6 @@ button {
         color:#000;
         padding-right: vw(15);
         background: url(../img/ico_polygon.svg) no-repeat 100% 50% / vw(10);
-        letter-spacing: -0.05em;
     }
     & + .btn_main {
         margin-top: vw(12);
@@ -44,6 +43,7 @@ button {
     justify-content: center;
     align-items: center;
     border-radius: 5px;
+    letter-spacing: -0.03em;
     &.puple {
         background-color: $color_puple3;
     }
@@ -92,7 +92,6 @@ button {
         background-color: #FFCB40;
         padding-left:vw(22);
         font-size: vw(16);
-        letter-spacing: -0.05em;
         font-weight: 500;
         color:#000;
     }
@@ -113,7 +112,6 @@ button {
         box-sizing: border-box;
         border-radius: 10px;
         padding:vw(17) 0;
-        letter-spacing: -0.05em;
         li {
             width: calc(100% / 3);
             display: flex;
@@ -149,7 +147,6 @@ button {
         li {
             background: url(../img/ico_arrow_right.svg) no-repeat 100%  vw(12) / vw(24);
             color:#333;
-            letter-spacing: -0.05em;
             border-bottom: 1px solid rgba(196, 196, 196, 0.5);
             padding:vw(10) 0;
             .t1 {

@@ -11,7 +11,8 @@
 @import 'layout/footer';
 @import 'layout/layout';
 
-@import 'pages/main/main';
+@import 'pages/main';
+@import 'pages/member';
 
 
 
@@ -19,6 +20,7 @@ body {
 	font-size: vw(22);
 	-ms-overflow-style: none; 
 	overflow-x: hidden;
+	letter-spacing: -0.05em;
 }
 // ::-webkit-scrollbar { 
 // 	display: none;
@@ -71,7 +73,19 @@ a {
 	display: flex !important;
 }
 
-
+#wrap {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+input[type=checkbox] {
+	width: vw(24);
+	height: vw(24);
+	background: url(../img/ico_checkbox.svg) no-repeat 0 0 / cover;
+	&:checked {
+		background: url(../img/ico_checkbox_on.svg) no-repeat 0 0 / cover;
+	}
+}
 /* pc layout common */
 @include desktop {
 	

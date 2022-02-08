@@ -13,15 +13,14 @@
         color:#000;
         padding-right:vw(47);
         background: url(../img/ico_phone.svg) no-repeat 100% 50% / vw(30);
-        letter-spacing: -0.05em;
-    }
+   }
 }
 footer.footer {
     background: #444;
     text-align: center;
+    margin-top: auto;
     .inner {
         padding:vw(15);
-        letter-spacing: -0.05em;
         p {
             color:#bbb;
             font-size: vw(13);

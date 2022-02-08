@@ -901,17 +901,16 @@ header.header .inner .btn_user img {
   color: #000;
   padding-right: 13.05556vw;
   background: url(../img/ico_phone.svg) no-repeat 100% 50%/8.33333vw;
-  letter-spacing: -0.05em;
 }
 
 footer.footer {
   background: #444;
   text-align: center;
+  margin-top: auto;
 }
 
 footer.footer .inner {
   padding: 4.16667vw;
-  letter-spacing: -0.05em;
 }
 
 footer.footer .inner p {
@@ -995,7 +994,6 @@ button {
   color: #000;
   padding-right: 4.16667vw;
   background: url(../img/ico_polygon.svg) no-repeat 100% 50%/2.77778vw;
-  letter-spacing: -0.05em;
 }
 
 .btn_main + .btn_main {
@@ -1019,6 +1017,7 @@ button {
       -ms-flex-align: center;
           align-items: center;
   border-radius: 5px;
+  letter-spacing: -0.03em;
 }
 
 .btn_submit.puple {
@@ -1087,7 +1086,6 @@ button {
   background-color: #FFCB40;
   padding-left: 6.11111vw;
   font-size: 4.44444vw;
-  letter-spacing: -0.05em;
   font-weight: 500;
   color: #000;
 }
@@ -1112,7 +1110,6 @@ button {
           box-sizing: border-box;
   border-radius: 10px;
   padding: 4.72222vw 0;
-  letter-spacing: -0.05em;
 }
 
 .side_nav .quick_menu_list li {
@@ -1169,7 +1166,6 @@ button {
 .side_nav nav li {
   background: url(../img/ico_arrow_right.svg) no-repeat 100% 3.33333vw/6.66667vw;
   color: #333;
-  letter-spacing: -0.05em;
   border-bottom: 1px solid rgba(196, 196, 196, 0.5);
   padding: 2.77778vw 0;
 }
@@ -1238,7 +1234,6 @@ button {
   margin-top: 4.16667vw;
   font-size: 4.44444vw;
   color: #000;
-  letter-spacing: -0.05em;
 }
 
 .main .cont1 .img img {
@@ -1284,7 +1279,6 @@ button {
 .main .cont2 dl dt {
   font-size: 5vw;
   font-weight: 500;
-  letter-spacing: -0.05em;
 }
 
 .main .cont2 dl dd {
@@ -1310,7 +1304,6 @@ button {
   height: 12.22222vw;
   font-size: 4.44444vw;
   font-weight: 500;
-  letter-spacing: -0.05em;
   border-radius: 35px;
   background: #FFBA4D;
   color: #000;
@@ -1390,7 +1383,6 @@ button {
 
 .main .cont4 p {
   font-size: 5.55556vw;
-  letter-spacing: -0.05em;
   color: #000;
 }
 
@@ -1410,10 +1402,186 @@ button {
   margin-top: 5.55556vw;
 }
 
+.member {
+  margin-bottom: 18.88889vw;
+  padding: 9.44444vw 4.16667vw 0;
+}
+
+.member .btn_submit + .btn_submit {
+  margin-top: 2.77778vw;
+}
+
+.member .tab_wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #C4C4C4;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 2px;
+  overflow: hidden;
+  width: 100%;
+  height: 11.11111vw;
+}
+
+.member .tab_wrap a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  font-size: 4.16667vw;
+  font-weight: 500;
+  color: #999;
+  height: 100%;
+  background-color: #F4F5F7;
+}
+
+.member .tab_wrap a:first-child {
+  border-right: 1px solid #C4C4C4;
+}
+
+.member .tab_wrap a.active {
+  color: #333;
+  background-color: #fff;
+}
+
+.member .form_wrap {
+  margin-top: 4.16667vw;
+}
+
+.member .form_wrap .txt {
+  font-size: 3.88889vw;
+  color: #777;
+  letter-spacing: -0.03em;
+}
+
+.member .form_wrap .txt + .input_wrap {
+  margin-top: 4.16667vw;
+}
+
+.member ._link {
+  text-decoration: underline;
+  font-weight: 500;
+  color: #666;
+}
+
+.member .input_wrap {
+  margin-top: 8.33333vw;
+  margin-bottom: 8.33333vw;
+}
+
+.member .agree_wrap {
+  letter-spacing: -0.03em;
+  margin: 4.72222vw 0 9.72222vw;
+}
+
+.member .agree_wrap label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 4.16667vw;
+  color: #666;
+}
+
+.member .agree_wrap label span {
+  margin-left: 1.11111vw;
+}
+
+.member .agree_wrap label + label {
+  margin-top: 1.38889vw;
+}
+
+.member input.text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 13.88889vw;
+  width: 100%;
+  height: 12.22222vw;
+  letter-spacing: -0.03em;
+  font-size: 4.16667vw;
+  background: #000;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid #F0F1F2;
+  background-color: #F0F1F2;
+  border-radius: 5px;
+  font-weight: 500;
+  background-repeat: no-repeat;
+  background-position: 3.88889vw center;
+  background-size: 7.77778vw;
+}
+
+.member input.text::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.member input.text:-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.member input.text::-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.member input.text::placeholder {
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.member input.text.error {
+  border: 1px solid #EA5504;
+}
+
+.member input.text.ico_id {
+  background-image: url(../img/ico_input_id.svg);
+}
+
+.member input.text.ico_pw {
+  background-image: url(../img/ico_input_pw.svg);
+}
+
+.member input.text.ico_user {
+  background-image: url(../img/ico_input_user.svg);
+}
+
+.member input.text.ico_phone {
+  background-image: url(../img/ico_input_phone.svg);
+}
+
+.member input.text + .text {
+  margin-top: 2.22222vw;
+}
+
+.member .error_txt {
+  font-size: 3.88889vw;
+  color: #EA5504;
+  margin: 2.77778vw 0;
+  letter-spacing: -0.03em;
+}
+
 body {
   font-size: 6.11111vw;
   -ms-overflow-style: none;
   overflow-x: hidden;
+  letter-spacing: -0.05em;
 }
 
 /* common */
@@ -1469,6 +1637,27 @@ a {
   display: -webkit-box !important;
   display: -ms-flexbox !important;
   display: flex !important;
+}
+
+#wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+}
+
+input[type=checkbox] {
+  width: 6.66667vw;
+  height: 6.66667vw;
+  background: url(../img/ico_checkbox.svg) no-repeat 0 0/cover;
+}
+
+input[type=checkbox]:checked {
+  background: url(../img/ico_checkbox_on.svg) no-repeat 0 0/cover;
 }
 
 /* pc layout common */
