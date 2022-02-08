@@ -20,7 +20,7 @@
     <!-- header -->
     <header class="header">
         <section class="inner __top">
-            <button id="btnMobile" class="m btn _menu"></button>
+            <button id="btnMobile" class="btn _menu"></button>
             <h1 class="logo">
                 <a href="#a"><img src="../assets/img/logo.svg" alt="한우리 독서올림피아드"></a>
             </h1>
@@ -49,6 +49,22 @@
                 <li>
                     <a href="#a">결과발표</a>
                 </li>
+                <li class="pc">
+                    <a href="#a">고객센터</a>
+                    <div class="sub_nav">
+                        <a href="#a">공지사항</a>
+                        <a href="#a">자주묻는 질문</a>
+                    </div>
+                </li>
+                <li class="pc">
+                    <a href="#a">한우리소개</a>
+                    <div class="sub_nav">
+                        <a href="#a">인사말</a>
+                        <a href="#a">설립목적</a>
+                        <a href="#a">연혁</a>
+                        <a href="#a">위치안내</a>
+                    </div>
+                </li>
                 <li>
                     <a href="#a">내정보</a>
                     <div class="sub_nav">
@@ -59,7 +75,8 @@
                         <a href="#a">결과</a>
                     </div>
                 </li>
-            </ul>      
+            </ul>
+            <div class="sub_bg"></div>
         </section>
     </nav>
     
@@ -109,7 +126,7 @@
                 <a href="#a">회사소개</a>
             </div>
             <p class="address">
-                07261 서울시 영등포구 당산로27길 16 한우리빌딩 2층 <br class="m_br">
+                07261 서울시 영등포구 당산로27길 16 한우리빌딩 2층 <br class="m">
                 대표 김희선  /  사업자등록 220-82-00385  /  02-6276-2604
             </p>
             <p class="copyright">@ (사)한우리독서문화운동본부</p>
@@ -120,12 +137,13 @@
 
 <button class="btn __top"></button>
 
-<!-- mobile nav -->
+<!-- side nav -->
 <aside class="side_nav" id="mobileMenu">
     <div class="side_header">
         <p class="tit">안녕하세요, 한우리입니다.</p>
-		
-        <ul class="quick_menu_list"><!-- login 전 -->
+
+        <ul class="quick_menu_list">
+            <!-- login 전 -->
             <li><a href="#a"><span>로그인</span></a></li>
             <li><a href="#a"><span>회원가입</span></a></li>
             <li><a href="#a"><span>아이디/비번찾기</span></a></li>
@@ -167,7 +185,7 @@
                 </div>
             </li>
             <li>
-                <strong>한우리소개</strong>
+                <strong class="t1">한우리소개</strong>
                 <div>
                     <a href="#a">인사말</a>
                     <a href="#a">설립목적</a>
@@ -175,11 +193,20 @@
                     <a href="#a">위치안내</a>
                 </div>
             </li>
+            <li class="pc_f">
+                <strong class="t1">회원정보</strong>
+                <div>
+                    <a href="#a">로그인</a>
+                    <a href="#a">회원가입</a>
+                    <a href="#a">아이디 찾기</a>
+                    <a href="#a">비밀번호 찾기</a>
+                </div>
+            </li>
         </ul>
     </nav>
-    <buton id="btnClosed" class="btn __closed"></buton>
+    <button id="btnClosed" class="btn __closed"></button>
 </aside>
-<!--// mobile nav -->
+<!--// side nav -->
 <script defer src="../assets/js/jquery-3.4.1.min.js"></script>
 <script defer src="../assets/libs/swiper.min.js"></script>
 <script defer src="../assets/js/ui.js"></script>

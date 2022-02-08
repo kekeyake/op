@@ -66,5 +66,129 @@ header.header {
 }
 
 @include desktop {
-    
+    header.header {
+        border-bottom: 2px solid #DBDBDB;
+        position: relative;
+        .inner {
+            width: 1030px;
+            margin:0 auto;
+            padding:px(27) 0 px(24);
+            .logo {
+                width: 200px;
+            }
+            ._menu {
+                width: 30px;
+                height: 20px;
+                margin-top: 30px;
+                background:url(../img/ico_menu.svg) no-repeat 0 0 / 100%;
+            }
+            .btn_user {
+                margin-top: 30px;
+                width: 32px;
+                height: 32px;
+            }
+        }
+    }
+    .main_menu {
+        padding:0;
+        position: relative;
+        z-index: 101;
+        &::after {
+            display: block;
+            content: '';
+            width: 100%;
+            height: 2px;
+            background:#DBDBDB;
+            position: absolute;
+            left:0;
+            top:52px;
+        }
+        .inner {
+            width: 1030px;
+            margin:0 auto;
+        }
+        .__nav ul {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            z-index: 1;
+        }
+        .__nav li {
+            position: relative;
+            &:nth-child(5) {
+                .sub_nav {
+                    transform: translateX(-25%);
+                }
+            }
+            &:nth-child(6) {
+                .sub_nav {
+                    transform: translateX(-30%);
+                }
+            }
+            &:last-child {
+                .sub_nav {
+                    left:auto;
+                    right:0;
+                }
+            }
+        }
+        .__nav li > a {
+            height: 52px;
+            font-size: 22px;
+            font-weight: 400;
+            letter-spacing: 0;
+            &:hover,
+            &.active {
+                color:#EA5504;
+                position: relative;
+                &::after {
+                    content: '';
+                    display: block;
+                    width: 100%;
+                    height: 2px;
+                    background-color: #EA5504;
+                    position: absolute;
+                    left: 0;
+                    top:-2px;
+                }
+                & + .sub_nav {
+                    display: block;
+                }
+            }
+        }
+        .sub_nav {
+            display: none;
+            position: absolute;
+            white-space: nowrap;
+            left:0;
+            a {
+                display: inline-flex;
+                align-items: center;
+                height: 45px;
+                margin-right: 20px;
+                color:#777;
+                font-size: 20px;
+                &:last-child {
+                    margin-right: 0;
+                }
+                &:hover,
+                &.active {
+                    font-weight: 500;
+                    color:#333;
+                }
+            }
+        }
+        .sub_bg {
+            width: 100%;
+            height: 45px;
+            background: #F4F5F7;
+            border-bottom: 2px solid #DBDBDB;
+            position: absolute;
+            left: 0;
+            top: 52px;
+            z-index: 0;
+            display: none;
+        }
+    }
 }

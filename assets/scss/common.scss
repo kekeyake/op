@@ -88,5 +88,22 @@ input[type=checkbox] {
 }
 /* pc layout common */
 @include desktop {
-	
+	.pc {
+		display: block !important;
+	}
+	.m {
+		display: none !important;
+	}
+	.pc_f {
+		display: flex !important;
+	}
+	.m_f {
+		display: none !important;
+	}
+	body {
+		font-size: px(18);
+		-ms-overflow-style: none; 
+		overflow-x: hidden;
+		letter-spacing: -0.05px;
+	}
 }

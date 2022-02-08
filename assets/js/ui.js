@@ -1,7 +1,26 @@
 var $winW, $winH, $isMobile, $headerHeight;
+var filter = "win16|win32|win64|mac|macintel"; 
 
 $(function () {
     $headerHeight = $('.header').innerHeight();
+
+    if (navigator.platform) {
+        if (filter.indexOf(navigator.platform.toLowerCase()) < 0) { //mobile
+           
+        } else { //pc
+            $('.__nav li').mouseenter(function () {
+                $(this).children('a').addClass('active');
+                if ($(this).find('.sub_nav').length > 0 ){
+                    $('.sub_bg').show();
+                }
+            });
+            $('.__nav li').mouseleave(function () {
+                $(this).children('a').removeClass('active');
+                $('.sub_bg').hide();
+            });
+        } 
+    }
+
 
     // ===== Scroll to Top ==== 
     $(window).scroll(function () {
@@ -31,6 +50,8 @@ $(function () {
         $('#btnClosed').hide();
     });
 
+    
+
 
 
     if ($('.main_banner').length) {
@@ -38,7 +59,9 @@ $(function () {
             loop: true,
             pagination: {
                 el: ".main_banner .swiper-pagination",
-              },
+            },
+            observer: true,
+            observeParents: true,
         });
     }
     

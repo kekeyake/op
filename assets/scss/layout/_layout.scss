@@ -1,5 +1,6 @@
 button {
     all: unset;
+    cursor: pointer;
 }
 .btn {
     &.__top {
@@ -10,6 +11,9 @@ button {
         height: vw(40);
         background: url(../img/btn_top.svg) no-repeat 0 0 / cover;
     }
+}
+.side_banner {
+    display: none;
 }
 .btn_main {
     display: flex;
@@ -161,6 +165,91 @@ button {
     }
 }
 @include desktop {
-
-    
+    .btn_main {
+        margin:0 auto;
+        width: 500px;
+        height: 78px;
+        box-shadow: 2px 2px 1px 1px #000;
+        span {
+            font-size: 30px;
+            padding-right: 25px;
+            background: url(../img/ico_polygon.svg) no-repeat 100% 50% / 15px;
+        }
+        & + .btn_main {
+            margin-top: 25px;
+        }
+        &.puple {
+            background-color: #A475FF;
+        }
+    }
+    .side_banner {
+        display: block;
+        width: 220px;
+        flex-direction: column;
+        position: fixed;
+        right:10px;
+        top:50%;
+        z-index: 200;
+    }
+    #wrap {
+        &.open {
+            height: 100%;
+            overflow: visible;
+        }
+    }
+    .side_nav {
+        position: absolute;
+        top: 113px;
+        left: 50%;
+        z-index: 1000;
+        width: 1030px;
+        transform: translateX(-50%);
+        height: auto;
+        overflow-y: auto;
+        display: none;
+        border: 2px solid #C4C4C4;
+        &.open {
+            display: flex;
+            left: 50%;
+        }
+        .side_header {
+            display: none;
+        }
+        .__closed {
+            position: absolute;
+            right:9px;
+            top:10px;
+            width: 44px;
+            height: 44px;
+        }
+        nav {
+            height: 100%;
+            flex: 1;
+            background-color: #fff;
+            padding:30px 45px;
+            li {
+                background: none;
+                color:#333;
+                border-bottom: 1px solid #C4C4C4;
+                padding:0 40px;
+                height: 80px;
+                display: flex;
+                align-items: center;
+                .t1 {
+                    font-size: 22px;
+                    font-weight: 500;
+                    padding:0;
+                    width: 130px;
+                }
+                a {
+                    font-size: 18px;
+                    margin-right: 0;
+                    padding:0 10px;
+                }
+                &:last-child {
+                    border-bottom: 0 solid #000;
+                }
+            }
+        }
+    }
 }

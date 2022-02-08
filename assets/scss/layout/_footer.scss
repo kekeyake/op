@@ -21,6 +21,9 @@ footer.footer {
     margin-top: auto;
     .inner {
         padding:vw(15);
+        .logo {
+            display: none;
+        }
         p {
             color:#bbb;
             font-size: vw(13);
@@ -53,5 +56,59 @@ footer.footer {
     }
 }
 @include desktop {
-    
+    .consult_call {
+        display: none;
+    }
+    footer.footer {
+        background: #444;
+        text-align: left;
+        margin-top: auto;
+        display: flex;
+        .inner {
+            display: flex;
+            align-items: center;
+            .logo {
+                display: block;
+                width: 220px;
+                margin-right: px(53);
+                img {
+                    width: 100%;
+                }
+            }
+            width: 1030px;
+            margin:0 auto;
+            padding:px(30) 0;
+            .foot_cont {
+            }
+            p {
+                color:#fff;
+                font-size: px(16);
+            }
+            .link_list {
+                display: flex;
+                align-items: center;
+                justify-content: start;
+                margin-bottom: px(10);
+                a {
+                    color:#eee;
+                    font-size: px(18);
+                    font-weight: 500;
+                    margin-right: px(20);
+                    &::after {
+                        display: none;
+                        width: 1px;
+                        height: vw(10);
+                        margin:0 vw(10);
+                        background-color: #777;
+                    }
+                    &:last-child::after {
+                        display: none;
+                    }
+                }
+            }
+            .copyright {
+                margin-top: px(5);
+            }
+        }
+    }
 }
