@@ -6,7 +6,7 @@
 
 @function px($pixels) {
     @return #{
-        $pixels * 2
+        $pixels
     }px;
 }
 @function em($pixels) {

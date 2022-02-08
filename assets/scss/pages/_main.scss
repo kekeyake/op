@@ -39,6 +39,13 @@
     }
     h2 {
         text-align: center;
+        &.h2 {
+            font-family: 'Cafe24Ohsquare';
+            font-size: vw(28);
+            line-height: vw(32);
+            letter-spacing: 0;
+            color:#000;
+        }
     }
     .cont1 {
         text-align: center;
@@ -171,6 +178,9 @@
         }
         h2 {
             margin-top: vw(15);
+            font-size: vw(38);
+            color:#713BB9;
+            line-height: vw(42);
         }
         .img {
             margin-top: vw(20);

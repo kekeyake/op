@@ -132,6 +132,13 @@ header, footer, section, article, aside, nav, hgroup, details, menu, figure, fig
   src: url("../fonts/NotoSansKR-Black.woff2") format("woff2"), url("../fonts/NotoSansKR-Black.woff") format("woff"), url("../fonts/NotoSansKR-Black.otf") format("opentype");
 }
 
+@font-face {
+  font-family: 'Cafe24Ohsquare';
+  src: url("../fonts//Cafe24Ohsquare.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 /**
  * Swiper 5.4.1
  * Most modern mobile touch slider and framework with hardware accelerated transitions
@@ -1225,6 +1232,14 @@ button {
   text-align: center;
 }
 
+.main h2.h2 {
+  font-family: 'Cafe24Ohsquare';
+  font-size: 7.77778vw;
+  line-height: 8.88889vw;
+  letter-spacing: 0;
+  color: #000;
+}
+
 .main .cont1 {
   text-align: center;
   padding: 8.33333vw 0;
@@ -1388,6 +1403,9 @@ button {
 
 .main .cont4 h2 {
   margin-top: 4.16667vw;
+  font-size: 10.55556vw;
+  color: #713BB9;
+  line-height: 11.66667vw;
 }
 
 .main .cont4 .img {
