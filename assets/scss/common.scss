@@ -106,4 +106,8 @@ input[type=checkbox] {
 		overflow-x: hidden;
 		letter-spacing: -0.05px;
 	}
+	input[type=checkbox] {
+		width: px(24);
+		height: px(24);
+	}
 }

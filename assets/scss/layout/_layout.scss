@@ -182,6 +182,18 @@ button {
             background-color: #A475FF;
         }
     }
+    .btn_submit {
+        height: 64px;
+        letter-spacing: -0.03px;
+        > span {
+            font-size: 26px;
+        }
+    }
+    .btn {
+        &.__top {
+            display: none;
+        }
+    }
     .side_banner {
         display: block;
         width: 220px;
