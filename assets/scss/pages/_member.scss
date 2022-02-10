@@ -42,6 +42,19 @@
             font-size: vw(14);
             color:#777;
             letter-spacing: -0.03em;
+            padding-left: vw(8);
+            position: relative;
+            &::before {
+                content: '';
+                display: block;
+                width: vw(2);
+                height: vw(2);
+                background-color: #777;
+                border-radius: 50%;
+                position: absolute;
+                left:vw(3);
+                top:50%;
+            }
             & + .input_wrap {
                 margin-top: vw(15);
             }
@@ -91,7 +104,7 @@
         background-position: vw(14) center;
         background-size: vw(28);
         &::placeholder {
-            color:rgba(0,0,0,.2)
+            color:#999;
         }
         &.error {
             border: 1px solid #EA5504;
@@ -117,6 +130,19 @@
         color:#EA5504;
         margin: vw(10) 0;
         letter-spacing: -0.03em;
+        padding-left: vw(8);
+        position: relative;
+        &::before {
+            content: '';
+            display: block;
+            width: vw(2);
+            height: vw(2);
+            background-color: #EA5504;
+            border-radius: 50%;
+            position: absolute;
+            left:vw(3);
+            top:50%;
+        }
     }
 }
 @include desktop {

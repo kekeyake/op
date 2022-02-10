@@ -955,7 +955,7 @@ header.header .inner .btn_user img {
   .main_menu .__nav li > a {
     height: 52px;
     font-size: 22px;
-    font-weight: 400;
+    font-weight: 500;
     letter-spacing: 0;
   }
   .main_menu .__nav li > a:hover, .main_menu .__nav li > a.active {
@@ -2031,6 +2031,20 @@ button {
   font-size: 3.88889vw;
   color: #777;
   letter-spacing: -0.03em;
+  padding-left: 2.22222vw;
+  position: relative;
+}
+
+.member .form_wrap .txt::before {
+  content: '';
+  display: block;
+  width: 0.55556vw;
+  height: 0.55556vw;
+  background-color: #777;
+  border-radius: 50%;
+  position: absolute;
+  left: 0.83333vw;
+  top: 50%;
 }
 
 .member .form_wrap .txt + .input_wrap {
@@ -2098,19 +2112,19 @@ button {
 }
 
 .member input.text::-webkit-input-placeholder {
-  color: rgba(0, 0, 0, 0.2);
+  color: #999;
 }
 
 .member input.text:-ms-input-placeholder {
-  color: rgba(0, 0, 0, 0.2);
+  color: #999;
 }
 
 .member input.text::-ms-input-placeholder {
-  color: rgba(0, 0, 0, 0.2);
+  color: #999;
 }
 
 .member input.text::placeholder {
-  color: rgba(0, 0, 0, 0.2);
+  color: #999;
 }
 
 .member input.text.error {
@@ -2142,6 +2156,20 @@ button {
   color: #EA5504;
   margin: 2.77778vw 0;
   letter-spacing: -0.03em;
+  padding-left: 2.22222vw;
+  position: relative;
+}
+
+.member .error_txt::before {
+  content: '';
+  display: block;
+  width: 0.55556vw;
+  height: 0.55556vw;
+  background-color: #EA5504;
+  border-radius: 50%;
+  position: absolute;
+  left: 0.83333vw;
+  top: 50%;
 }
 
 @media (min-width: 1030px) {

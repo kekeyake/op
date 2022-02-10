@@ -53,10 +53,14 @@ $(function () {
     
 
 
-
+    // main 상단 slide banner
     if ($('.main_banner').length) {
         var swiper = new Swiper(".main_banner", {
             loop: true,
+            autoplay: {
+                delay: 3500,
+                disableOnInteraction: false,
+            },
             pagination: {
                 el: ".main_banner .swiper-pagination",
             },
