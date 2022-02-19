@@ -1,0 +1,851 @@
+.book {
+    margin-bottom: vw(50);
+    padding:0 vw(15) 0;
+    .btn_app {
+        & + .btn_app {
+            margin-top: vw(12);
+        }
+    }
+    .link_top {
+        .link_coupon {
+            display: block;
+            margin:0 vw(-15) vw(30);
+            img {
+                width: 100%;
+            }
+        }
+    }
+    h2 {
+        font-size: vw(18);
+        text-align: left;
+        font-weight: 500;
+        letter-spacing: -0.05em;
+        margin: vw(32) 0 vw(10);
+        color:#000;
+    }
+    .tit_box {
+        display: flex;
+        align-items: center;
+        margin-bottom: vw(14);
+        h3 {
+            background-color: #666;
+            border-radius: 3px;
+            font-size: vw(15);
+            font-weight: 700;
+            color:#fff;
+            padding:vw(3) vw(6);
+            margin-right: vw(9);
+        }
+        span {
+            font-size: vw(18);
+            letter-spacing: -0.03em;
+            color:#333;
+            position: relative;
+            padding-right: vw(10);
+            padding-left: vw(2);
+            &::after {
+                content: '';
+                display: block;
+                width: vw(6);
+                height: vw(9);
+                background: url(../img/ico_app_right_b.svg) no-repeat 0 0 / cover;
+                position: absolute;
+                right: 0;
+                top:vw(9);
+            }
+            &::before {
+                content: '';
+                display: block;
+                width: 95%;
+                height: 1px;
+                background-color: #000;
+                position: absolute;
+                left:0;
+                top:50%;
+
+
+            }
+        }
+        b {
+            color:#EA5504;
+            font-size: vw(18);
+            font-weight: 500;
+            margin-left: vw(10);
+        }
+    }
+    .competition_must {
+        .btn_box {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            justify-content: space-between;
+        }
+        button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: vw(40);
+            width: 49%;
+            margin-top: 2%;
+            background-color: #999;
+            border-radius: 6px;
+            color:#fff;
+            font-size: vw(16);
+            letter-spacing: -0.05em;
+            font-weight: 700;
+            &:nth-child(-n + 2) {
+                margin-top: 0;
+            }
+            span {
+                padding-right: vw(12);
+                background: url(../img/ico_arrow_right_w.svg) no-repeat 100% 50% / vw(8) vw(14);
+
+            }
+        }
+    }
+    .school_year_wrap {
+        .book_list_box {
+            border-top: 1px solid #CACACA;;
+            border-bottom: 1px solid #CACACA;
+            background-color: #F4F5F7;
+            padding:vw(18) vw(15) vw(20);
+            margin:0 vw(-15);
+            .scroll_box {
+                overflow-x: auto;
+            }
+            ul {
+                display: flex;
+                width: max-content;
+                li {
+                    width: vw(137);
+                    margin-right: vw(12);
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                    img {
+                        width: 100%;
+                        filter: drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.3));
+                    }
+                    .text_box {
+                        text-align: center;
+                        .t1 {
+                            margin-top: vw(10);
+                            font-size: vw(15);
+                            font-weight: 500;
+                            letter-spacing: -0.05em;
+                            color:#000;
+                            padding:0 vw(5);
+                            span {
+                                font-size: vw(13);
+                                color:#666;
+                                display: block;
+                            }
+                        }
+                        .t2 {
+                            margin-top: vw(5);
+                            font-size: vw(13);
+                            font-weight: 500;
+                            color:#666;
+                            span {
+                                font-size: vw(12);
+                                background: #999;
+                                border-radius: 3px;
+                                color:#fff;
+                                padding:vw(1) vw(6) vw(2);
+                                margin-right: vw(4);
+                            }
+                        }
+                        .t3 {
+                            margin-top: vw(10);
+                            font-size: vw(13);
+                            color:#666;
+                            letter-spacing: -0.05em;
+                            text-align: left;
+                        }
+                    }
+                    
+                }
+            }
+        }
+        margin:0 0 vw(40);
+    }
+    .checkbox_wrap {
+        margin-top: vw(12);
+        margin-bottom:vw(30);
+        label {
+            display: flex;
+            align-items: center;
+            font-size: vw(15);
+            color:#666;
+            span {
+                margin-left: vw(4);
+                display: inline-block;
+                transform: translateY(-1px);
+            }
+        }
+    }
+    .book_select_box {
+        margin:0 vw(-15);
+        border-top: 1px solid #CACACA;
+        background-color: #F4F5F7;
+        padding:vw(18) vw(35);
+        .select_info_wrap {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            select {
+                width: vw(112);
+                background:#fff url(../img/ico_select.svg) no-repeat right vw(9) top 50% / vw(16.75) vw(13);
+                border: 1px solid #c4c4c4;
+                height: vw(33);
+                padding-left: vw(7);
+                font-size: vw(16);
+            }
+            .input_box {
+                display: flex;
+                width: vw(110);
+                input {
+                    width: vw(46);
+                    height: vw(33);
+                    border: 1px solid #c4c4c4;
+                    text-align: center;
+                    font-size: vw(16);
+                }
+                button {
+                    display: block;
+                    flex: 1;
+                    width: vw(33);
+                    &.btn_minus {
+                        background: #fff url(../img/btn_minus.svg) no-repeat 0 0 / cover;
+                    }
+                    &.btn_plus {
+                        background: #777 url(../img/btn_plus.svg) no-repeat 0 0 / cover;
+                    }
+                }
+
+            }
+            > button {
+                width: vw(48);
+                height: vw(33);
+                background-color: #EA5504;
+                border-radius: 3px;
+                text-align: center;
+                color:#fff;
+                font-size: vw(15);
+                font-weight: 700;
+                letter-spacing: -0.03em;
+            }
+        }
+        .tit_box {
+            margin: vw(12) 0 0;
+        }
+    }
+    .book_select_list {
+        border-top: 1px solid #CACACA;
+        margin: 0 vw(-15);
+        > div {
+            font-size: vw(16);
+            display: flex;
+            align-items: center;
+            b {
+                padding: vw(14) vw(13);
+                color:#999;
+                background-color: #F4F5F7;
+                width: vw(85);
+                height: 100%;
+                font-weight: 700;
+                box-sizing: border-box;
+            }
+            div {
+                display: flex;
+                align-items: center;
+                flex: 1;
+                padding:vw(13);
+                justify-content: space-between;
+            }
+        }
+        .add_option {
+            border-bottom: 1px solid #CACACA;
+            .btn_delete {
+                width: vw(20);
+                height: vw(20);
+                background:url(../img/btn_delete.svg) no-repeat 0 0 / cover;
+            }
+        }
+        .total_price {
+            border-bottom: 1px solid #CACACA;
+            div {
+                color:#EA5504;
+                font-weight: 700;
+                font-size: vw(18);
+            }
+        }
+    }
+    .applicant_info {
+        .applicant_form {
+            margin:0 vw(-15);
+            border-top: 1px solid #CACACA;
+            li {
+                border-bottom: 1px solid #CACACA;
+                background-color: #F4F5F7;
+                display: flex;
+                align-items: center;
+                font-size: vw(16);
+                b {
+                    width: vw(56);
+                    padding: vw(14) vw(13);
+                    color:#999;
+                    height: 100%;
+                    font-weight: 700;
+                    box-sizing: border-box;
+                }
+                div {
+                    display: flex;
+                    flex-wrap: wrap;
+                    flex: 1;
+                    padding:vw(10) vw(15) vw(10) 0;
+                    font-size: vw(16);
+                    color:#333;
+                    align-items: center;
+                    .btn_cate {
+                        border: 2px solid #999;
+                        background-color: #fff;
+                        font-size: vw(16);
+                        font-weight: 500;
+                        height: vw(33);
+                        padding:0 vw(5);
+                        color:#777;
+                        box-sizing: border-box;
+                        margin-right: vw(8);
+                    }
+                    input {
+                        width: 100%;
+                        border: 1px solid #c4c4c4;
+                        height: vw(33);
+                        display: flex;
+                        align-items: center;
+                        padding:0 vw(7);
+                        letter-spacing: -0.03em;
+                        & + input {
+                            margin-top: vw(7);
+                        }
+                    }
+                    span + input {
+                        flex: 1;
+                        margin-left: vw(10);
+                    }
+                }
+            }
+        }
+    }
+    .shipping_info {
+        position: relative;
+        .checkbox_wrap {
+            position: absolute;
+            top:vw(-10);
+            right:0;
+        }
+        .text_list {
+            margin-top: vw(30);
+        }
+        .shipping_form {
+            margin:0 vw(-15);
+            border-top: 1px solid #CACACA;
+            li {
+                border-bottom: 1px solid #CACACA;
+                background-color: #F4F5F7;
+                display: flex;
+                align-items: center;
+                font-size: vw(16);
+                b {
+                    width: vw(85);
+                    padding: vw(14) vw(13);
+                    color:#999;
+                    height: 100%;
+                    font-weight: 700;
+                    box-sizing: border-box;
+                }
+                div {
+                    flex: 1;
+                    padding:vw(10) vw(15) vw(10) 0;
+
+                    input {
+                        width: 100%;
+                        border: 1px solid #c4c4c4;
+                        height: vw(33);
+                        display: flex;
+                        align-items: center;
+                        padding-left: vw(7);
+                        & + input {
+                            margin-top: vw(7);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .total_book_price {
+        display: flex;
+        justify-content: space-between;
+        margin:vw(60) vw(-15) 0;
+        padding:vw(13) vw(15) vw(14);
+        background: #F4F5F7;
+        border-top: 1px solid #CACACA;
+        border-bottom: 1px solid #CACACA;
+        font-size: vw(18);
+        font-weight: 500;
+        letter-spacing: -0.05em;
+        b {
+            color:#000;
+        }
+        strong {
+            color:#EA5504;
+            &::after {
+                content: '원';
+                color:#000;
+            }
+        }
+    }
+    .btn_order_box {
+        display: flex;
+        justify-content: center;
+        margin-top: vw(18);
+        button {
+            font-size: vw(15);
+            color:#fff;
+            font-weight: 500;
+            letter-spacing: -0.03em;
+            height: vw(32);
+            border-radius: 3px;
+            padding:0 vw(10);
+            background-color: #666;
+            & + button {
+                margin-left: vw(12);
+            }
+
+        }
+    }
+    .tbl {
+        margin:0 vw(-15);
+        table {
+            table-layout: fixed;
+            width: 100%;
+            font-size: vw(15);
+            letter-spacing: -0.03em;
+        }
+        th {
+            background-color: #F4F5F7;
+            color:#999;
+            font-weight: 700;
+            padding:vw(10) 0;
+            border-bottom: 1px solid #CACACA;
+            border-right: 1px solid #CACACA;
+            &:last-child {
+                border-right: 0 solid #000;
+            }
+        }
+        td {
+            text-align: center;
+            padding:vw(10) 0;
+            border-bottom: 1px solid #CACACA;
+            border-right: 1px solid #CACACA;
+            &:last-child {
+                border-right: 0 solid #000;
+            }
+        }
+        tfoot {
+            b {
+                color:#333;
+            }
+        }
+    }
+    .book_order_list {
+        border-top: 1px solid #CACACA;
+        margin: 0 vw(-15); 
+        li {
+            font-size: vw(16);
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid #CACACA;
+            background-color: #F4F5F7;
+            b {
+                padding: 0 vw(13);
+                color:#999;
+                
+                width: vw(85);
+                height: 100%;
+                font-weight: 700;
+                box-sizing: border-box;
+            }
+            div {
+                display: flex;
+                align-items: center;
+                flex: 1;
+                padding:vw(14) vw(13);
+                justify-content: space-between;
+                background-color: #fff;
+            }
+            strong {
+                color:#EA5504;
+                font-weight: 500;
+            }
+        }
+    }
+}
+@include desktop {
+    .book {
+        width: 1030px;
+        margin:0 auto 100px;
+        padding:0;
+        .btn_app {
+            & + .btn_app {
+                margin-top: 17px;
+            }
+        }
+        .link_top {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .link_coupon {
+                display: block;
+                margin:0;
+                width: 506px;
+                img {
+                    width: 100%;
+                }
+            }
+            .btn_box {
+                width: 506px;;
+            }
+        }
+        h2 {
+            font-size: 24px;
+            margin: 60px 0 16px;
+        }
+        .tit_box {
+            h3 {
+                font-size: 20px;
+                padding:4px 12px;
+                margin-right: 20px;
+            }
+            span {
+                font-size: 22px;
+                padding-right: 15px;
+                padding-left: 7px;
+                &::after {
+                    width: 8px;
+                    height: 12px;
+                    background: url(../img/ico_app_right_b.svg) no-repeat 0 0 / cover;
+                    position: absolute;
+                    top:10px;
+                }
+            }
+            b {
+                font-size: 22px;
+                margin-left: 10px;
+            }
+        }
+        .flex_box_pc {
+            .cont_wrap {
+                width: 506px;
+            }
+        }
+        .competition_must {
+            .btn_box {
+                justify-content: flex-start;
+            }
+            button {
+                height: 60px;
+                width: 246px;
+                font-size: 20px;
+                margin-top: 14px;
+                margin-right: 15px;
+                &:nth-child(-n + 4) {
+                    margin-top: 0;
+                }
+                &:nth-child(4n) {
+                    margin-right: 0;
+                }
+                span {
+                    padding-right: 12px;
+                    background: url(../img/ico_arrow_right_w.svg) no-repeat 100% 50% / 8px 14px ;
+
+                }
+            }
+        }
+        .school_year_wrap {
+            .book_list_box {
+                padding:30px 32px;
+                margin:0;
+                .tit_box {
+                    margin-bottom: 18px;
+                }
+                .scroll_box {
+                    overflow-x: auto;
+                }
+                ul {
+                    display: block;
+                    width: auto;
+                    li {
+                        width: 100%;
+                        display: flex;
+                        margin-right: 0;
+                        margin-bottom: 16px;
+                        align-items: center;
+                        &:last-child {
+                            margin-bottom: 16px;
+                        }
+                        img {
+                            width: 137px;
+                            filter: drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.3));
+                        }
+                        .text_box {
+                            width: calc(100% - 162px);
+                            text-align: left;
+                            margin-left: 24px;
+                            .t1 {
+                                margin-top: 0;
+                                font-size: 20px;
+                                padding:0;
+                                span {
+                                    font-size:16px;
+                                    display: inline-block;
+                                    &::before {
+                                        content: '/';
+                                        margin-left: 10px;
+                                        padding-right: 10px;
+                                    }
+                                }
+                            }
+                            .t2 {
+                                margin-top: 10px;
+                                font-size: 18px;
+                                span {
+                                    font-size: 16px;
+                                    padding:3px 10px 4px;
+                                    margin-right: 8px;
+                                }
+                            }
+                            .t3 {
+                                margin-top: 14px;
+                                font-size: 16px;
+                            }
+                        }
+                        
+                    }
+                }
+            }
+            margin:0 0 60px;
+        }
+        .checkbox_wrap {
+            margin-top: 10px;
+            margin-bottom:50px;
+            display: flex;
+            justify-content: flex-end;
+            label {
+                font-size: 20px;
+                span {
+                    margin-left: 5px;
+                    letter-spacing: -0.03em;
+                }
+            }
+        }
+        .book_select_box {
+            margin:0;
+            padding:18px 40px;
+            display: flex;
+            .select_info_wrap {
+                justify-content: flex-start;
+                flex: 1;
+                select {
+                    width: 114px;
+                    background:#fff url(../img/ico_select.svg) no-repeat right 13px top 50% / 10px 16px;
+                    height: 40px;
+                    padding-left:10px;
+                    font-size: 22px;
+                    margin-right: 15px;
+                }
+                .input_box {
+                    display: flex;
+                    width: 138px;
+                    margin-right: 15px;
+                    input {
+                        width: 60px;
+                        height: 40px;
+                        font-size:20px;
+                    }
+                    button {
+                        display: block;
+                        flex: 1;
+                        width: 40px;
+                    }
+
+                }
+                > button {
+                    width: 97px;
+                    height: 40px;
+                    font-size: 20px;
+                }
+            }
+            .tit_box {
+                margin: 0;
+            }
+        }
+        .book_select_list {
+            margin: 0;
+            > div {
+                font-size: 22px;
+                b {
+                    padding: 17px 40px;
+                    width: 160px;
+                    letter-spacing: -0.03em;
+                }
+                div {
+                    padding: 15px 30px;
+                }
+            }
+            .add_option {
+                div {
+                    justify-content: flex-start;
+                }
+                .btn_delete {
+                    width: 25px;
+                    height: 25px;
+                    margin-left: 10px;
+                }
+            }
+            .total_price {
+                div {
+                    font-size: 26px;
+                }
+            }
+        }
+        .applicant_info {
+            .applicant_form {
+                margin:0;
+                li {
+                    font-size: 22px;
+                    b {
+                        width: 160px;
+                        padding: 17px 40px;
+                    }
+                    div {
+                        padding:14px 40px 15px 20px;
+                        font-size: 22px;
+                        .btn_cate {
+                            font-size: 22px;
+                            height: 40px;
+                            padding:0 10px 4px;
+                            margin-right: 10px;
+                        }
+                        input {
+                            height: 40px;
+                            padding:0 10px;
+                            flex: 1;
+                            & + input {
+                                margin-top: 0;
+                                margin-left: 7px;
+                                width: 40%;
+                            }
+                        }
+                        span + input {
+                            flex: 1;
+                            margin-left: vw(10);
+                        }
+                    }
+                }
+            }
+        }
+        .shipping_info {
+            position: relative;
+            .checkbox_wrap {
+                top:-10px;
+            }
+            .text_list {
+                margin-top: 30px;
+            }
+            .shipping_form {
+                margin:0;
+                li {
+                    font-size: 22px;
+                    b {
+                        width: 160px;
+                        padding: 17px 40px;
+                        letter-spacing: -0.03em;
+                    }
+                    div {
+                        flex: 1;
+                        padding:14px 40px 15px 20px;
+                        flex-wrap: wrap;
+                        display: flex;
+                        input {
+                            height: 40px;
+                            padding-left: 10px;
+                            flex: 1;
+                            & + input {
+                                width: 40%;
+                                margin-top: 0;
+                                margin-left: 7px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .btn_wrap {
+            display: flex;
+            justify-content: space-between;
+            .btn_app + .btn_app {
+                margin-top: 0;
+            }
+        }
+        .total_book_price {
+            margin:80px 0 0;
+            padding:30px 50px 32px;
+            font-size: 26px;
+            letter-spacing: -0.05em;
+        }
+        .btn_order_box {
+            margin-top: 40px;
+            button {
+                font-size: 21px;
+                height: 40px;
+                padding:0 26px;
+                & + button {
+                    margin-left: 20px;
+                }
+
+            }
+        }
+        .tbl {
+            margin:0;
+            table {
+                font-size: 22px;
+            }
+            th {
+                padding:15px 0;
+            }
+            td {
+                padding:15px 0;
+            }
+        }
+        .book_order_list {
+            margin: 0;
+            li {
+                font-size: 22px;
+                b {
+                    padding: 0 40px;
+                    color:#999;
+                    width: 160px;
+                    box-sizing: border-box;
+                    letter-spacing: -0.05em;
+                }
+                div {
+                    flex: 1;
+                    padding:18px 30px;
+                }
+            }
+        }
+    }
+}
