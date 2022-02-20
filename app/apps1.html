@@ -81,16 +81,19 @@
     
     <main class="main">
         <div class="tit">
-            <h1>주문수정</h1>
+            <h1>시험접수</h1>
         </div>
-        <section class="book">
-            <div class="cont_wrap">
-                <h2>도서구입 및 할인 안내</h2>
-                <ul class="text_list">
-                    <li>도서 정가 대비 약 10% 할인 금액으로 판매</li>
-                    <li><strong>도서구입 세트 당 시험 참가비 2,000원 할인쿠폰 제공</strong></li>
-                    <li>여러 배송지 일괄 결제 가능</li>
-                </ul>
+        <section class="app">
+            <div class="link_top">
+                <a href="#a" class="link_coupon">
+                    <img srcset="../assets/img/book/img_coupon@2x.png 2x,
+                                        ../assets/book/img/img_coupon@3x.png 3x" src="../assets/img/book/img_coupon@2x.png" alt=""
+                        class="m">
+                    <img src="../assets/img/book/img_coupon_pc.png" alt="" class="pc">
+                </a>                
+                <a href="#a">
+                    <img src="../assets/img/app/img_coupon2_pc.png" alt="" class="pc">
+                </a>
             </div>
 
             <div class="cont_wrap applicant_info">
@@ -106,12 +109,6 @@
                             </div>
                         </li>
                         <li>
-                            <b>소속</b>
-                            <div>
-                                <span>한우리지부</span>
-                            </div>
-                        </li>
-                        <li>
                             <b>이름</b>
                             <div>
                                 <span>한교사</span>
@@ -119,122 +116,177 @@
                             </div>
                         </li>
                         <li>
+                            <b>관계</b>
+                            <div>
+                                <span>응시자의</span>
+                                <div>
+                                    <button class="btn_cate">교사</button>
+                                    <button class="btn_cate">부</button>
+                                    <button class="btn_cate">모</button>
+                                    <button class="btn_cate">기타</button>
+                                </div>
+                            </div>
+                        </li>
+                        
+                        <li>
                             <b>주소</b>
                             <div>
-                                <input type="text" value="서울시 영등포구 당산로27길 16 한우리빌딩">
-                                <input type="text" value="2층">
+                                <input type="text" placeholder="클릭하여 검색">
+                                <input type="text">
                             </div>
                         </li>
                     </ul>
                 </div>
+            </div>
+
+            <div class="m banner_box">
+                <a href="#a">
+                    <img srcset="../assets/img/app/img_coupon2@2x.png 2x,
+                    ../assets/apop/img/img_coupon2@3x.png 3x" src="../assets/img/app/img_coupon2@2x.png" alt="">
+                </a>
             </div>
 
             <div class="cont_wrap shipping_info">
-                <h2>배송지 정보</h2>
-                <div class="checkbox_wrap">
-                    <label>
-                        <input type="checkbox">
-                        <span>신청자 정보와 동일</span>
-                    </label>
-                </div>
+                <h2>응시자 정보 <span>(입력 후 <a href="#a">응시자 등록</a> 버튼을 클릭하세요.)</span></h2>
                 <div class="shipping_form">
                     <ul>
                         <li>
-                            <b>받으실분</b>
+                            <b>이름</b>
                             <div>
                                 <input type="text">
                             </div>
                         </li>
                         <li>
-                            <b>휴대폰</b>
+                            <b>생년월일</b>
                             <div>
-                                <input type="text" placeholder="받으실분 휴대폰 번호 입력">
+                                <input type="text" placeholder="8자리 입력 (예) 20101205">
                             </div>
                         </li>
                         <li>
-                            <b>배송주소</b>
+                            <b>참가부문</b>
                             <div>
-                                <input type="text">
-                                <input type="text">
+                                <select name="" id="">
+                                    <option value="">선택</option>
+                                </select>
                             </div>
                         </li>
                         <li>
-                            <b>배송메모</b>
+                            <b>학교명</b>
                             <div>
-                                <input type="text">
+                                <input type="text" placeholder="클릭하여 검색">
                             </div>
                         </li>
-                    </ul>
+                        <li>
+                            <b>학부모 휴대폰</b>
+                            <div>
+                                <input type="number" placeholder="숫자만 입력">
+                            </div>
+                        </li>
+                        <li>
+                            <b>참가비</b>
+                            <div>
+                                <button type="button>" class="btn_coupon">쿠폰적용 (15개)</button>
+                                <strong>12,000원</strong>
+                                <span class="pc">쿠폰적용 버튼을 클릭하여 적용·해제할 수 있습니다.</span>
+                            </div>
+                        </li>
+                    </ul>                    
                 </div>
-                <ul class="text_list">
-                    <li>동일 배송지에 보낼 상품이 2개 이상이면, <a href="#a"> 배송지를 1곳</a>으로 하여 주문하세요.
-                        <p>예) 초1, 초3 형제 주문 : 1학년, 3학년 필독서 <a href="#a">함께 선택</a></p>
-                    </li>
+                <ul class="info_list m">
+                    <li>쿠폰적용 버튼을 클릭하여 적용·해제할 수 있습니다.</li>
                 </ul>
             </div>
 
+            <a href="#a" class="btn_app orange">
+                <span class="right">응시자 등록</span>
+            </a>
+            
             <div class="cont_wrap">
-                <h2>도서 선택</h2>
-                <div class="book_select_box">
-                    <div class="select_info_wrap">
-                        <select name="" id="">
-                            <option value="">선택</option>
-                        </select>
-                        <div class="input_box">
-                            <button type="button" class="btn_minus"></button>
-                            <input type="text" value="10">
-                            <button type="button" class="btn_plus"></button>
-                        </div>
-                        <button type="button"><span>구입</span></button>
-                    </div>
-                    <div class="tit_box">
-                        <h3>4권 세트 할인가</h3>
-                        <span class="org_price">44,000원</span>
-                        <b class="discount_price">40,440원</b>
-                    </div>
+                <h2>접수중인 응시자 <strong>(2명)</strong></h2>
+                <div class="tbl">
+                    <table>
+                        <colgroup>
+                            <col class="cell">
+                            <col class="cell">
+                            <col class="cell">
+                            <col class="cell">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th rowspan="2">이름</th>
+                                <th>생년월일</th>
+                                <th>학교명</th>
+                                <th>참가비</th>
+                            </tr>
+                            <tr>
+                                <th>참가부문</th>
+                                <th>학부모 휴대폰</th>
+                                <th>삭제</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td rowspan="2">강다니엘헤이츠</td>
+                                <td>2010.05.29</td>
+                                <td>서울연희초등학교</td>
+                                <td>12,000원</td>
+                            </tr>
+                            <tr>
+                                <td>초등 3학년</td>
+                                <td>010-1234-5678</td>
+                                <td><a href="#a">삭제</a></td>
+                            </tr>
+                            <tr>
+                                <td rowspan="2">이영희</td>
+                                <td>2010.05.29</td>
+                                <td>서울대학교사범대학 부설여자중학교</td>
+                                <td>12,000원</td>
+                            </tr>
+                            <tr>
+                                <td>중 1학년</td>
+                                <td>010-1234-5678</td>
+                                <td><a href="#a">삭제</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
-                <div class="book_select_list">
-                    <div class="add_option">
-                        <b>선택 1</b>
-                        <div>
-                            <p>초등 4학년 / 1세트 / 44,000원</p>
-                            <button type="button" class="btn_delete"></button>
-                        </div>
-                    </div>
-                    <div class="add_option">
-                        <b>선택 2</b>
-                        <div>
-                            <p>초등 1학년 / 10세트 / 440,000원</p>
-                            <button type="button" class="btn_delete"></button>
-                        </div>
-                    </div>
-                    <div class="total_price">
-                        <b>합계금액</b>
-                        <div>448,000원</div>
+            </div>
+            <div class="cont_wrap">
+                <h2>설문</h2>
+                <div class="survey_wrap">
+                    <p class="q">Q.독서올림피아드를 어떻게 알게 되셨나요?</p>
+                    <div>
+                        <button class="btn_survey">현수막</button>
+                        <button class="btn_survey">포스터·전단</button>
+                        <button class="btn_survey">신문광고</button>
+                        <button class="btn_survey">지인</button>
+                        <button class="btn_survey">한우리교사·센터 추천</button>
+                        <button class="btn_survey">인터넷검색</button>
+                        <button class="btn_survey">기타</button>
                     </div>
                 </div>
             </div>
 
             <div class="cont_wrap">
-                <h2>도서 교환·환불 규정</h2>
+                <h2>참가비 환불규정</h2>
                 <ul class="text_list">
-                    <li>교환·환불은 수령 후 7일 이내 가능</li>
-                    <li>변심 및 착오로 인한 교환·환불 시 왕복배송비 발생</li>
-                    <li>불량 도서, 배송 중 파손 도서는 무료 교환</li>
-                    <li>환불 시, 제공된 참가비 할인쿠폰은 무효 처리</li>
+                    <li><b>전액 환불</b> : 6.13(월) ~ 7.15(금)</li>
+                    <li><b>50% 환불</b> : 7.16(토) ~ 7.29(금)</li>
+                    <li><b>환불 불가</b> : 7.30(토) 이후</li>
                 </ul>
             </div>
             
             <div class="checkbox_wrap">
                 <label>
                     <input type="checkbox">
-                    <span>도서 교환 · 환불 규정에 동의</span>
+                    <span>참가비 환불 규정에 동의</span>
                 </label>
             </div>
-            <a href="#a" class="btn_app puple">
-                <span class="right">구입하기</span>
-            </a>
 
+            <a href="#a" class="btn_app puple">
+                <span class="right">접수하기</span>
+            </a>
+            
         </section>
     </main>
     

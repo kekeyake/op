@@ -1298,7 +1298,16 @@ button {
 }
 
 .btn_app.gray {
-  background-color: #999;
+  background-color: #666;
+}
+
+.btn_app.gray > span {
+  color: #fff;
+}
+
+.btn_app.gray > span.right {
+  padding-right: 4.86111vw;
+  background: url(../img/ico_app_right_w.svg) no-repeat 100% 50%/3.47222vw 2.77778vw;
 }
 
 .btn_app.orange {
@@ -1523,7 +1532,11 @@ main > .tit {
   margin-bottom: 3.33333vw;
   color: #777;
   font-size: 3.88889vw;
-  etter-spacing: -0.03em;
+  letter-spacing: -0.03em;
+}
+
+.info_list li:last-child {
+  margin-bottom: 0;
 }
 
 .info_list li::after {
@@ -1535,7 +1548,7 @@ main > .tit {
   border-radius: 50%;
   position: absolute;
   left: 0;
-  top: 3.05556vw;
+  top: 2.22222vw;
 }
 
 .info_list li a {
@@ -1568,6 +1581,10 @@ main > .tit {
     height: 78px;
   }
   .btn_app.puple span.right {
+    padding-right: 27px;
+    background: url(../img/ico_app_right_w.svg) no-repeat 100% 50%/19px 15px;
+  }
+  .btn_app.gray span.right {
     padding-right: 27px;
     background: url(../img/ico_app_right_w.svg) no-repeat 100% 50%/19px 15px;
   }
@@ -2854,14 +2871,48 @@ main > .tit {
   background: url(../img/btn_delete.svg) no-repeat 0 0/cover;
 }
 
-.book .book_select_list .total_price {
+.book .book_select_list + .total_price {
+  margin: 0 -4.16667vw;
   border-bottom: 1px solid #CACACA;
+  background-color: #F4F5F7;
+  font-size: 4.44444vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.book .book_select_list .total_price div {
+.book .book_select_list + .total_price b {
+  padding: 3.88889vw 3.61111vw;
+  color: #999;
+  background-color: #F4F5F7;
+  width: 23.61111vw;
+  height: 100%;
+  font-weight: 700;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.book .book_select_list + .total_price div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 3.61111vw;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   color: #EA5504;
   font-weight: 700;
   font-size: 5vw;
+  background-color: #fff;
 }
 
 .book .applicant_info .applicant_form {
@@ -2919,6 +2970,15 @@ main > .tit {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin-right: 2.22222vw;
+}
+
+.book .applicant_info .applicant_form li div .btn_cate:last-child {
+  margin-right: 0;
+}
+
+.book .applicant_info .applicant_form li div .btn_cate.on {
+  border-color: #EA5504;
+  color: #EA5504;
 }
 
 .book .applicant_info .applicant_form li div input {
@@ -3388,8 +3448,18 @@ main > .tit {
     height: 25px;
     margin-left: 10px;
   }
-  .book .book_select_list .total_price div {
+  .book .book_select_list + .total_price {
+    margin: 0;
+  }
+  .book .book_select_list + .total_price b {
+    font-size: 22px;
+    padding: 17px 40px;
+    width: 160px;
+    letter-spacing: -0.03em;
+  }
+  .book .book_select_list + .total_price div {
     font-size: 26px;
+    padding: 15px 30px;
   }
   .book .applicant_info .applicant_form {
     margin: 0;
@@ -3534,6 +3604,724 @@ main > .tit {
   }
 }
 
+.app {
+  margin-bottom: 13.88889vw;
+  padding: 0 4.16667vw 0;
+}
+
+.app .btn_app + .btn_app {
+  margin-top: 3.33333vw;
+}
+
+.app .link_top .link_coupon {
+  display: block;
+  margin: 0 -4.16667vw 8.33333vw;
+}
+
+.app .link_top .link_coupon img {
+  width: 100%;
+}
+
+.app h2 {
+  font-size: 5vw;
+  text-align: left;
+  font-weight: 500;
+  letter-spacing: -0.05em;
+  margin: 8.88889vw 0 2.77778vw;
+  color: #000;
+}
+
+.app h2 span {
+  display: inline-block;
+  font-size: 3.88889vw;
+  color: #777;
+  margin-left: 2.22222vw;
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
+}
+
+.app h2 span a {
+  text-decoration: underline;
+  color: #333;
+}
+
+.app h2 strong {
+  color: #EA5504;
+  margin-left: 1.38889vw;
+}
+
+.app .btn_wrap {
+  margin-top: 8.33333vw;
+}
+
+.app .banner_box {
+  margin: 11.11111vw -4.16667vw 0;
+}
+
+.app .banner_box img {
+  width: 100%;
+}
+
+.app .applicant_info .applicant_form {
+  margin: 0 -4.16667vw;
+  border-top: 1px solid #CACACA;
+}
+
+.app .applicant_info .applicant_form li {
+  border-bottom: 1px solid #CACACA;
+  background-color: #F4F5F7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 4.44444vw;
+}
+
+.app .applicant_info .applicant_form li b {
+  width: 15.55556vw;
+  padding: 3.88889vw 3.61111vw;
+  color: #999;
+  height: 100%;
+  font-weight: 700;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.app .applicant_info .applicant_form li > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 2.77778vw 4.16667vw 2.77778vw 0;
+  font-size: 4.44444vw;
+  color: #333;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.app .applicant_info .applicant_form li > div .btn_cate {
+  border: 2px solid #999;
+  background-color: #fff;
+  font-size: 4.44444vw;
+  font-weight: 500;
+  height: 9.16667vw;
+  padding: 0 2.77778vw;
+  color: #777;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-right: 2.22222vw;
+}
+
+.app .applicant_info .applicant_form li > div .btn_cate:last-child {
+  margin-right: 0;
+}
+
+.app .applicant_info .applicant_form li > div .btn_cate.on {
+  border-color: #EA5504;
+  color: #EA5504;
+}
+
+.app .applicant_info .applicant_form li > div input {
+  width: 100%;
+  border: 1px solid #c4c4c4;
+  height: 9.16667vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 1.94444vw;
+  letter-spacing: -0.03em;
+}
+
+.app .applicant_info .applicant_form li > div input + input {
+  margin-top: 1.94444vw;
+}
+
+.app .applicant_info .applicant_form li > div span + input {
+  margin-left: 2.77778vw;
+  width: auto;
+}
+
+.app .applicant_info .applicant_form li > div span + div {
+  margin-left: 2.5vw;
+}
+
+.app .shipping_info {
+  position: relative;
+}
+
+.app .shipping_info .checkbox_wrap {
+  position: absolute;
+  top: -2.77778vw;
+  right: 0;
+}
+
+.app .shipping_info .text_list {
+  margin-top: 8.33333vw;
+}
+
+.app .shipping_info .shipping_form {
+  margin: 0 -4.16667vw;
+  border-top: 1px solid #CACACA;
+}
+
+.app .shipping_info .shipping_form li {
+  border-bottom: 1px solid #CACACA;
+  background-color: #F4F5F7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 4.44444vw;
+}
+
+.app .shipping_info .shipping_form li b {
+  width: 32.5vw;
+  padding: 3.88889vw 3.61111vw;
+  color: #999;
+  height: 100%;
+  font-weight: 700;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.app .shipping_info .shipping_form li div {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 2.77778vw 4.16667vw 2.77778vw 0;
+}
+
+.app .shipping_info .shipping_form li div input {
+  width: 100%;
+  border: 1px solid #c4c4c4;
+  height: 9.16667vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 1.94444vw;
+}
+
+.app .shipping_info .shipping_form li div input + input {
+  margin-top: 1.94444vw;
+}
+
+.app .shipping_info .shipping_form li div select {
+  min-width: 31.11111vw;
+  background: #fff url(../img/ico_select.svg) no-repeat right 2.5vw top 50%/4.65278vw 3.61111vw;
+  border: 1px solid #c4c4c4;
+  height: 9.16667vw;
+  padding-left: 1.94444vw;
+  font-size: 4.44444vw;
+}
+
+.app .shipping_info .shipping_form li div .btn_coupon {
+  height: 8.88889vw;
+  color: #fff;
+  background-color: #999;
+  border-radius: 3px;
+  padding: 0 2.77778vw;
+  margin-right: 3.33333vw;
+  font-size: 4.16667vw;
+  font-weight: 700;
+}
+
+.app .shipping_info .shipping_form li div .btn_coupon + strong {
+  color: #000;
+  font-weight: 500;
+  font-size: 5vw;
+}
+
+.app .shipping_info .shipping_form li div .btn_coupon.on {
+  background-color: #EA5504;
+}
+
+.app .shipping_info .info_list {
+  margin-bottom: 8.33333vw;
+}
+
+.app .checkbox_wrap {
+  margin-top: 3.33333vw;
+  margin-bottom: 8.33333vw;
+}
+
+.app .checkbox_wrap label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 4.16667vw;
+  color: #666;
+}
+
+.app .checkbox_wrap label span {
+  margin-left: 1.11111vw;
+  display: inline-block;
+  -webkit-transform: translateY(-1px);
+          transform: translateY(-1px);
+}
+
+.app .survey_wrap {
+  margin: 0 -4.16667vw;
+  border-top: 1px solid #CACACA;
+  border-bottom: 1px solid #CACACA;
+  background-color: #F4F5F7;
+  padding: 5.55556vw;
+}
+
+.app .survey_wrap p {
+  font-size: 4.44444vw;
+  font-weight: 500;
+  color: #666;
+  letter-spacing: -0.03em;
+}
+
+.app .survey_wrap div {
+  margin-top: 2.77778vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.app .survey_wrap div button {
+  border: 2px solid #999999;
+  background-color: #fff;
+  height: 9.16667vw;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0 2.77778vw;
+  font-size: 4.44444vw;
+  font-weight: 500;
+  letter-spacing: -0.03em;
+  margin-top: 2.08333vw;
+  color: #777;
+}
+
+.app .survey_wrap div button:nth-child(-n + 4) {
+  margin-top: 0;
+}
+
+.app .survey_wrap div button.on {
+  border-color: #EA5504;
+  color: #EA5504;
+}
+
+.app .tbl {
+  margin: 0 -4.16667vw;
+}
+
+.app .tbl table {
+  table-layout: fixed;
+  width: 100%;
+  font-size: 4.16667vw;
+  letter-spacing: -0.05em;
+  border-top: 1px solid #CACACA;
+}
+
+.app .tbl table .cell:nth-child(1) {
+  width: 15%;
+}
+
+.app .tbl table .cell:nth-child(2) {
+  width: 25%;
+}
+
+.app .tbl table .cell:nth-child(3) {
+  width: 40%;
+}
+
+.app .tbl th {
+  background-color: #F4F5F7;
+  color: #999;
+  font-weight: 700;
+  padding: 1.38889vw;
+  border-bottom: 1px solid #CACACA;
+  border-right: 1px solid #CACACA;
+  vertical-align: middle;
+}
+
+.app .tbl th:last-child {
+  border-right: 0 solid #000;
+}
+
+.app .tbl td {
+  text-align: center;
+  padding: 1.38889vw;
+  border-bottom: 1px solid #CACACA;
+  border-right: 1px solid #CACACA;
+  vertical-align: middle;
+}
+
+.app .tbl td:last-child {
+  border-right: 0 solid #000;
+}
+
+.app .tbl td a {
+  color: #EA5504;
+  text-decoration: underline;
+}
+
+.app .tbl td a + a {
+  margin-left: 1.38889vw;
+}
+
+.app .tbl tfoot b {
+  color: #333;
+}
+
+.app .book_order_list {
+  border-top: 1px solid #CACACA;
+  margin: 0 -4.16667vw;
+}
+
+.app .book_order_list li {
+  font-size: 4.44444vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid #CACACA;
+  background-color: #F4F5F7;
+}
+
+.app .book_order_list li b {
+  padding: 0 3.61111vw;
+  color: #999;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 1;
+          flex: 0 0 1;
+  height: 100%;
+  font-weight: 700;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.app .book_order_list li div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 3.88889vw 3.61111vw;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #fff;
+}
+
+.app .book_order_list li strong {
+  color: #EA5504;
+  font-weight: 500;
+}
+
+.app .total_book_price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 16.66667vw -4.16667vw 0;
+  padding: 3.61111vw 4.16667vw 3.88889vw;
+  background: #F4F5F7;
+  border-top: 1px solid #CACACA;
+  border-bottom: 1px solid #CACACA;
+  font-size: 5vw;
+  font-weight: 500;
+  letter-spacing: -0.05em;
+}
+
+.app .total_book_price b {
+  color: #000;
+}
+
+.app .total_book_price strong {
+  color: #EA5504;
+}
+
+.app .total_book_price strong::after {
+  content: '원';
+  color: #000;
+}
+
+@media (min-width: 1030px) {
+  .app {
+    width: 1030px;
+    margin: 0 auto 100px;
+    padding: 0;
+  }
+  .app .btn_app + .btn_app {
+    margin-top: 17px;
+  }
+  .app .link_top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .app .link_top .link_coupon {
+    display: block;
+    margin: 0;
+    width: 506px;
+  }
+  .app .link_top .link_coupon img {
+    width: 100%;
+  }
+  .app .link_top .btn_box {
+    width: 506px;
+  }
+  .app h2 {
+    font-size: 24px;
+    margin: 60px 0 16px;
+  }
+  .app h2 span {
+    font-size: 18px;
+    margin-left: 5px;
+    -webkit-transform: translateY(-2px);
+            transform: translateY(-2px);
+  }
+  .app h2 strong {
+    margin-left: 5px;
+  }
+  .app .flex_box_pc .cont_wrap {
+    width: 506px;
+  }
+  .app .btn_wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 60px;
+  }
+  .app .btn_wrap .btn_app + .btn_app {
+    margin-top: 0;
+  }
+  .app .applicant_info .applicant_form {
+    margin: 0;
+  }
+  .app .applicant_info .applicant_form li {
+    font-size: 22px;
+  }
+  .app .applicant_info .applicant_form li b {
+    width: 140px;
+    padding: 17px 40px;
+  }
+  .app .applicant_info .applicant_form li > div {
+    padding: 14px 40px 15px 0;
+    font-size: 22px;
+  }
+  .app .applicant_info .applicant_form li > div .btn_cate {
+    font-size: 22px;
+    height: 40px;
+    padding: 3px 10px 4px;
+    margin-right: 10px;
+  }
+  .app .applicant_info .applicant_form li > div input {
+    height: 40px;
+    padding: 0 10px;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  .app .applicant_info .applicant_form li > div input + input {
+    margin-top: 0;
+    margin-left: 7px;
+    width: 40%;
+  }
+  .app .applicant_info .applicant_form li > div span + input {
+    margin-left: 10px;
+    width: 294px;
+    -webkit-box-flex: 0;
+        -ms-flex: none;
+            flex: none;
+  }
+  .app .applicant_info .applicant_form li > div span + div {
+    margin-left: 10px;
+  }
+  .app .shipping_info {
+    position: relative;
+    margin-bottom: 40px;
+  }
+  .app .shipping_info .checkbox_wrap {
+    top: -10px;
+  }
+  .app .shipping_info .text_list {
+    margin-top: 30px;
+  }
+  .app .shipping_info .shipping_form {
+    margin: 0;
+  }
+  .app .shipping_info .shipping_form li {
+    font-size: 22px;
+  }
+  .app .shipping_info .shipping_form li b {
+    width: 210px;
+    padding: 17px 40px;
+    letter-spacing: -0.05em;
+  }
+  .app .shipping_info .shipping_form li div {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    padding: 14px 40px 15px 0px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .app .shipping_info .shipping_form li div input {
+    height: 40px;
+    padding-left: 10px;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  .app .shipping_info .shipping_form li div input + input {
+    width: 40%;
+    margin-top: 0;
+    margin-left: 7px;
+  }
+  .app .shipping_info .shipping_form li div select {
+    width: 114px;
+    background: #fff url(../img/ico_select.svg) no-repeat right 13px top 50%/10px 16px;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 22px;
+    margin-right: 15px;
+  }
+  .app .shipping_info .shipping_form li div .btn_coupon {
+    height: 40px;
+    padding: 0 12px;
+    margin-right: 15px;
+    font-size: 21px;
+  }
+  .app .shipping_info .shipping_form li div .btn_coupon + strong {
+    font-size: 26px;
+    display: inline-block;
+    -webkit-transform: translateY(2px);
+            transform: translateY(2px);
+  }
+  .app .shipping_info .shipping_form li div .btn_coupon + strong + span {
+    font-size: 18px;
+    color: #777;
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+    margin-left: 10px;
+  }
+  .app .survey_wrap {
+    margin: 0;
+    padding: 30px 35px;
+  }
+  .app .survey_wrap p {
+    font-size: 22px;
+  }
+  .app .survey_wrap div {
+    margin-top: 20px;
+  }
+  .app .survey_wrap div button {
+    height: 40px;
+    padding: 0 22px;
+    font-size: 18px;
+    margin-top: 0;
+  }
+  .app .tbl {
+    margin: 0;
+  }
+  .app .tbl table {
+    font-size: 22px;
+  }
+  .app .tbl table .cell:nth-child(1) {
+    width: 20%;
+  }
+  .app .tbl table .cell:nth-child(2) {
+    width: 20%;
+  }
+  .app .tbl table .cell:nth-child(3) {
+    width: 40%;
+  }
+  .app .tbl th {
+    padding: 15px 20px;
+  }
+  .app .tbl td {
+    padding: 15px 20px;
+  }
+  .app .tbl td + a {
+    margin-left: 10px;
+  }
+  .app .book_order_list {
+    margin: 0;
+  }
+  .app .book_order_list li {
+    font-size: 22px;
+  }
+  .app .book_order_list li b {
+    padding: 0 40px;
+  }
+  .app .book_order_list li div {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    padding: 18px 30px;
+  }
+  .app .checkbox_wrap {
+    margin-top: 10px;
+    margin-bottom: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .app .checkbox_wrap label {
+    font-size: 20px;
+  }
+  .app .checkbox_wrap label span {
+    margin-left: 5px;
+    letter-spacing: -0.03em;
+  }
+  .app .total_book_price {
+    margin: 80px 0 0;
+    padding: 30px 50px 32px;
+    font-size: 26px;
+    letter-spacing: -0.05em;
+  }
+}
+
 body {
   font-size: 6.11111vw;
   -ms-overflow-style: none;
@@ -3605,6 +4393,26 @@ a {
       -ms-flex-direction: column;
           flex-direction: column;
   height: 100%;
+}
+
+select {
+  color: #999;
+}
+
+input::-webkit-input-placeholder {
+  color: #999;
+}
+
+input:-ms-input-placeholder {
+  color: #999;
+}
+
+input::-ms-input-placeholder {
+  color: #999;
+}
+
+input::placeholder {
+  color: #999;
 }
 
 input[type=checkbox] {

@@ -262,14 +262,34 @@
                 background:url(../img/btn_delete.svg) no-repeat 0 0 / cover;
             }
         }
-        .total_price {
+        & + .total_price {
+            margin: 0 vw(-15);
             border-bottom: 1px solid #CACACA;
+            background-color: #F4F5F7;
+            font-size: vw(16);
+            display: flex;
+            align-items: center;
+            b {
+                padding: vw(14) vw(13);
+                color:#999;
+                background-color: #F4F5F7;
+                width: vw(85);
+                height: 100%;
+                font-weight: 700;
+                box-sizing: border-box;
+            }
             div {
+                display: flex;
+                align-items: center;
+                flex: 1;
+                padding:vw(13);
+                justify-content: space-between;
                 color:#EA5504;
                 font-weight: 700;
                 font-size: vw(18);
-            }
-        }
+                background-color: #fff;
+            }            
+        }        
     }
     .applicant_info {
         .applicant_form {
@@ -307,6 +327,13 @@
                         color:#777;
                         box-sizing: border-box;
                         margin-right: vw(8);
+                        &:last-child {
+                            margin-right: 0;
+                        }
+                        &.on {
+                            border-color: #EA5504;
+                            color:#EA5504;
+                        }
                     }
                     input {
                         width: 100%;
@@ -700,11 +727,19 @@
                     margin-left: 10px;
                 }
             }
-            .total_price {
+            & + .total_price {         
+                margin: 0;
+                b {
+                    font-size: 22px;
+                    padding: 17px 40px;
+                    width: 160px;
+                    letter-spacing: -0.03em;
+                }
                 div {
                     font-size: 26px;
-                }
-            }
+                    padding: 15px 30px;
+                }            
+            } 
         }
         .applicant_info {
             .applicant_form {

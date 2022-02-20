@@ -92,7 +92,14 @@ button {
         }
     }
     &.gray {
-        background-color: #999;
+        background-color: #666;
+        > span {
+            color:#fff;
+            &.right {
+                padding-right: vw(17.5);
+                background: url(../img/ico_app_right_w.svg) no-repeat 100% 50% / vw(12.5) vw(10);
+            }
+        }
     }
     &.orange {
         background-color: $color_orange2;
@@ -266,7 +273,10 @@ main {
         margin-bottom: vw(12);
         color:#777;
         font-size: vw(14);
-        etter-spacing: -0.03em;
+        letter-spacing: -0.03em;        
+        &:last-child {
+            margin-bottom: 0;
+        }
         &::after {
             content: '';
             display: block;
@@ -276,7 +286,7 @@ main {
             border-radius: 50%;
             position: absolute;
             left: 0;
-            top:vw(11);
+            top:vw(8);
         }
         a {
             color:#333;
@@ -308,6 +318,12 @@ main {
         margin:0 auto;
         height: 78px;
         &.puple {
+            span.right {
+                padding-right: 27px;
+                background: url(../img/ico_app_right_w.svg) no-repeat 100% 50% / 19px 15px;
+            }
+        }
+        &.gray {
             span.right {
                 padding-right: 27px;
                 background: url(../img/ico_app_right_w.svg) no-repeat 100% 50% / 19px 15px;
