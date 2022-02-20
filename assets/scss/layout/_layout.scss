@@ -39,6 +39,11 @@ button {
     &.puple {
         background-color: #A475FF;
     }
+    &:hover {
+        span {
+            transform: scale(1.02);
+        }
+    }
 }
 .btn_submit {
     display: flex;
@@ -64,6 +69,11 @@ button {
         font-size: vw(18);
         font-weight: 700;
         color:#fff;
+    }
+    &:hover {
+        span {
+            transform: scale(1.02);
+        }
     }
 }
 .btn_app {
@@ -96,8 +106,13 @@ button {
     }
     > span {
         font-size: vw(18);
-        font-weight: 700;
+        font-weight: 500;
         color:#fff;
+    }
+    &:hover {
+        span {
+            transform: scale(1.02);
+        }
     }
 }
 #wrap {
@@ -328,7 +343,7 @@ main {
         flex-direction: column;
         position: fixed;
         left:50%;
-        bottom:200px;
+        bottom:100px;
         z-index: 200;
         transform: translateX(515px);
         a + a {

@@ -1058,6 +1058,7 @@ footer.footer .inner .logo {
 footer.footer .inner p {
   color: #bbb;
   font-size: 3.61111vw;
+  font-weight: 400;
 }
 
 footer.footer .inner .link_list {
@@ -1130,6 +1131,7 @@ footer.footer .inner .copyright {
   footer.footer .inner p {
     color: #fff;
     font-size: 16px;
+    font-weight: 300;
   }
   footer.footer .inner .link_list {
     display: -webkit-box;
@@ -1148,6 +1150,9 @@ footer.footer .inner .copyright {
     font-size: 18px;
     font-weight: 500;
     margin-right: 20px;
+  }
+  footer.footer .inner .link_list a:first-child {
+    font-weight: 700;
   }
   footer.footer .inner .link_list a::after {
     display: none;
@@ -1219,6 +1224,11 @@ button {
   background-color: #A475FF;
 }
 
+.btn_main:hover span {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+}
+
 .btn_submit {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1255,6 +1265,11 @@ button {
   font-size: 5vw;
   font-weight: 700;
   color: #fff;
+}
+
+.btn_submit:hover span {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
 }
 
 .btn_app {
@@ -1301,8 +1316,13 @@ button {
 
 .btn_app > span {
   font-size: 5vw;
-  font-weight: 700;
+  font-weight: 500;
   color: #fff;
+}
+
+.btn_app:hover span {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
 }
 
 #wrap.open {
@@ -1577,7 +1597,7 @@ main > .tit {
             flex-direction: column;
     position: fixed;
     left: 50%;
-    bottom: 200px;
+    bottom: 100px;
     z-index: 200;
     -webkit-transform: translateX(515px);
             transform: translateX(515px);
