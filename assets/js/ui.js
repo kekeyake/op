@@ -54,7 +54,7 @@ $(function () {
 
 
     // main 상단 slide banner
-    if ($('.main_banner').length) {
+    if ( $('.main_banner').length ) {
         var swiper = new Swiper(".main_banner", {
             loop: true,
             autoplay: {
@@ -67,6 +67,18 @@ $(function () {
             },
             observer: true,
             observeParents: true,
+        });
+    }
+
+    // book 학년별 도서
+    if ( $('.competition_must').length ) {
+        $('.school_year_wrap_container .school_year_wrap').hide();
+        $('.school_year_wrap_container .school_year_wrap:first').show();
+
+        $('.competition_must button').on('click',function(){
+            let tg = $(this).attr('data-rel');            
+            $('.school_year_wrap_container .school_year_wrap').hide();
+            $('#' + tg).fadeIn();
         });
     }
     

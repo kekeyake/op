@@ -224,7 +224,7 @@ main {
             border-radius: 50%;
             position: absolute;
             left: 0;
-            top:vw(11);
+            top:vw(8);
         }
         b {
             font-weight: 500;
@@ -327,9 +327,14 @@ main {
         width: 220px;
         flex-direction: column;
         position: fixed;
-        right:10px;
-        top:50%;
+        left:50%;
+        bottom:200px;
         z-index: 200;
+        transform: translateX(515px);
+        a + a {
+            display: block;
+            margin-top: 10px;
+        }
     }
     #wrap {
         &.open {
@@ -423,7 +428,7 @@ main {
             &::after {
                 width: 3px;
                 height: 3px;
-                top:12px;
+                top:11px;
             }
             p {
                 margin-top: 0;
