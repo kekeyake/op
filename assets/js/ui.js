@@ -6,7 +6,7 @@ $(function () {
 
     if (navigator.platform) {
         if (filter.indexOf(navigator.platform.toLowerCase()) < 0) { //mobile
-           
+
         } else { //pc
             $('.__nav li').mouseenter(function () {
                 $(this).children('a').addClass('active');
@@ -63,6 +63,7 @@ $(function () {
             },
             pagination: {
                 el: ".main_banner .swiper-pagination",
+                clickable: true,
             },
             observer: true,
             observeParents: true,
