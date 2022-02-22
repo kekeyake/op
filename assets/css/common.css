@@ -3295,7 +3295,7 @@ main > .tit {
   margin-right: 0;
 }
 
-.book .applicant_info .applicant_form li div .btn_cate.on {
+.book .applicant_info .applicant_form li div .btn_cate.active {
   border-color: #EA5504;
   color: #EA5504;
 }
