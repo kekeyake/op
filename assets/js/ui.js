@@ -1,6 +1,21 @@
 var $winW, $winH, $isMobile, $headerHeight;
 var filter = "win16|win32|win64|mac|macintel"; 
 
+function closePop(e) {
+    $(e).removeClass('open');
+    $('.bg_dimmed').hide();
+    $('html').css('height', 'auto');
+    $('html').css('overflow-y', 'auto');
+}
+
+function popOpen(o) {
+    $('.bg_dimmed').show();
+    setTimeout(function () {
+        $(o).addClass('open');
+    }, 200);
+    $('html').css('height', '100vh');
+    $('html').css('overflow-y', 'hidden');
+}
 $(function () {
     $headerHeight = $('.header').innerHeight();
 
@@ -80,6 +95,15 @@ $(function () {
             $('.school_year_wrap_container .school_year_wrap').hide();
             $('#' + tg).fadeIn();
         });
+    }
+
+    // btn select
+    if ($('.category_wrap').length ) {  
+        
+        $('.category_wrap .btn_cate').on('click',function(){
+            $(this).addClass('active').siblings().removeClass('active');
+        });
+
     }
     
 });

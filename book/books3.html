@@ -99,8 +99,8 @@
                     <ul>
                         <li>
                             <b>구분</b>
-                            <div>
-                                <button class="btn_cate">한우리교사</button>
+                            <div class="category_wrap">
+                                <button class="btn_cate" onclick="popOpen('#certificationLayer');">한우리교사</button>
                                 <button class="btn_cate">일반 개인</button>
                                 <button class="btn_cate">일반 단체</button>
                             </div>
@@ -334,6 +334,32 @@
     <button id="btnClosed" class="btn __closed"></button>
 </aside>
 <!--// side nav -->
+
+<!-- 한우리 교사 인증 팝업 -->
+<aside class="layer_pop certification" id="certificationLayer">
+    <p class="tit">한우리교사 인증</p>
+    <button class="btn_closed" onclick="closePop('#certificationLayer');"></button>
+    <div class="inner">
+        <p class="t1">교사의 소속 지역센터 확인을 위해 정보를 입력해 주세요.</p>
+        <ul class="input_form">
+            <li>
+                <b>에듀넷 아이디</b>
+                <input type="text" value="myedu22">
+            </li>
+            <li>
+                <b>이름</b>
+                <input type="text" value="한교사">
+            </li>
+            <li>
+                <b>휴대폰 번호</b>
+                <input type="text" value="" placeholder="숫자만 입력">
+            </li>
+        </ul>
+        <button class="btn_submit orange" type="button"><span>확인</span></button>
+    </div>
+</aside>
+<!--// 한우리 교사 인증 팝업 -->
+
 <script defer src="../assets/js/jquery-3.4.1.min.js"></script>
 <script defer src="../assets/libs/swiper.min.js"></script>
 <script defer src="../assets/js/ui.js"></script>
