@@ -1220,7 +1220,7 @@ button {
   margin-top: 3.33333vw;
 }
 
-.btn_main.puple {
+.btn_main.purple {
   background-color: #A475FF;
 }
 
@@ -1245,7 +1245,7 @@ button {
   letter-spacing: -0.03em;
 }
 
-.btn_submit.puple {
+.btn_submit.purple {
   background-color: #9255E4;
 }
 
@@ -1288,11 +1288,11 @@ button {
   letter-spacing: -0.03em;
 }
 
-.btn_app.puple {
+.btn_app.purple {
   background-color: #9255E4;
 }
 
-.btn_app.puple span.right {
+.btn_app.purple span.right {
   padding-right: 4.86111vw;
   background: url(../img/ico_app_right_w.svg) no-repeat 100% 50%/3.47222vw 2.77778vw;
 }
@@ -1556,6 +1556,116 @@ main > .tit {
   text-decoration: underline;
 }
 
+.tbl {
+  margin: 0 -4.16667vw;
+}
+
+.tbl table {
+  table-layout: fixed;
+  width: 100%;
+  font-size: 4.16667vw;
+  letter-spacing: -0.03em;
+}
+
+.tbl table .cell:nth-child(1) {
+  width: 15%;
+}
+
+.tbl table .cell:nth-child(2) {
+  width: 25%;
+}
+
+.tbl table .cell:nth-child(3) {
+  width: 40%;
+}
+
+.tbl thead th {
+  border-top: 1px solid #CACACA;
+}
+
+.tbl th {
+  vertical-align: middle;
+  background-color: #F4F5F7;
+  color: #999;
+  font-weight: 700;
+  padding: 2.77778vw 0;
+  border-bottom: 1px solid #CACACA;
+  border-right: 1px solid #CACACA;
+}
+
+.tbl th:last-child {
+  border-right: 0 solid #000;
+}
+
+.tbl td {
+  vertical-align: middle;
+  text-align: center;
+  padding: 2.77778vw 0;
+  border-bottom: 1px solid #CACACA;
+  border-right: 1px solid #CACACA;
+}
+
+.tbl td:last-child {
+  border-right: 0 solid #000;
+}
+
+.tbl td span {
+  font-size: 3.88889vw;
+}
+
+.tbl tfoot b {
+  color: #333;
+}
+
+.book_order_list {
+  border-top: 1px solid #CACACA;
+  margin: 0 -4.16667vw;
+}
+
+.book_order_list li {
+  font-size: 4.44444vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid #CACACA;
+  background-color: #F4F5F7;
+}
+
+.book_order_list li b {
+  padding: 0 3.61111vw;
+  color: #999;
+  min-width: 22.22222vw;
+  height: 100%;
+  font-weight: 700;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.book_order_list li div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 3.88889vw 3.61111vw;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #fff;
+}
+
+.book_order_list li strong {
+  color: #EA5504;
+  font-weight: 500;
+}
+
 .layer_pop {
   z-index: 1000;
   opacity: 0;
@@ -1778,7 +1888,7 @@ main > .tit {
   .btn_main + .btn_main {
     margin-top: 25px;
   }
-  .btn_main.puple {
+  .btn_main.purple {
     background-color: #A475FF;
   }
   .btn_app {
@@ -1786,7 +1896,7 @@ main > .tit {
     margin: 0 auto;
     height: 78px;
   }
-  .btn_app.puple span.right {
+  .btn_app.purple span.right {
     padding-right: 27px;
     background: url(../img/ico_app_right_w.svg) no-repeat 100% 50%/19px 15px;
   }
@@ -1954,6 +2064,50 @@ main > .tit {
     color: #333;
     text-decoration: underline;
     font-weight: 500;
+  }
+  .tbl {
+    margin: 0;
+  }
+  .tbl table {
+    font-size: 22px;
+  }
+  .tbl table .cell:nth-child(1) {
+    width: 20%;
+  }
+  .tbl table .cell:nth-child(2) {
+    width: 20%;
+  }
+  .tbl table .cell:nth-child(3) {
+    width: 40%;
+  }
+  .tbl th {
+    padding: 15px 0;
+  }
+  .tbl td {
+    padding: 15px 0;
+  }
+  .tbl td span {
+    font-size: 20px;
+  }
+  .book_order_list {
+    margin: 0;
+  }
+  .book_order_list li {
+    font-size: 22px;
+  }
+  .book_order_list li b {
+    min-width: 200px;
+    padding: 0 40px;
+    color: #999;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    letter-spacing: -0.05em;
+  }
+  .book_order_list li div {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    padding: 18px 30px;
   }
   .layer_pop {
     position: fixed;
@@ -3445,94 +3599,6 @@ main > .tit {
   margin-left: 3.33333vw;
 }
 
-.book .tbl {
-  margin: 0 -4.16667vw;
-}
-
-.book .tbl table {
-  table-layout: fixed;
-  width: 100%;
-  font-size: 4.16667vw;
-  letter-spacing: -0.03em;
-}
-
-.book .tbl th {
-  background-color: #F4F5F7;
-  color: #999;
-  font-weight: 700;
-  padding: 2.77778vw 0;
-  border-bottom: 1px solid #CACACA;
-  border-right: 1px solid #CACACA;
-}
-
-.book .tbl th:last-child {
-  border-right: 0 solid #000;
-}
-
-.book .tbl td {
-  text-align: center;
-  padding: 2.77778vw 0;
-  border-bottom: 1px solid #CACACA;
-  border-right: 1px solid #CACACA;
-}
-
-.book .tbl td:last-child {
-  border-right: 0 solid #000;
-}
-
-.book .tbl tfoot b {
-  color: #333;
-}
-
-.book .book_order_list {
-  border-top: 1px solid #CACACA;
-  margin: 0 -4.16667vw;
-}
-
-.book .book_order_list li {
-  font-size: 4.44444vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border-bottom: 1px solid #CACACA;
-  background-color: #F4F5F7;
-}
-
-.book .book_order_list li b {
-  padding: 0 3.61111vw;
-  color: #999;
-  width: 23.61111vw;
-  height: 100%;
-  font-weight: 700;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-.book .book_order_list li div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  padding: 3.88889vw 3.61111vw;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  background-color: #fff;
-}
-
-.book .book_order_list li strong {
-  color: #EA5504;
-  font-weight: 500;
-}
-
 @media (min-width: 1030px) {
   .book {
     width: 1030px;
@@ -3888,38 +3954,6 @@ main > .tit {
   }
   .book .btn_order_box button + button {
     margin-left: 20px;
-  }
-  .book .tbl {
-    margin: 0;
-  }
-  .book .tbl table {
-    font-size: 22px;
-  }
-  .book .tbl th {
-    padding: 15px 0;
-  }
-  .book .tbl td {
-    padding: 15px 0;
-  }
-  .book .book_order_list {
-    margin: 0;
-  }
-  .book .book_order_list li {
-    font-size: 22px;
-  }
-  .book .book_order_list li b {
-    padding: 0 40px;
-    color: #999;
-    width: 160px;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    letter-spacing: -0.05em;
-  }
-  .book .book_order_list li div {
-    -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
-    padding: 18px 30px;
   }
 }
 
@@ -4638,6 +4672,379 @@ main > .tit {
     padding: 30px 50px 32px;
     font-size: 26px;
     letter-spacing: -0.05em;
+  }
+}
+
+.myinfo {
+  margin-bottom: 13.88889vw;
+  padding: 0 4.16667vw 0;
+}
+
+.myinfo .btn_app {
+  margin-top: 11.11111vw;
+}
+
+.myinfo .cont_wrap {
+  position: relative;
+}
+
+.myinfo h2 {
+  font-size: 5vw;
+  text-align: left;
+  font-weight: 500;
+  letter-spacing: -0.05em;
+  margin: 8.88889vw 0 2.77778vw;
+  color: #000;
+}
+
+.myinfo h2 span {
+  color: #EA5504;
+}
+
+.myinfo .info_txt {
+  position: absolute;
+  right: 1.38889vw;
+  top: 0.55556vw;
+  font-size: 3.88889vw;
+  color: #777;
+}
+
+.myinfo .info_txt span {
+  color: #EA5504;
+}
+
+.myinfo .btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 6.38889vw;
+  margin: 0 auto;
+  border-radius: 3px;
+  padding: 0 2.63889vw;
+  font-size: 4.16667vw;
+  font-weight: 700;
+  color: #fff;
+}
+
+.myinfo .btn span {
+  padding-right: 2.77778vw;
+  background: url(../img/ico_poly_right_w.svg) no-repeat 100% 50%/1.38889vw 1.94444vw;
+}
+
+.myinfo .btn.ogrange {
+  background-color: #EA5504;
+}
+
+.myinfo .btn.purple {
+  background-color: #9255E4;
+}
+
+.myinfo .book_order_list .btn {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 0;
+  margin-left: 1.38889vw;
+  margin-right: auto;
+}
+
+.myinfo .tbl td a {
+  color: #EA5504;
+  text-decoration: underline;
+}
+
+.myinfo .checkbox_wrap {
+  position: absolute;
+  top: -2.77778vw;
+  right: 0;
+  margin-top: 3.33333vw;
+  margin-bottom: 8.33333vw;
+}
+
+.myinfo .checkbox_wrap label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 4.16667vw;
+  color: #666;
+}
+
+.myinfo .checkbox_wrap label span {
+  margin-left: 1.11111vw;
+  display: inline-block;
+  -webkit-transform: translateY(-1px);
+          transform: translateY(-1px);
+}
+
+.myinfo .refund_form {
+  margin: 0 -4.16667vw;
+  border-top: 1px solid #CACACA;
+}
+
+.myinfo .refund_form li {
+  border-bottom: 1px solid #CACACA;
+  background-color: #F4F5F7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 4.44444vw;
+}
+
+.myinfo .refund_form li b {
+  width: 25vw;
+  padding: 3.88889vw 3.61111vw;
+  color: #999;
+  height: 100%;
+  font-weight: 700;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.myinfo .refund_form li div {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 2.77778vw 4.16667vw 2.77778vw 0;
+}
+
+.myinfo .refund_form li div input {
+  width: 100%;
+  border: 1px solid #c4c4c4;
+  height: 9.16667vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 1.94444vw;
+}
+
+.myinfo .refund_form li div input + input {
+  margin-top: 1.94444vw;
+}
+
+.myinfo .refund_form li div select {
+  min-width: 31.11111vw;
+  background: #fff url(../img/ico_select.svg) no-repeat right 2.5vw top 50%/4.65278vw 3.61111vw;
+  border: 1px solid #c4c4c4;
+  height: 9.16667vw;
+  padding-left: 1.94444vw;
+  font-size: 4.44444vw;
+}
+
+.myinfo .refund_form li div .btn_coupon {
+  height: 8.88889vw;
+  color: #fff;
+  background-color: #999;
+  border-radius: 3px;
+  padding: 0 2.77778vw;
+  margin-right: 3.33333vw;
+  font-size: 4.16667vw;
+  font-weight: 700;
+}
+
+.myinfo .refund_form li div .btn_coupon + strong {
+  color: #000;
+  font-weight: 500;
+  font-size: 5vw;
+}
+
+.myinfo .refund_form li div .btn_coupon.on {
+  background-color: #EA5504;
+}
+
+.myinfo .refund_form li div strong {
+  color: #EA5504;
+}
+
+.myinfo .myinfo_foot a {
+  display: block;
+  text-align: center;
+  padding: 10.55556vw 0 8.33333vw;
+}
+
+.myinfo .myinfo_foot a img {
+  width: 41.66667vw;
+}
+
+.form_tit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 75vw;
+  margin: 9.72222vw auto;
+  padding: 1.38889vw 4.44444vw;
+  border: 1px solid #555;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 5.55556vw;
+  font-weight: 500;
+  color: #000;
+}
+
+.btn_save {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 14.44444vw;
+  margin: 0 -4.16667vw;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.btn_save span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  color: #fff;
+  font-size: 5vw;
+  font-weight: 500;
+  padding-left: 7.5vw;
+  background: url(../img/ico_download.svg) no-repeat 0 50%/5.83333vw;
+}
+
+@media (min-width: 1030px) {
+  .myinfo {
+    width: 1030px;
+    margin: 0 auto 100px;
+    padding: 0;
+  }
+  .myinfo .btn_app {
+    margin-top: 60px;
+  }
+  .myinfo h2 {
+    font-size: 24px;
+    margin: 60px 0 16px;
+  }
+  .myinfo .info_txt {
+    position: static;
+    text-align: right;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .myinfo .btn {
+    height: 38px;
+    padding: 0 20px;
+    font-size: 21px;
+  }
+  .myinfo .btn span {
+    padding-right: 20px;
+    background: url(../img/ico_poly_right_w.svg) no-repeat 100% 50%/8px 14px;
+  }
+  .myinfo .checkbox_wrap {
+    top: -5px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .myinfo .checkbox_wrap label {
+    font-size: 20px;
+  }
+  .myinfo .checkbox_wrap label span {
+    margin-left: 5px;
+    letter-spacing: -0.03em;
+  }
+  .myinfo .refund_form {
+    margin: 0;
+  }
+  .myinfo .refund_form li {
+    font-size: 22px;
+  }
+  .myinfo .refund_form li b {
+    width: 210px;
+    padding: 17px 40px;
+    letter-spacing: -0.05em;
+  }
+  .myinfo .refund_form li div {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    padding: 14px 40px 15px 0px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .myinfo .refund_form li div input {
+    height: 40px;
+    padding-left: 10px;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  .myinfo .refund_form li div input + input {
+    width: 40%;
+    margin-top: 0;
+    margin-left: 7px;
+  }
+  .myinfo .refund_form li div select {
+    width: 114px;
+    background: #fff url(../img/ico_select.svg) no-repeat right 13px top 50%/10px 16px;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 22px;
+    margin-right: 15px;
+  }
+  .myinfo .refund_form li div .btn_coupon {
+    height: 40px;
+    padding: 0 12px;
+    margin-right: 15px;
+    font-size: 21px;
+  }
+  .myinfo .refund_form li div .btn_coupon + strong {
+    font-size: 26px;
+    display: inline-block;
+    -webkit-transform: translateY(2px);
+            transform: translateY(2px);
+  }
+  .myinfo .refund_form li div .btn_coupon + strong + span {
+    font-size: 18px;
+    color: #777;
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+    margin-left: 10px;
+  }
+  .form_tit {
+    width: 395px;
+    margin: 60px auto;
+    padding: 10px 0;
+    border: 1px solid #555;
+    border-left: 0 solid #000;
+    border-right: 0 solid #000;
+    font-size: 30px;
+    color: #333;
   }
 }
 

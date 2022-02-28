@@ -81,160 +81,177 @@
     
     <main class="main">
         <div class="tit">
-            <h1>주문수정</h1>
+            <h1>도서주문내역 상세조회</h1>
         </div>
-        <section class="book">
+        <section class="myinfo">
             <div class="cont_wrap">
-                <h2>도서구입 및 할인 안내</h2>
-                <ul class="text_list">
-                    <li>도서 정가 대비 약 10% 할인 금액으로 판매</li>
-                    <li><strong>도서구입 세트 당 시험 참가비 2,000원 할인쿠폰 제공</strong></li>
-                    <li>여러 배송지 일괄 결제 가능</li>
-                </ul>
-            </div>
-
-            <div class="cont_wrap applicant_info">
-                <h2>신청자 정보</h2>
-                <div class="applicant_form">
+                <h2 class="pc">입금 정보</h2>
+                <h2 class="m">도서주문내역 상세조회</h2>
+                <div class="book_order_list">
                     <ul>
                         <li>
-                            <b>구분</b>
-                            <div class="category_wrap">
-                                <button class="btn_cate" onclick="popOpen('#certificationLayer');">한우리교사</button>
-                                <button class="btn_cate">일반 개인</button>
-                                <button class="btn_cate">일반 단체</button>
+                            <b>주문일</b>
+                            <div>
+                                <span>2022.07.02</span>
                             </div>
                         </li>
                         <li>
-                            <b>소속</b>
+                            <b>입금상태</b>
                             <div>
-                                <span>한우리지부</span>
+                                <span>입금완료</span>
                             </div>
                         </li>
                         <li>
-                            <b>이름</b>
+                            <b>입금계좌</b>
                             <div>
-                                <span>한교사</span>
-                                <input type="text" value="010-6276-2604">
+                                <span>SC제일은행 175425-54-511222 (사)한우리독서</span>
                             </div>
                         </li>
                         <li>
-                            <b>주소</b>
+                            <b>입금기한</b>
                             <div>
-                                <input type="text" value="서울시 영등포구 당산로27길 16 한우리빌딩">
-                                <input type="text" value="2층">
+                                <span>2022.06.10 까지</span>
+                            </div>
+                        </li>
+                        <li>
+                            <b>금액</b>
+                            <div>
+                                <strong>528,000원</strong>
                             </div>
                         </li>
                     </ul>
                 </div>
             </div>
-
-            <div class="cont_wrap shipping_info">
-                <h2>배송지 정보</h2>
-                <div class="checkbox_wrap">
-                    <label>
-                        <input type="checkbox">
-                        <span>신청자 정보와 동일</span>
-                    </label>
-                </div>
-                <div class="shipping_form">
+            <div class="cont_wrap">
+                <h2>주문 1</h2>
+                <div class="book_order_list">
                     <ul>
                         <li>
                             <b>받으실분</b>
                             <div>
-                                <input type="text">
+                                <span>한교사 (010-6276-2604)</span>
                             </div>
                         </li>
                         <li>
-                            <b>휴대폰</b>
+                            <b>배송상태</b>
                             <div>
-                                <input type="text" placeholder="받으실분 휴대폰 번호 입력">
+                                <span>촐고완료</span>
+                                <button type="button" class="btn purple"><span>배송조회</span></button>
                             </div>
                         </li>
                         <li>
                             <b>배송주소</b>
                             <div>
-                                <input type="text">
-                                <input type="text">
+                                <span>서울시 영등포구 당산로27길 16 한우리빌딩 2층</span>
                             </div>
                         </li>
                         <li>
                             <b>배송메모</b>
                             <div>
-                                <input type="text">
+                                <span>부재 시 연락</span>
                             </div>
                         </li>
                     </ul>
                 </div>
-                <ul class="text_list">
-                    <li>동일 배송지에 보낼 상품이 2개 이상이면, <a href="#a"> 배송지를 1곳</a>으로 하여 주문하세요.
-                        <p>예) 초1, 초3 형제 주문 : 1학년, 3학년 필독서 <a href="#a">함께 선택</a></p>
-                    </li>
-                </ul>
+                <div class="tbl">
+                    <table>
+                        <colgroup>
+                            <col style="width: 33.3333%;">
+                            <col style="width: 33.3333%;">
+                            <col style="width: 33.3333%;">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th>학년</th>
+                                <th>수량</th>
+                                <th>금액</th>
+                            </tr>
+                            <tr>
+                                <td>초등 4학년</td>
+                                <td>1세트</td>
+                                <td>44,000원</td>
+                            </tr>
+                            <tr>
+                                <td>초등 1학년</td>
+                                <td>10세트</td>
+                                <td>400,000원</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <th colspan="2">합계</th>
+                                <th><b>444,000원</b></th>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
             </div>
-
             <div class="cont_wrap">
-                <h2>도서 선택</h2>
-                <div class="book_select_box">
-                    <div class="select_info_wrap">
-                        <select name="" id="">
-                            <option value="">선택</option>
-                        </select>
-                        <div class="input_box">
-                            <button type="button" class="btn_minus"></button>
-                            <input type="text" value="10">
-                            <button type="button" class="btn_plus"></button>
-                        </div>
-                        <button type="button"><span>구입</span></button>
-                    </div>
-                    <div class="tit_box">
-                        <h3>4권 세트 할인가</h3>
-                        <span class="org_price">44,000원</span>
-                        <b class="discount_price">40,440원</b>
-                    </div>
+                <h2>주문 2</h2>
+                <div class="book_order_list">
+                    <ul>
+                        <li>
+                            <b>받으실분</b>
+                            <div>
+                                <span>이부모 (010-6276-2604)</span>
+                            </div>
+                        </li>
+                        <li>
+                            <b>배송상태</b>
+                            <div>
+                                <span>상품준비</span>
+                            </div>
+                        </li>
+                        <li>
+                            <b>배송주소</b>
+                            <div>
+                                <span>서울시 영등포구 당산로27길 16 한우리빌딩 2층</span>
+                            </div>
+                        </li>
+                        <li>
+                            <b>배송메모</b>
+                            <div>
+                                <span>부재 시 연락</span>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
-                <div class="book_select_list">
-                    <div class="add_option">
-                        <b>선택 1</b>
-                        <div>
-                            <p>초등 4학년 / 1세트 / 44,000원</p>
-                            <button type="button" class="btn_delete"></button>
-                        </div>
-                    </div>
-                    <div class="add_option">
-                        <b>선택 2</b>
-                        <div>
-                            <p>초등 1학년 / 10세트 / 440,000원</p>
-                            <button type="button" class="btn_delete"></button>
-                        </div>
-                    </div>
-                </div>
-                <div class="total_price">
-                    <b>합계금액</b>
-                    <div>448,000원</div>
+                <div class="tbl">
+                    <table>
+                        <colgroup>
+                            <col style="width: 33.3333%;">
+                            <col style="width: 33.3333%;">
+                            <col style="width: 33.3333%;">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th>학년</th>
+                                <th>수량</th>
+                                <th>금액</th>
+                            </tr>
+                            <tr>
+                                <td>초등 4학년</td>
+                                <td>1세트</td>
+                                <td>44,000원</td>
+                            </tr>
+                            <tr>
+                                <td>초등 1학년</td>
+                                <td>10세트</td>
+                                <td>400,000원</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <th colspan="2">합계</th>
+                                <th><b>444,000원</b></th>
+                            </tr>
+                        </tfoot>
+                    </table>
                 </div>
             </div>
-
-            <div class="cont_wrap">
-                <h2>도서 교환·환불 규정</h2>
-                <ul class="text_list">
-                    <li>교환·환불은 수령 후 7일 이내 가능</li>
-                    <li>변심 및 착오로 인한 교환·환불 시 왕복배송비 발생</li>
-                    <li>불량 도서, 배송 중 파손 도서는 무료 교환</li>
-                    <li>환불 시, 제공된 참가비 할인쿠폰은 무효 처리</li>
-                </ul>
-            </div>
-            
-            <div class="checkbox_wrap">
-                <label>
-                    <input type="checkbox">
-                    <span>도서 교환 · 환불 규정에 동의</span>
-                </label>
-            </div>
-            <a href="#a" class="btn_app purple">
-                <span class="right">구입하기</span>
+            <a href="#a" class="btn_app orange">
+                <span class="right">도서주문 목록</span>
             </a>
-
         </section>
     </main>
     
@@ -334,32 +351,6 @@
     <button id="btnClosed" class="btn __closed"></button>
 </aside>
 <!--// side nav -->
-
-<!-- 한우리 교사 인증 팝업 -->
-<aside class="layer_pop certification" id="certificationLayer">
-    <p class="tit">한우리교사 인증</p>
-    <button class="btn_closed" onclick="closePop('#certificationLayer');"></button>
-    <div class="inner">
-        <p class="t1">교사의 소속 지역센터 확인을 위해 정보를 입력해 주세요.</p>
-        <ul class="input_form">
-            <li>
-                <b>에듀넷 아이디</b>
-                <input type="text" value="myedu22">
-            </li>
-            <li>
-                <b>이름</b>
-                <input type="text" value="한교사">
-            </li>
-            <li>
-                <b>휴대폰 번호</b>
-                <input type="text" value="" placeholder="숫자만 입력">
-            </li>
-        </ul>
-        <button class="btn_submit orange" type="button"><span>확인</span></button>
-    </div>
-</aside>
-<!--// 한우리 교사 인증 팝업 -->
-
 <script defer src="../assets/js/jquery-3.4.1.min.js"></script>
 <script defer src="../assets/libs/swiper.min.js"></script>
 <script defer src="../assets/js/ui.js"></script>

@@ -1,0 +1,305 @@
+.myinfo {
+    margin-bottom: vw(50);
+    padding:0 vw(15) 0;
+    .btn_app {
+        margin-top: vw(40);
+    }
+    .cont_wrap {
+        position: relative;
+    }
+    h2 {
+        font-size: vw(18);
+        text-align: left;
+        font-weight: 500;
+        letter-spacing: -0.05em;
+        margin: vw(32) 0 vw(10);
+        color:#000;
+        span {
+            color:#EA5504;
+        }
+    }
+    .info_txt {
+        position: absolute;
+        right:vw(5);
+        top:vw(2);
+        font-size: vw(14);
+        color:#777;
+        span {
+            color:#EA5504;
+        }
+    }
+    .btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: vw(23);
+        margin:0 auto;
+        border-radius: 3px;
+        padding:0 vw(9.5);
+        font-size: vw(15);
+        font-weight: 700;
+        color:#fff;
+        span {
+            padding-right: vw(10);
+            background: url(../img/ico_poly_right_w.svg) no-repeat 100% 50% / vw(5) vw(7);
+        }
+        &.ogrange {
+            background-color: #EA5504;
+        }
+        &.purple {
+            background-color: #9255E4;
+        }
+    }
+    .book_order_list {
+        .btn {
+            display: inline-flex;
+            margin:0;
+            margin-left: vw(5);
+            margin-right: auto;
+        }
+    }
+    .tbl {
+        td {
+            a {
+                color: #EA5504;
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .checkbox_wrap {
+        position: absolute;
+        top:vw(-10);
+        right:0;
+        margin-top: vw(12);
+        margin-bottom:vw(30);
+        label {
+            display: flex;
+            align-items: center;
+            font-size: vw(15);
+            color:#666;
+            span {
+                margin-left: vw(4);
+                display: inline-block;
+                transform: translateY(-1px);
+            }
+        }
+    }
+
+    .refund_form {
+        margin:0 vw(-15);
+        border-top: 1px solid #CACACA;
+        li {
+            border-bottom: 1px solid #CACACA;
+            background-color: #F4F5F7;
+            display: flex;
+            align-items: center;
+            font-size: vw(16);
+            b {
+                width: vw(90);
+                padding: vw(14) vw(13);
+                color:#999;
+                height: 100%;
+                font-weight: 700;
+                box-sizing: border-box;
+            }
+            div {
+                flex: 1;
+                padding:vw(10) vw(15) vw(10) 0;
+
+                input {
+                    width: 100%;
+                    border: 1px solid #c4c4c4;
+                    height: vw(33);
+                    display: flex;
+                    align-items: center;
+                    padding-left: vw(7);
+                    & + input {
+                        margin-top: vw(7);
+                    }
+                }
+                select {
+                    min-width: vw(112);
+                    background:#fff url(../img/ico_select.svg) no-repeat right vw(9) top 50% / vw(16.75) vw(13);
+                    border: 1px solid #c4c4c4;
+                    height: vw(33);
+                    padding-left: vw(7);
+                    font-size: vw(16);
+                }
+                .btn_coupon {
+                    height: vw(32);
+                    color:#fff;
+                    background-color:#999;
+                    border-radius: 3px;
+                    padding:0 vw(10);
+                    margin-right: vw(12);
+                    font-size: vw(15);
+                    font-weight: 700;
+                    & + strong {
+                        color:#000;
+                        font-weight: 500;
+                        font-size: vw(18);
+                    }
+                    &.on {
+                        background-color: #EA5504;
+                    }
+                }
+                strong {
+                    color:#EA5504;
+                }
+            }
+        }
+    }
+    .myinfo_foot {
+        a {
+            display: block;
+            text-align: center;
+            padding:vw(38) 0 vw(30);
+            img {
+                width: vw(150);
+            }
+        }
+    }
+}
+.form_tit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: vw(270);;
+    margin:vw(35) auto;
+    padding:vw(5) vw(16);
+    border: 1px solid #555;
+    box-sizing: border-box;
+    font-size: vw(20);
+    font-weight: 500;
+    color:#000;
+}
+.btn_save {
+    display: flex;
+    height: vw(52);
+    margin:0 vw(-15);
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6);
+    span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin:0 auto;
+        color:#fff;
+        font-size: vw(18);
+        font-weight: 500;
+        padding-left: vw(27);
+        background: url(../img/ico_download.svg) no-repeat 0 50% / vw(21);
+    }
+}
+@include desktop {
+    .myinfo {
+        width: 1030px;
+        margin:0 auto 100px;
+        padding:0;
+        .btn_app {
+            margin-top: 60px;
+        }
+
+        h2 {
+            font-size: 24px;
+            margin: 60px 0 16px;
+        }
+        .info_txt {
+            position: static;
+            text-align: right;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        
+        .btn {
+            height: 38px;
+            padding:0 20px;
+            font-size: 21px;
+            span {
+                padding-right: 20px;
+                background: url(../img/ico_poly_right_w.svg) no-repeat 100% 50% / 8px 14px;
+            }
+        }
+        .checkbox_wrap {
+            top:-5px;
+            margin-top: 10px;
+            margin-bottom:50px;
+            display: flex;
+            justify-content: flex-end;
+            label {
+                font-size: 20px;
+                span {
+                    margin-left: 5px;
+                    letter-spacing: -0.03em;
+                }
+            }
+        }
+
+        .refund_form {
+            margin:0;
+            li {
+                font-size: 22px;
+                b {
+                    width: 210px;
+                    padding: 17px 40px;
+                    letter-spacing: -0.05em;
+                }
+                div {
+                    flex: 1;
+                    padding:14px 40px 15px 0px;
+                    flex-wrap: wrap;
+                    display: flex;
+                    input {
+                        height: 40px;
+                        padding-left: 10px;
+                        flex: 1;
+                        & + input {
+                            width: 40%;
+                            margin-top: 0;
+                            margin-left: 7px;
+                        }
+                    }
+                    
+                    select {
+                        width: 114px;
+                        background:#fff url(../img/ico_select.svg) no-repeat right 13px top 50% / 10px 16px;
+                        height: 40px;
+                        padding-left:10px;
+                        font-size: 22px;
+                        margin-right: 15px;
+                    }
+                    .btn_coupon {
+                        height: 40px;                            
+                        padding:0 12px;
+                        margin-right: 15px;
+                        font-size: 21px;
+                        & + strong {
+                            font-size: 26px;
+                            display: inline-block;
+                            transform: translateY(2px);
+                        }
+                        & + strong + span {
+                            font-size: 18px;
+                            color:#777;
+                            transform: translateY(10px);
+                            margin-left: 10px;
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+    .form_tit {
+
+        width: 395px;
+        margin:60px auto;
+        padding:10px 0;
+        border: 1px solid #555;
+        border-left: 0 solid #000;
+        border-right: 0 solid #000;
+        font-size: 30px;
+        color:#333;
+    }
+}

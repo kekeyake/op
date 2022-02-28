@@ -36,7 +36,7 @@ button {
     & + .btn_main {
         margin-top: vw(12);
     }
-    &.puple {
+    &.purple {
         background-color: #A475FF;
     }
     &:hover {
@@ -53,8 +53,8 @@ button {
     align-items: center;
     border-radius: 5px;
     letter-spacing: -0.03em;
-    &.puple {
-        background-color: $color_puple3;
+    &.purple {
+        background-color: $color_purple3;
     }
     &.gray {
         background-color: #999;
@@ -84,8 +84,8 @@ button {
     align-items: center;
     border-radius: 10px;
     letter-spacing: -0.03em;
-    &.puple {
-        background-color: $color_puple3;
+    &.purple {
+        background-color: $color_purple3;
         span.right {
             padding-right: vw(17.5);
             background: url(../img/ico_app_right_w.svg) no-repeat 100% 50% / vw(12.5) vw(10);
@@ -295,6 +295,97 @@ main {
     }
 }
 
+.tbl {
+    margin:0 vw(-15);
+    table {
+        table-layout: fixed;
+        width: 100%;
+        font-size: vw(15);
+        letter-spacing: -0.03em;
+        .cell {
+            &:nth-child(1) {
+                width: 15%;
+            }
+            &:nth-child(2) {
+                width: 25%;
+            }
+            &:nth-child(3) {
+                width: 40%;
+            }
+            &:nth-child(4) {
+                
+            }
+        }
+    }
+    thead {
+        th {
+            border-top: 1px solid #CACACA;    
+        }
+    }
+    th {
+        vertical-align: middle;
+        background-color: #F4F5F7;
+        color:#999;
+        font-weight: 700;
+        padding:vw(10) 0;
+        border-bottom: 1px solid #CACACA;
+        border-right: 1px solid #CACACA;
+        &:last-child {
+            border-right: 0 solid #000;
+        }
+    }
+    td {
+        vertical-align: middle;
+        text-align: center;
+        padding:vw(10) 0;
+        border-bottom: 1px solid #CACACA;
+        border-right: 1px solid #CACACA;
+        &:last-child {
+            border-right: 0 solid #000;
+        }
+        span {
+            font-size: vw(14);
+        }
+    }
+    tfoot {
+        b {
+            color:#333;
+        }
+    }
+}
+
+.book_order_list {
+    border-top: 1px solid #CACACA;
+    margin: 0 vw(-15); 
+    li {
+        font-size: vw(16);
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid #CACACA;
+        background-color: #F4F5F7;
+        b {
+            padding: 0 vw(13);
+            color:#999;
+            min-width: vw(80);
+            height: 100%;
+            font-weight: 700;
+            box-sizing: border-box;
+        }
+        div {
+            display: flex;
+            align-items: center;
+            flex: 1;
+            padding:vw(14) vw(13);
+            justify-content: space-between;
+            background-color: #fff;
+        }
+        strong {
+            color:#EA5504;
+            font-weight: 500;
+        }
+    }
+}
+
 .layer_pop {
         z-index: 1000;
         opacity: 0;
@@ -445,7 +536,7 @@ main {
         & + .btn_main {
             margin-top: 25px;
         }
-        &.puple {
+        &.purple {
             background-color: #A475FF;
         }
     }
@@ -453,7 +544,7 @@ main {
         width: 506px;
         margin:0 auto;
         height: 78px;
-        &.puple {
+        &.purple {
             span.right {
                 padding-right: 27px;
                 background: url(../img/ico_app_right_w.svg) no-repeat 100% 50% / 19px 15px;
@@ -617,6 +708,54 @@ main {
                 color:#333;
                 text-decoration: underline;
                 font-weight: 500;
+            }
+        }
+    }
+    .tbl {
+        margin:0;
+        table {
+            font-size: 22px;
+            .cell {
+                &:nth-child(1) {
+                    width: 20%;
+                }
+                &:nth-child(2) {
+                    width: 20%;
+                }
+                &:nth-child(3) {
+                    width: 40%;
+                }
+                &:nth-child(4) {
+                    
+                }
+            }
+        }
+
+        th {
+            padding:15px 0;
+        }
+        td {
+            padding:15px 0;
+            span {
+                font-size: 20px;
+            }
+        }
+    }
+
+    .book_order_list {
+        margin: 0;
+        li {
+            font-size: 22px;
+            b {
+                min-width:200px;
+                padding: 0 40px;
+                color:#999;
+                box-sizing: border-box;
+                letter-spacing: -0.05em;
+            }
+            div {
+                flex: 1;
+                padding:18px 30px;
             }
         }
     }
