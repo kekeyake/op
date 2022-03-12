@@ -5157,6 +5157,146 @@ main > .tit {
   }
 }
 
+.result {
+  margin-bottom: 13.88889vw;
+  padding: 0 4.16667vw 0;
+}
+
+.result .btn_app {
+  margin-top: 11.11111vw;
+}
+
+.result .cont_wrap {
+  position: relative;
+}
+
+.result h2 {
+  font-size: 5vw;
+  text-align: left;
+  font-weight: 500;
+  letter-spacing: -0.05em;
+  margin: 8.88889vw 0 2.77778vw;
+  color: #000;
+}
+
+.result h2 span {
+  color: #EA5504;
+}
+
+.result .info_txt {
+  position: absolute;
+  right: 1.38889vw;
+  top: 0.55556vw;
+  font-size: 3.88889vw;
+  color: #777;
+}
+
+.result .info_txt span {
+  color: #EA5504;
+}
+
+.result .btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 6.38889vw;
+  margin: 0 auto;
+  border-radius: 3px;
+  padding: 0 2.63889vw;
+  font-size: 4.16667vw;
+  font-weight: 700;
+  color: #fff;
+}
+
+.result .btn span {
+  padding-right: 2.77778vw;
+  background: url(../img/ico_poly_right_w.svg) no-repeat 100% 50%/1.38889vw 1.94444vw;
+}
+
+.result .btn.ogrange {
+  background-color: #EA5504;
+}
+
+.result .btn.purple {
+  background-color: #9255E4;
+}
+
+.result .book_order_list .btn {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 0;
+  margin-left: 1.38889vw;
+  margin-right: auto;
+}
+
+.result .tbl td a {
+  color: #EA5504;
+  text-decoration: underline;
+}
+
+.result .checkbox_wrap {
+  position: absolute;
+  top: -2.77778vw;
+  right: 0;
+  margin-top: 3.33333vw;
+  margin-bottom: 8.33333vw;
+}
+
+.result .checkbox_wrap label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 4.16667vw;
+  color: #666;
+}
+
+.result .checkbox_wrap label span {
+  margin-left: 1.11111vw;
+  display: inline-block;
+  -webkit-transform: translateY(-1px);
+          transform: translateY(-1px);
+}
+
+@media (min-width: 1030px) {
+  .result {
+    width: 1030px;
+    margin: 0 auto 100px;
+    padding: 0;
+  }
+  .result .btn_app {
+    margin-top: 60px;
+  }
+  .result h2 {
+    font-size: 24px;
+    margin: 60px 0 16px;
+  }
+  .result .info_txt {
+    position: static;
+    text-align: right;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .result .btn {
+    height: 38px;
+    padding: 0 20px;
+    font-size: 21px;
+  }
+  .result .btn span {
+    padding-right: 20px;
+    background: url(../img/ico_poly_right_w.svg) no-repeat 100% 50%/8px 14px;
+  }
+}
+
 body {
   font-size: 6.11111vw;
   -ms-overflow-style: none;

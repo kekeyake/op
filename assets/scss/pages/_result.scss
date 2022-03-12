@@ -1,0 +1,124 @@
+.result {
+    margin-bottom: vw(50);
+    padding:0 vw(15) 0;
+    .btn_app {
+        margin-top: vw(40);
+    }
+    .cont_wrap {
+        position: relative;
+    }
+    h2 {
+        font-size: vw(18);
+        text-align: left;
+        font-weight: 500;
+        letter-spacing: -0.05em;
+        margin: vw(32) 0 vw(10);
+        color:#000;
+        span {
+            color:#EA5504;
+        }
+    }
+    .info_txt {
+        position: absolute;
+        right:vw(5);
+        top:vw(2);
+        font-size: vw(14);
+        color:#777;
+        span {
+            color:#EA5504;
+        }
+    }
+    .btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: vw(23);
+        margin:0 auto;
+        border-radius: 3px;
+        padding:0 vw(9.5);
+        font-size: vw(15);
+        font-weight: 700;
+        color:#fff;
+        span {
+            padding-right: vw(10);
+            background: url(../img/ico_poly_right_w.svg) no-repeat 100% 50% / vw(5) vw(7);
+        }
+        &.ogrange {
+            background-color: #EA5504;
+        }
+        &.purple {
+            background-color: #9255E4;
+        }
+    }
+    .book_order_list {
+        .btn {
+            display: inline-flex;
+            margin:0;
+            margin-left: vw(5);
+            margin-right: auto;
+        }
+    }
+    .tbl {
+        td {
+            a {
+                color: #EA5504;
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .checkbox_wrap {
+        position: absolute;
+        top:vw(-10);
+        right:0;
+        margin-top: vw(12);
+        margin-bottom:vw(30);
+        label {
+            display: flex;
+            align-items: center;
+            font-size: vw(15);
+            color:#666;
+            span {
+                margin-left: vw(4);
+                display: inline-block;
+                transform: translateY(-1px);
+            }
+        }
+    }
+
+}
+
+@include desktop {
+    .result {
+        width: 1030px;
+        margin:0 auto 100px;
+        padding:0;
+        .btn_app {
+            margin-top: 60px;
+        }
+
+        h2 {
+            font-size: 24px;
+            margin: 60px 0 16px;
+        }
+        .info_txt {
+            position: static;
+            text-align: right;
+            font-size: 20px;
+            margin-bottom: 10px;
+
+        }
+        
+        .btn {
+            height: 38px;
+            padding:0 20px;
+            font-size: 21px;
+            span {
+                padding-right: 20px;
+                background: url(../img/ico_poly_right_w.svg) no-repeat 100% 50% / 8px 14px;
+            }
+        }
+        
+    }
+
+}
