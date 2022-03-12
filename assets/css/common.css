@@ -2089,6 +2089,31 @@ main > .tit {
   .tbl td span {
     font-size: 20px;
   }
+  .tbl_p {
+    border-top: 1px solid #999;
+  }
+  .tbl_p th,
+  .tbl_p td {
+    font-size: 22px;
+    letter-spacing: -0.03em;
+    border: 1px solid #999;
+    border-top: 0 solid #000;
+    padding: 20px 0 20px 30px;
+    text-align: left;
+  }
+  .tbl_p th {
+    background-color: #F4F5F7;
+    font-weight: 500;
+  }
+  .tbl_p th:first-child {
+    border-left: 0 solid #000;
+  }
+  .tbl_p td:last-child {
+    border-right: 0 solid #000;
+  }
+  .tbl_p td b {
+    color: #EA5504;
+  }
   .book_order_list {
     margin: 0;
   }
@@ -4948,6 +4973,10 @@ main > .tit {
     font-size: 20px;
     margin-bottom: 10px;
   }
+  .myinfo .info_txt.pos {
+    position: absolute;
+    top: 0;
+  }
   .myinfo .btn {
     height: 38px;
     padding: 0 20px;
@@ -5035,6 +5064,86 @@ main > .tit {
     -webkit-transform: translateY(10px);
             transform: translateY(10px);
     margin-left: 10px;
+  }
+  .myinfo .test_box {
+    border: 3px solid #999;
+    padding: 20px 30px;
+    font-weight: 500;
+    font-size: 22px;
+    letter-spacing: -0.03em;
+    color: #333;
+  }
+  .myinfo .test_box i {
+    text-decoration: underline;
+  }
+  .myinfo .how_online {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .myinfo .how_online li {
+    background: #F0F1F2;
+    border: 3px solid #999;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    border-radius: 8px;
+    margin-right: 50px;
+    position: relative;
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: -0.05em;
+    width: 230px;
+  }
+  .myinfo .how_online li p {
+    background-color: #fff;
+    padding: 10px 0;
+  }
+  .myinfo .how_online li p em {
+    font-weight: 500;
+  }
+  .myinfo .how_online li b {
+    display: block;
+    font-weight: 500;
+    padding: 10px 0;
+  }
+  .myinfo .how_online li::after {
+    display: block;
+    content: '';
+    background: url(../img/ico_arrow_online.svg) no-repeat 50%;
+    width: 50px;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    right: -53px;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  .myinfo .how_online li:last-child {
+    margin-right: 0;
+    width: 160px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .myinfo .how_online li:last-child::after {
+    display: none;
+  }
+  .myinfo .how_online li:nth-child(3) {
+    width: 260px;
+  }
+  .myinfo .myinfo_foot a {
+    display: block;
+    text-align: center;
+    padding: 60px 0;
+  }
+  .myinfo .myinfo_foot a img {
+    width: 150px;
   }
   .form_tit {
     width: 395px;
