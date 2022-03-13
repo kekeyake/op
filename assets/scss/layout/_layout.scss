@@ -340,6 +340,7 @@ main {
         padding:vw(10) vw(5);
         border-bottom: 1px solid #CACACA;
         border-right: 1px solid #CACACA;
+        line-height: 1.1;
         &:last-child {
             border-right: 0 solid #000;
         }
@@ -350,6 +351,8 @@ main {
             font-size: vw(16);
             color:#666;
             font-weight: 500;
+            display: inline-block;
+            line-height: 1.1;
         }
     }
     tfoot {

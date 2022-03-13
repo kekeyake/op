@@ -1606,6 +1606,7 @@ main > .tit {
   padding: 2.77778vw 1.38889vw;
   border-bottom: 1px solid #CACACA;
   border-right: 1px solid #CACACA;
+  line-height: 1.1;
 }
 
 .tbl td:last-child {
@@ -1620,6 +1621,8 @@ main > .tit {
   font-size: 4.44444vw;
   color: #666;
   font-weight: 500;
+  display: inline-block;
+  line-height: 1.1;
 }
 
 .tbl tfoot b {
