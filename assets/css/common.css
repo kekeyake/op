@@ -2198,6 +2198,7 @@ main > .tit {
   .layer_pop b {
     font-size: 22px;
     letter-spacing: -0.03em;
+    font-weight: 500;
   }
   .layer_pop.certification {
     width: 540px;
