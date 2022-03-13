@@ -691,7 +691,7 @@
                         .btn_cate {
                             font-size: 22px;
                             height: 40px;
-                            padding:0 10px 4px;
+                            padding:0 10px;
                             margin-right: 10px;
                         }
                         input {
@@ -705,7 +705,8 @@
                             }
                         }
                         span + input {
-                            flex: 1;
+                            flex: 0 284px;
+                            width: 284px;
                             margin-left: vw(10);
                         }
                     }
@@ -742,8 +743,12 @@
                                 width: 40%;
                                 margin-top: 0;
                                 margin-left: 7px;
-                            }
+                            }                            
                         }
+                        .pc_300 {
+                            flex: 0 300px;
+                            width: 300px;
+                        }                        
                     }
                 }
             }

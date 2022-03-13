@@ -146,6 +146,8 @@
                 }
                 strong {
                     color:#EA5504;
+                    font-size: vw(18);
+                    font-weight: 500;
                 }
             }
         }
@@ -290,7 +292,15 @@
                             margin-left: 10px;
                         }
                     }
-                    
+                    strong {
+                        font-size: 26px;
+                    }
+                }
+                .pc_300 {
+                    flex: 0 300px;
+                }
+                .pc_460 {
+                    flex: 0 460px;
                 }
             }
         }
