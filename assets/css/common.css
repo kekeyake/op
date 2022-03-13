@@ -4257,16 +4257,23 @@ main > .tit {
   font-size: 5vw;
   background: transparent;
   border: 0 solid #000;
-  width: 50px;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 50px;
-          flex: 0 50px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 19.44444vw;
+  text-align: right;
+  padding-left: 0;
 }
 
 .app .shipping_info .shipping_form li div .btn_coupon + input + span {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   color: #000;
   font-weight: 500;
   font-size: 5vw;
+  -webkit-transform: translateY(0.5vw);
+          transform: translateY(0.5vw);
 }
 
 .app .shipping_info .shipping_form li div .btn_coupon.on {
@@ -4864,6 +4871,10 @@ main > .tit {
   margin: 0;
   margin-left: 1.38889vw;
   margin-right: auto;
+}
+
+.myinfo.form {
+  margin-bottom: 0;
 }
 
 .myinfo.form .book_order_list {

@@ -185,13 +185,17 @@
                             font-size: vw(18);
                             background: transparent;
                             border: 0 solid #000;
-                            width: 50px;
-                            flex: 0 50px;
+                            display: inline-flex;
+                            width: vw(70);
+                            text-align: right;
+                            padding-left: 0;
                         }
                         & + input + span {
+                            display: inline-flex;
                             color:#000;
                             font-weight: 500;
                             font-size: vw(18);
+                            transform: translateY(0.5vw);
                         }
                         
                         &.on {
