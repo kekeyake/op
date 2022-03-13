@@ -4327,7 +4327,7 @@ main > .tit {
   margin-top: 0;
 }
 
-.app .survey_wrap div button.on {
+.app .survey_wrap div button.active {
   border-color: #EA5504;
   color: #EA5504;
 }
@@ -4835,6 +4835,15 @@ main > .tit {
   margin: 0;
   margin-left: 1.38889vw;
   margin-right: auto;
+}
+
+.myinfo.form .book_order_list {
+  color: #000;
+}
+
+.myinfo.form .book_order_list b {
+  font-weight: 500;
+  color: #666;
 }
 
 .myinfo .tbl td a {

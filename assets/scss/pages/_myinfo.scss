@@ -58,6 +58,15 @@
             margin-right: auto;
         }
     }
+    &.form {
+        .book_order_list {
+            color:#000;
+            b {
+                font-weight: 500;
+                color:#666;
+            }
+        }
+    }
     .tbl {
         td {
             a {

@@ -103,7 +103,19 @@ $(function () {
         $('.category_wrap .btn_cate').on('click',function(){
             $(this).addClass('active').siblings().removeClass('active');
         });
+    }
 
+    // btn select
+    if ($('.survey_wrap').length ) {
+        var $input = $('.survey_wrap > div input');
+        $input.hide();
+        $('.survey_wrap .btn_survey').on('click',function(){
+            $(this).addClass('active').siblings().removeClass('active');
+            $input.hide();
+            if ($(this).attr('data-rel') == 'etc') {
+                $input.show();
+            }
+        });
     }
     
 });
