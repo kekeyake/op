@@ -204,10 +204,16 @@
     }
 }
 @include desktop {
+    main {
+        .tit {
+            margin-top: 100px;
+        }
+    }
+    
     .myinfo {
         width: 1030px;
         margin:0 auto 100px;
-        padding:0;
+        padding:0;        
         .btn_app {
             margin-top: 60px;
         }

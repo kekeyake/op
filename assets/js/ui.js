@@ -30,8 +30,67 @@ function saveAs(uri, filename) {
         window.open(uri);
     }
 }
+
+// 메뉴 활성화 세팅
+function menuSetting() {
+    $('.main_menu').addClass('page_on');
+    $('.__nav li > a').removeClass('active');
+    $('.__nav .sub_nav a').removeClass('active');
+    $('.sub_bg').addClass('active');
+}
+
+// 메뉴 활성화
+function activeMenu() {
+    // navi active
+    var pageId = $('main > section').attr('id');
+    // var subPageId = $('main > section').attr('id');
+    console.log(pageId);
+    
+    switch(pageId) {
+        case 'contest':
+
+            break;
+    
+        case 'customer': 
+
+            break;
+
+        case 'hanuri':
+            break;
+
+        
+        case 'myinfo_mybook':
+            menuSetting();
+            $('[data-rel=myinfo]').addClass('active');
+            $('[data-rel=mybook]').addClass('active');            
+            break;    
+
+        case 'myinfo_myapp':
+            menuSetting();
+            $('[data-rel=myinfo]').addClass('active');
+            $('[data-rel=myapp]').addClass('active');            
+            break;
+
+        case 'myinfo_form':
+            menuSetting();
+            $('[data-rel=myinfo]').addClass('active');
+            $('[data-rel=form]').addClass('active');            
+            break;
+
+        case 'myinfo_refund':
+            menuSetting();
+            $('[data-rel=myinfo]').addClass('active');
+            $('[data-rel=refund]').addClass('active');            
+            break;
+    
+        default:
+    }
+}
 $(function () {
     $headerHeight = $('.header').innerHeight();
+
+    // 메뉴 활성화
+    activeMenu();
 
     if (navigator.platform) {
         if (filter.indexOf(navigator.platform.toLowerCase()) < 0) { //mobile
@@ -43,14 +102,21 @@ $(function () {
                     $('.sub_bg').show();
                 }
             });
+            
+            // 페이지 활성화            
             $('.__nav li').mouseleave(function () {
                 $(this).children('a').removeClass('active');
+                $('.sub_nav a').removeClass('active');
                 $('.sub_bg').hide();
             });
+
         } 
     }
-
-
+    // sub menu
+    $('.sub_nav a').hover(function () {
+        $(this).addClass('active').siblings('a').removeClass('active');
+    });
+    
     // ===== Scroll to Top ==== 
     $(window).scroll(function () {
         if ($(window).scrollTop() > 106) {

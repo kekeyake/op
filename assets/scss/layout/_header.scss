@@ -188,6 +188,9 @@ header.header {
             top: 52px;
             z-index: 0;
             display: none;
+            &.active {
+                display: block !important;
+            }
         }
     }
 }

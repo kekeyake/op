@@ -1010,6 +1010,9 @@ header.header .inner .btn_user img {
     z-index: 0;
     display: none;
   }
+  .main_menu .sub_bg.active {
+    display: block !important;
+  }
 }
 
 .consult_call {
@@ -5024,6 +5027,9 @@ main > .tit {
 }
 
 @media (min-width: 1030px) {
+  main .tit {
+    margin-top: 100px;
+  }
   .myinfo {
     width: 1030px;
     margin: 0 auto 100px;
