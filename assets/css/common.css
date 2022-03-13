@@ -1769,7 +1769,7 @@ main > .tit {
 
 .layer_pop b {
   font-size: 4.44444vw;
-  font-weight: 700;
+  font-weight: 500;
   color: #999;
 }
 
@@ -2198,7 +2198,6 @@ main > .tit {
   .layer_pop b {
     font-size: 22px;
     letter-spacing: -0.03em;
-    font-weight: 500;
   }
   .layer_pop.certification {
     width: 540px;
@@ -4252,7 +4251,19 @@ main > .tit {
   font-weight: 700;
 }
 
-.app .shipping_info .shipping_form li div .btn_coupon + strong {
+.app .shipping_info .shipping_form li div .btn_coupon + input {
+  color: #000;
+  font-weight: 500;
+  font-size: 5vw;
+  background: transparent;
+  border: 0 solid #000;
+  width: 50px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 50px;
+          flex: 0 50px;
+}
+
+.app .shipping_info .shipping_form li div .btn_coupon + input + span {
   color: #000;
   font-weight: 500;
   font-size: 5vw;
@@ -4659,13 +4670,24 @@ main > .tit {
     margin-right: 15px;
     font-size: 21px;
   }
-  .app .shipping_info .shipping_form li div .btn_coupon + strong {
+  .app .shipping_info .shipping_form li div .btn_coupon + input {
     font-size: 26px;
     display: inline-block;
     -webkit-transform: translateY(2px);
             transform: translateY(2px);
+    width: 95px;
+    -webkit-box-flex: 0;
+        -ms-flex: 0;
+            flex: 0;
+    text-align: right;
   }
-  .app .shipping_info .shipping_form li div .btn_coupon + strong + span {
+  .app .shipping_info .shipping_form li div .btn_coupon + input + span {
+    font-size: 26px;
+    -webkit-transform: translateY(4px);
+            transform: translateY(4px);
+    font-weight: 500;
+  }
+  .app .shipping_info .shipping_form li div .btn_coupon + input + span + span {
     font-size: 18px;
     color: #777;
     -webkit-transform: translateY(10px);

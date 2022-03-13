@@ -102,7 +102,7 @@ $(function () {
                     $('.sub_bg').show();
                 }
             });
-            
+
             // 페이지 활성화            
             $('.__nav li').mouseleave(function () {
                 $(this).children('a').removeClass('active');
@@ -208,5 +208,8 @@ $(function () {
         });
     }
     
+    $('.btn_coupon').on('click', function(){
+        $(this).toggleClass('on');
+    });
     
 });
