@@ -149,13 +149,13 @@ function activeMenu() {
 }
 $(function () {
     $headerHeight = $('.header').innerHeight();
+    // 메뉴 활성화
+    activeMenu();
 
     if (navigator.platform) {
         if (filter.indexOf(navigator.platform.toLowerCase()) < 0) { //mobile
 
         } else { //pc
-            // 메뉴 활성화
-            activeMenu();
             titMargin();
             $('.__nav li').mouseenter(function () {
                 $(this).children('a').addClass('active');
