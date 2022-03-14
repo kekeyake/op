@@ -789,7 +789,6 @@ header.header {
   width: 100%;
   background-color: #fff;
   z-index: 100;
-  border-bottom: 2px solid #DBDBDB;
 }
 
 header.header .inner {
@@ -830,7 +829,6 @@ header.header .inner .btn_user img {
 
 .main_menu {
   padding: 0 5.55556vw;
-  border-bottom: 2px solid #DBDBDB;
 }
 
 .main_menu .__nav ul {
@@ -843,6 +841,7 @@ header.header .inner .btn_user img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
 }
 
 .main_menu .__nav li > a {
@@ -862,8 +861,69 @@ header.header .inner .btn_user img {
   letter-spacing: -0.03em;
 }
 
+.main_menu .__nav li > a.active_on {
+  color: #EA5504;
+  position: relative;
+}
+
+.main_menu .__nav li > a.active_on::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #EA5504;
+  position: absolute;
+  left: 0;
+  top: -2px;
+}
+
+.main_menu .__nav li > a.active_on + .sub_nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 10;
+}
+
 .main_menu .sub_nav {
+  position: absolute;
+  height: 10vw;
+  left: 0;
+  top: 12.22222vw;
   display: none;
+}
+
+.main_menu .sub_nav a {
+  display: inline-block;
+  line-height: 10vw;
+  height: 10vw;
+  margin-right: 3.33333vw;
+  color: #777;
+  font-size: 4.16667vw;
+}
+
+.main_menu .sub_nav a:last-child {
+  margin-right: 0;
+}
+
+.main_menu .sub_nav a.active_on {
+  font-weight: 500;
+  color: #333;
+}
+
+.main_menu .sub_bg {
+  border-top: 2px solid #DBDBDB;
+  background: #F4F5F7;
+  position: absolute;
+  left: 0;
+  top: 31.66667vw;
+  z-index: 0;
+  width: 100%;
+  height: 10vw;
+  display: none;
+}
+
+.main_menu .sub_bg.active {
+  display: block !important;
 }
 
 .bg_dimmed {
@@ -909,6 +969,7 @@ header.header .inner .btn_user img {
     padding: 0;
     position: relative;
     z-index: 101;
+    border-bottom: 2px solid #DBDBDB;
   }
   .main_menu::after {
     display: block;
@@ -958,11 +1019,11 @@ header.header .inner .btn_user img {
     font-weight: 500;
     letter-spacing: 0;
   }
-  .main_menu .__nav li > a:hover, .main_menu .__nav li > a.active {
+  .main_menu .__nav li > a:hover, .main_menu .__nav li > a.active_on, .main_menu .__nav li > a.active {
     color: #EA5504;
     position: relative;
   }
-  .main_menu .__nav li > a:hover::after, .main_menu .__nav li > a.active::after {
+  .main_menu .__nav li > a:hover::after, .main_menu .__nav li > a.active_on::after, .main_menu .__nav li > a.active::after {
     content: '';
     display: block;
     width: 100%;
@@ -972,7 +1033,7 @@ header.header .inner .btn_user img {
     left: 0;
     top: -2px;
   }
-  .main_menu .__nav li > a:hover + .sub_nav, .main_menu .__nav li > a.active + .sub_nav {
+  .main_menu .__nav li > a:hover + .sub_nav, .main_menu .__nav li > a.active_on + .sub_nav, .main_menu .__nav li > a.active + .sub_nav {
     display: block;
   }
   .main_menu .sub_nav {
@@ -980,6 +1041,9 @@ header.header .inner .btn_user img {
     position: absolute;
     white-space: nowrap;
     left: 0;
+    top: 53px;
+    height: 45px;
+    z-index: -1;
   }
   .main_menu .sub_nav a {
     display: -webkit-inline-box;
@@ -989,6 +1053,7 @@ header.header .inner .btn_user img {
         -ms-flex-align: center;
             align-items: center;
     height: 45px;
+    line-height: 45px;
     margin-right: 20px;
     color: #777;
     font-size: 20px;
@@ -996,7 +1061,7 @@ header.header .inner .btn_user img {
   .main_menu .sub_nav a:last-child {
     margin-right: 0;
   }
-  .main_menu .sub_nav a:hover, .main_menu .sub_nav a.active {
+  .main_menu .sub_nav a:hover, .main_menu .sub_nav a.active_on, .main_menu .sub_nav a.active {
     font-weight: 500;
     color: #333;
   }
@@ -4796,6 +4861,7 @@ main > .tit {
 }
 
 .myinfo {
+  margin-top: 18.88889vw;
   margin-bottom: 13.88889vw;
   padding: 0 4.16667vw 0;
 }
@@ -5065,13 +5131,13 @@ main > .tit {
 }
 
 @media (min-width: 1030px) {
-  main .tit {
-    margin-top: 100px;
-  }
   .myinfo {
     width: 1030px;
     margin: 0 auto 100px;
     padding: 0;
+  }
+  .myinfo ~ .tit {
+    margin-top: 100px;
   }
   .myinfo .btn_app {
     margin-top: 60px;

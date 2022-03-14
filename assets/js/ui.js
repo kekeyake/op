@@ -34,9 +34,17 @@ function saveAs(uri, filename) {
 // 메뉴 활성화 세팅
 function menuSetting() {
     $('.main_menu').addClass('page_on');
-    $('.__nav li > a').removeClass('active');
-    $('.__nav .sub_nav a').removeClass('active');
+    $('.__nav li > a').removeClass('active_on');
+    $('.__nav .sub_nav a').removeClass('active_on');
     $('.sub_bg').addClass('active');
+}
+
+// pc tit 간격
+function titMargin() {
+    $('section.contest').prev('.tit').css('margin-top',100);
+    $('section.customer').prev('.tit').css('margin-top',100);
+    $('section.hanuri').prev('.tit').css('margin-top',100);
+    $('section.myinfo').prev('.tit').css('margin-top',100);
 }
 
 // 메뉴 활성화
@@ -44,43 +52,96 @@ function activeMenu() {
     // navi active
     var pageId = $('main > section').attr('id');
     // var subPageId = $('main > section').attr('id');
-    console.log(pageId);
+    //console.log(pageId);
     
     switch(pageId) {
-        case 'contest':
-
+        case 'contest_info':
+            menuSetting();
+            $('[data-rel=contest]').addClass('active_on');
+            $('[data-rel=info]').addClass('active_on');
             break;
+        case 'contest_attention':
+            menuSetting();
+            $('[data-rel=contest]').addClass('active_on');
+            $('[data-rel=attention]').addClass('active_on');
+            break;
+        case 'contest_sample':
+            menuSetting();
+            $('[data-rel=contest]').addClass('active_on');
+            $('[data-rel=sample]').addClass('active_on');
+            break;
+        
+        case 'book':
+            menuSetting();
+            $('[data-rel=book]').addClass('active_on');
+            $('.sub_bg').removeClass('active');
+            break;
+
+        case 'app':
+            menuSetting();
+            $('[data-rel=app]').addClass('active_on');
+            $('.sub_bg').removeClass('active');
+            break;
+
+        case 'result':
+            menuSetting();
+            $('[data-rel=result]').addClass('active_on');
+            $('.sub_bg').removeClass('active');
+            break;
+        
     
-        case 'customer': 
-
+        case 'customer_notice': 
+            menuSetting();
+            $('[data-rel=customer]').addClass('active_on');
+            $('[data-rel=notice]').addClass('active_on');
+            break;
+        case 'customer_faq': 
+            menuSetting();
+            $('[data-rel=customer]').addClass('active_on');
+            $('[data-rel=faq]').addClass('active_on');
             break;
 
-        case 'hanuri':
+        case 'hanuri_greeting':
+            menuSetting();
+            $('[data-rel=hanuri]').addClass('active_on');
+            $('[data-rel=greeting]').addClass('active_on');
+            break;
+        case 'hanuri_purpose':
+            menuSetting();
+            $('[data-rel=hanuri]').addClass('active_on');
+            $('[data-rel=purpose]').addClass('active_on');
+            break;
+        case 'hanuri_history':
+            menuSetting();
+            $('[data-rel=hanuri]').addClass('active_on');
+            $('[data-rel=history]').addClass('active_on');
+            break;
+        case 'hanuri_location':
+            menuSetting();
+            $('[data-rel=hanuri]').addClass('active_on');
+            $('[data-rel=location]').addClass('active_on');
             break;
 
         
         case 'myinfo_mybook':
             menuSetting();
-            $('[data-rel=myinfo]').addClass('active');
-            $('[data-rel=mybook]').addClass('active');            
+            $('[data-rel=myinfo]').addClass('active_on');
+            $('[data-rel=mybook]').addClass('active_on');            
             break;    
-
         case 'myinfo_myapp':
             menuSetting();
-            $('[data-rel=myinfo]').addClass('active');
-            $('[data-rel=myapp]').addClass('active');            
+            $('[data-rel=myinfo]').addClass('active_on');
+            $('[data-rel=myapp]').addClass('active_on');            
             break;
-
         case 'myinfo_form':
             menuSetting();
-            $('[data-rel=myinfo]').addClass('active');
-            $('[data-rel=form]').addClass('active');            
+            $('[data-rel=myinfo]').addClass('active_on');
+            $('[data-rel=form]').addClass('active_on');            
             break;
-
         case 'myinfo_refund':
             menuSetting();
-            $('[data-rel=myinfo]').addClass('active');
-            $('[data-rel=refund]').addClass('active');            
+            $('[data-rel=myinfo]').addClass('active_on');
+            $('[data-rel=refund]').addClass('active_on');            
             break;
     
         default:
@@ -89,25 +150,32 @@ function activeMenu() {
 $(function () {
     $headerHeight = $('.header').innerHeight();
 
-    // 메뉴 활성화
-    activeMenu();
-
     if (navigator.platform) {
         if (filter.indexOf(navigator.platform.toLowerCase()) < 0) { //mobile
 
         } else { //pc
+            // 메뉴 활성화
+            activeMenu();
+            titMargin();
             $('.__nav li').mouseenter(function () {
                 $(this).children('a').addClass('active');
+                $(this).css('z-index',10);
                 if ($(this).find('.sub_nav').length > 0 ){
                     $('.sub_bg').show();
+                }
+                // 활성화 예외처리
+                if ( !$(this).children('a').hasClass('active_on') && $(this).find('.sub_nav').length ) {
+                    $('.active_on').next('.sub_nav').css('visibility','hidden');
                 }
             });
 
             // 페이지 활성화            
             $('.__nav li').mouseleave(function () {
+                $(this).css('z-index',0);
                 $(this).children('a').removeClass('active');
                 $('.sub_nav a').removeClass('active');
                 $('.sub_bg').hide();
+                $('.active_on').next('.sub_nav').css('visibility','visible');
             });
 
         } 
