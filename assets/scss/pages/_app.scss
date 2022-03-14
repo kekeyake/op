@@ -169,14 +169,16 @@
                         padding-left: vw(7);
                         font-size: vw(16);
                     }
-                    
+                    &.coupon_box {
+                        display: flex;
+                        align-items: center;
+                    }
                     .btn_coupon {
                         height: vw(32);
                         color:#fff;
                         background-color:#999;
                         border-radius: 3px;
                         padding:0 vw(10);
-                        margin-right: vw(12);
                         font-size: vw(15);
                         font-weight: 700;
                         & + input {
@@ -195,7 +197,6 @@
                             color:#000;
                             font-weight: 500;
                             font-size: vw(18);
-                            transform: translateY(0.5vw);
                         }
                         
                         &.on {
@@ -529,28 +530,26 @@
                             font-size: 22px;
                             margin-right: 15px;
                         }
+                        
                         .btn_coupon {
                             height: 40px;                            
                             padding:0 12px;
-                            margin-right: 15px;
                             font-size: 21px;
                             & + input {
                                 font-size: 26px;
                                 display: inline-block;
-                                transform: translateY(2px);
                                 width: 95px;
                                 flex: 0;
                                 text-align: right;
                             }
                             & + input + span {
                                 font-size: 26px;
-                                transform: translateY(4px);
                                 font-weight: 500;
                             }
                             & + input + span + span {
                                 font-size: 18px;
                                 color:#777;
-                                transform: translateY(10px);
+                                transform: translateY(2px);
                                 margin-left: 10px;
                             }
                         }

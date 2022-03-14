@@ -4240,13 +4240,21 @@ main > .tit {
   font-size: 4.44444vw;
 }
 
+.app .shipping_info .shipping_form li div.coupon_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .app .shipping_info .shipping_form li div .btn_coupon {
   height: 8.88889vw;
   color: #fff;
   background-color: #999;
   border-radius: 3px;
   padding: 0 2.77778vw;
-  margin-right: 3.33333vw;
   font-size: 4.16667vw;
   font-weight: 700;
 }
@@ -4272,8 +4280,6 @@ main > .tit {
   color: #000;
   font-weight: 500;
   font-size: 5vw;
-  -webkit-transform: translateY(0.5vw);
-          transform: translateY(0.5vw);
 }
 
 .app .shipping_info .shipping_form li div .btn_coupon.on {
@@ -4674,14 +4680,11 @@ main > .tit {
   .app .shipping_info .shipping_form li div .btn_coupon {
     height: 40px;
     padding: 0 12px;
-    margin-right: 15px;
     font-size: 21px;
   }
   .app .shipping_info .shipping_form li div .btn_coupon + input {
     font-size: 26px;
     display: inline-block;
-    -webkit-transform: translateY(2px);
-            transform: translateY(2px);
     width: 95px;
     -webkit-box-flex: 0;
         -ms-flex: 0;
@@ -4690,15 +4693,13 @@ main > .tit {
   }
   .app .shipping_info .shipping_form li div .btn_coupon + input + span {
     font-size: 26px;
-    -webkit-transform: translateY(4px);
-            transform: translateY(4px);
     font-weight: 500;
   }
   .app .shipping_info .shipping_form li div .btn_coupon + input + span + span {
     font-size: 18px;
     color: #777;
-    -webkit-transform: translateY(10px);
-            transform: translateY(10px);
+    -webkit-transform: translateY(2px);
+            transform: translateY(2px);
     margin-left: 10px;
   }
   .app .shipping_info .shipping_form li .pc_300 {
@@ -5007,7 +5008,7 @@ main > .tit {
 .myinfo .myinfo_foot a {
   display: block;
   text-align: center;
-  padding: 10.55556vw 0 8.33333vw;
+  padding: 10.55556vw 0 0;
 }
 
 .myinfo .myinfo_foot a img {
