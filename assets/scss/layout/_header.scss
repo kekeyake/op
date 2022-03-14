@@ -2,6 +2,7 @@ header.header {
     width: 100%;
     background-color: #fff;
     z-index: 100;
+    border-bottom: 2px solid #DBDBDB;
     .inner {
         display: flex;
         justify-content: space-between;
@@ -118,7 +119,6 @@ header.header {
 
 @include desktop {
     header.header {
-        border-bottom: 2px solid #DBDBDB;
         position: relative;
         .inner {
             width: 1030px;

@@ -789,6 +789,7 @@ header.header {
   width: 100%;
   background-color: #fff;
   z-index: 100;
+  border-bottom: 2px solid #DBDBDB;
 }
 
 header.header .inner {
@@ -943,7 +944,6 @@ header.header .inner .btn_user img {
 
 @media (min-width: 1030px) {
   header.header {
-    border-bottom: 2px solid #DBDBDB;
     position: relative;
   }
   header.header .inner {
