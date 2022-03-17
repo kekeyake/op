@@ -53,93 +53,79 @@ function activeMenu() {
     var pageId = $('main > section').attr('id');
     // var subPageId = $('main > section').attr('id');
     //console.log(pageId);
+    menuSetting();
     
     switch(pageId) {
         case 'contest_info':
-            menuSetting();
             $('[data-rel=contest]').addClass('active_on');
             $('[data-rel=info]').addClass('active_on');
             break;
         case 'contest_attention':
-            menuSetting();
             $('[data-rel=contest]').addClass('active_on');
             $('[data-rel=attention]').addClass('active_on');
             break;
         case 'contest_sample':
-            menuSetting();
             $('[data-rel=contest]').addClass('active_on');
             $('[data-rel=sample]').addClass('active_on');
             break;
         
         case 'book':
-            menuSetting();
             $('[data-rel=book]').addClass('active_on');
             $('.sub_bg').removeClass('active');
             break;
 
         case 'app':
-            menuSetting();
             $('[data-rel=app]').addClass('active_on');
             $('.sub_bg').removeClass('active');
             break;
 
         case 'result':
-            menuSetting();
             $('[data-rel=result]').addClass('active_on');
             $('.sub_bg').removeClass('active');
             break;
         
     
         case 'customer_notice': 
-            menuSetting();
             $('[data-rel=customer]').addClass('active_on');
             $('[data-rel=notice]').addClass('active_on');
             break;
         case 'customer_faq': 
-            menuSetting();
             $('[data-rel=customer]').addClass('active_on');
             $('[data-rel=faq]').addClass('active_on');
             break;
 
         case 'hanuri_greeting':
-            menuSetting();
+            
             $('[data-rel=hanuri]').addClass('active_on');
             $('[data-rel=greeting]').addClass('active_on');
             break;
         case 'hanuri_purpose':
-            menuSetting();
             $('[data-rel=hanuri]').addClass('active_on');
             $('[data-rel=purpose]').addClass('active_on');
             break;
         case 'hanuri_history':
-            menuSetting();
             $('[data-rel=hanuri]').addClass('active_on');
             $('[data-rel=history]').addClass('active_on');
             break;
         case 'hanuri_location':
-            menuSetting();
             $('[data-rel=hanuri]').addClass('active_on');
             $('[data-rel=location]').addClass('active_on');
             break;
 
         
         case 'myinfo_mybook':
-            menuSetting();
             $('[data-rel=myinfo]').addClass('active_on');
             $('[data-rel=mybook]').addClass('active_on');            
             break;    
         case 'myinfo_myapp':
-            menuSetting();
             $('[data-rel=myinfo]').addClass('active_on');
             $('[data-rel=myapp]').addClass('active_on');            
             break;
         case 'myinfo_form':
-            menuSetting();
             $('[data-rel=myinfo]').addClass('active_on');
             $('[data-rel=form]').addClass('active_on');            
             break;
         case 'myinfo_refund':
-            menuSetting();
             $('[data-rel=myinfo]').addClass('active_on');
             $('[data-rel=refund]').addClass('active_on');            
             break;

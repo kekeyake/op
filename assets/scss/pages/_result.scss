@@ -51,6 +51,16 @@
         }
     }
 
+    &.form {
+        margin-bottom: 0;
+        .book_order_list {
+            color:#000;
+            b {
+                font-weight: 500;
+                color:#666;
+            }
+        }
+    }
     .award_list {
         li {
             display: flex;
@@ -135,8 +145,51 @@
             margin-top: vw(14);
         }
     }
+
+    .result_foot {
+        a {
+            display: block;
+            text-align: center;
+            padding:vw(38) 0 0;
+            img {
+                width: vw(150);
+            }
+        }
+    }
     
 
+}
+
+.form_tit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    margin:vw(35) auto;
+    padding:vw(5) vw(16);
+    border: 1px solid #555;
+    box-sizing: border-box;
+    font-size: vw(20);
+    font-weight: 500;
+    color:#000;
+}
+.btn_save {
+    display: flex;
+    height: vw(52);
+    margin:0 vw(-15);
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6);
+    span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin:0 auto;
+        color:#fff;
+        font-size: vw(18);
+        font-weight: 500;
+        padding-left: vw(27);
+        background: url(../img/ico_download.svg) no-repeat 0 50% / vw(21);
+    }
 }
 
 @include desktop {
@@ -226,7 +279,28 @@
                 margin-top: 30px;
             }
         }
-        
+        .result_foot {
+            a {
+                display: block;
+                text-align: center;
+                padding:60px 0;
+                img {
+                    width: 150px;
+                }
+            }
+        }
+    }
+
+    .form_tit {
+
+        width: 395px;
+        margin:60px auto;
+        padding:10px 0;
+        border: 1px solid #555;
+        border-left: 0 solid #000;
+        border-right: 0 solid #000;
+        font-size: 30px;
+        color:#333;
     }
 
 }
