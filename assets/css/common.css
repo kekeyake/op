@@ -5421,6 +5421,19 @@ main > .tit {
   background-color: #9255E4;
 }
 
+.result .btn._description {
+  height: 6.11111vw;
+  background-color: #A475FF;
+  margin-left: 3.33333vw;
+  padding: 0 2.22222vw 0 1.38889vw;
+}
+
+.result .btn._description .open {
+  font-size: 3.61111vw;
+  padding: 0 0 0 2.77778vw;
+  background: url(../img/ico_poly_down.svg) no-repeat 0 60%/2.22222vw 1.66667vw;
+}
+
 .result.form {
   margin-bottom: 0;
 }

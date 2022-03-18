@@ -49,6 +49,17 @@
         &.purple {
             background-color: #9255E4;
         }
+        &._description {
+            height: vw(22);
+            background-color: #A475FF;
+            margin-left: vw(12);
+            padding:0 vw(8) 0 vw(5);
+            .open {
+                font-size: vw(13);
+                padding:0 0 0 vw(10);
+                background: url(../img/ico_poly_down.svg) no-repeat 0 60% / vw(8)  vw(6);
+            }
+        }
     }
 
     &.form {
@@ -155,9 +166,7 @@
                 width: vw(150);
             }
         }
-    }
-    
-
+    } 
 }
 
 .form_tit {
