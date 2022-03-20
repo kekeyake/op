@@ -43,6 +43,7 @@ select.select {
 select.select::-ms-expand {
 	display: none;
 }
+
 input {
 	outline: none;
 }
@@ -95,6 +96,12 @@ input[type=checkbox] {
 	background: url(../img/ico_checkbox.svg) no-repeat 0 0 / cover;
 	&:checked {
 		background: url(../img/ico_checkbox_on.svg) no-repeat 0 0 / cover;
+	}
+	&:disabled {
+		background: url(../img/ico_checkbox_disabled.svg) no-repeat 0 0 / cover;		
+	}
+	&.on_disabled {
+		background: url(../img/ico_checkbox_on_disabled.svg) no-repeat 0 0 / cover;		
 	}
 }
 /* pc layout common */

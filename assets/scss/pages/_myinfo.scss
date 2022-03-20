@@ -159,6 +159,14 @@
                     color:#EA5504;
                     font-size: vw(18);
                     font-weight: 500;
+                    display: inline-flex;
+                    align-items: center;
+                    input {
+                        border: 0 solid #000;
+                        background: transparent;
+                        padding-left: 0;
+                    }
+
                 }
             }
         }

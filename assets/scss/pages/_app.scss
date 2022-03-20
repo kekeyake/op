@@ -1,4 +1,5 @@
 .app {
+    margin-top: vw(68);
     margin-bottom: vw(50);
     padding:0 vw(15) 0;
     .btn_app {
@@ -36,6 +37,13 @@
         strong {
             color:#EA5504;
             margin-left: vw(5);
+            display: inline-flex;
+            span {
+                font-size: vw(18);
+                color:#EA5504;
+                transform: translateY(vw(0));
+                margin-left: 0;
+            }
         }
     }
     
@@ -104,6 +112,12 @@
                         align-items: center;
                         padding:0 vw(7);
                         letter-spacing: -0.03em;
+                        &.readonly {
+                            border: 0 solid #000;
+                            background-color: transparent;
+                            padding-left: 0;
+
+                        }
                         & + input {
                             margin-top: vw(7);
                         }
@@ -181,6 +195,16 @@
                         padding:0 vw(10);
                         font-size: vw(15);
                         font-weight: 700;
+                        display: flex;
+                        align-items: center;
+                        input {
+                            display: inline-flex;                            
+                            border: 0 solid #000;
+                            background: transparent;
+                            padding-left: 0;
+                            text-align: right;
+                            width: fit-content;
+                        }
                         & + input {
                             color:#000;
                             font-weight: 500;
@@ -247,7 +271,7 @@
                 background-color: #fff;
                 height: vw(33);
                 box-sizing: border-box;
-                padding:0 vw(10);
+                padding:0 vw(8);
                 font-size: vw(16);
                 font-weight: 500;
                 letter-spacing: -0.03em;
@@ -423,6 +447,9 @@
             }
             strong {
                 margin-left: 5px;
+                span {
+                    font-size: 24px;
+                }
             }
         }
         
@@ -580,8 +607,9 @@
                 input {
                     height: 40px;
                     padding:0 22px;
-                    font-size: 18px;
+                    font-size: 22px;
                     margin-top: 20px;
+                    font-weight: 400;
                 }
             }
         }

@@ -830,6 +830,7 @@ header.header .inner .btn_user img {
 
 .main_menu {
   padding: 0 5.55556vw;
+  border-bottom: 2px solid #DBDBDB;
 }
 
 .main_menu .__nav ul {
@@ -1950,6 +1951,35 @@ main > .tit {
   color: #333;
 }
 
+#message_layer {
+  position: fixed;
+  z-index: 1000;
+  width: 63.05556vw;
+  left: 50%;
+  top: 50%;
+  background: rgba(0, 0, 0, 0.9);
+  display: none;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+  padding: 5% 0;
+  border-radius: 6px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#message_layer img {
+  width: 5.55556vw;
+}
+
+#message_layer p {
+  font-size: 4.44444vw;
+  font-weight: 500;
+  color: #fff;
+  line-height: 1.4;
+  letter-spacing: -0.03em;
+}
+
 @media (min-width: 1030px) {
   .btn_main {
     margin: 0 auto;
@@ -2010,8 +2040,8 @@ main > .tit {
     left: 50%;
     bottom: 100px;
     z-index: 200;
-    -webkit-transform: translateX(515px);
-            transform: translateX(515px);
+    -webkit-transform: translateX(545px);
+            transform: translateX(545px);
   }
   .side_banner a + a {
     display: block;
@@ -2331,6 +2361,17 @@ main > .tit {
   }
   .layer_pop.search_school .select_list div {
     margin-bottom: 10px;
+  }
+  #message_layer {
+    width: 360px;
+    padding: 30px 0;
+  }
+  #message_layer img {
+    width: 50px;
+  }
+  #message_layer p {
+    line-height: 26px;
+    font-size: 22px;
   }
 }
 
@@ -3104,6 +3145,7 @@ main > .tit {
 
 .book {
   margin-bottom: 13.88889vw;
+  margin-top: 18.88889vw;
   padding: 0 4.16667vw 0;
 }
 
@@ -4075,6 +4117,7 @@ main > .tit {
 }
 
 .app {
+  margin-top: 18.88889vw;
   margin-bottom: 13.88889vw;
   padding: 0 4.16667vw 0;
 }
@@ -4118,6 +4161,17 @@ main > .tit {
 .app h2 strong {
   color: #EA5504;
   margin-left: 1.38889vw;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.app h2 strong span {
+  font-size: 5vw;
+  color: #EA5504;
+  -webkit-transform: translateY(0vw);
+          transform: translateY(0vw);
+  margin-left: 0;
 }
 
 .app .btn_wrap {
@@ -4216,6 +4270,12 @@ main > .tit {
           align-items: center;
   padding: 0 1.94444vw;
   letter-spacing: -0.03em;
+}
+
+.app .applicant_info .applicant_form li > div input.readonly {
+  border: 0 solid #000;
+  background-color: transparent;
+  padding-left: 0;
 }
 
 .app .applicant_info .applicant_form li > div input + input {
@@ -4322,6 +4382,25 @@ main > .tit {
   padding: 0 2.77778vw;
   font-size: 4.16667vw;
   font-weight: 700;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.app .shipping_info .shipping_form li div .btn_coupon input {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  border: 0 solid #000;
+  background: transparent;
+  padding-left: 0;
+  text-align: right;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .app .shipping_info .shipping_form li div .btn_coupon + input {
@@ -4411,7 +4490,7 @@ main > .tit {
   height: 9.16667vw;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 0 2.77778vw;
+  padding: 0 2.22222vw;
   font-size: 4.44444vw;
   font-weight: 500;
   letter-spacing: -0.03em;
@@ -4629,6 +4708,9 @@ main > .tit {
   .app h2 strong {
     margin-left: 5px;
   }
+  .app h2 strong span {
+    font-size: 24px;
+  }
   .app .flex_box_pc .cont_wrap {
     width: 506px;
   }
@@ -4793,8 +4875,9 @@ main > .tit {
   .app .survey_wrap div input {
     height: 40px;
     padding: 0 22px;
-    font-size: 18px;
+    font-size: 22px;
     margin-top: 20px;
+    font-weight: 400;
   }
   .app .tbl {
     margin: 0;
@@ -5069,6 +5152,18 @@ main > .tit {
   color: #EA5504;
   font-size: 5vw;
   font-weight: 500;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.myinfo .refund_form li div strong input {
+  border: 0 solid #000;
+  background: transparent;
+  padding-left: 0;
 }
 
 .myinfo .myinfo_foot a {
@@ -5580,6 +5675,10 @@ main > .tit {
 
 .result .result_foot a img {
   width: 41.66667vw;
+}
+
+.result .radar_chart {
+  margin-top: 5.55556vw;
 }
 
 .form_tit {
@@ -6153,6 +6252,14 @@ input[type=checkbox] {
 
 input[type=checkbox]:checked {
   background: url(../img/ico_checkbox_on.svg) no-repeat 0 0/cover;
+}
+
+input[type=checkbox]:disabled {
+  background: url(../img/ico_checkbox_disabled.svg) no-repeat 0 0/cover;
+}
+
+input[type=checkbox].on_disabled {
+  background: url(../img/ico_checkbox_on_disabled.svg) no-repeat 0 0/cover;
 }
 
 /* pc layout common */

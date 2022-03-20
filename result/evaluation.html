@@ -94,20 +94,76 @@
                     </div>
 
                     <div class="description_wrap">
-                        
-                    </div>
+                        <p class="description_txt">
+                            <b>백분위군</b>은 참가자의 득점을 응시부문별 전체 참가자와 비교하여 상위 몇 %에 해당하는지 등급화한 지수입니다.
+                        </p>
+                        <table class="percentile_info">
+                            <tbody>
+                                <tr>
+                                    <th>가</th>
+                                    <th>나</th>
+                                    <th>다</th>
+                                    <th>라</th>
+                                    <th>마</th>
+                                </tr>
+                                <tr>
+                                    <td>0~10%</td>
+                                    <td>11~20%</td>
+                                    <td>21~30%</td>
+                                    <td>31~40%</td>
+                                    <td>41~50%</td>
+                                </tr>
+                                <tr>
+                                    <th>바</th>
+                                    <th>사</th>
+                                    <th>아</th>
+                                    <th>자</th>
+                                    <th>차</th>
+                                </tr>
+                                <tr>
+                                    <td>51~60%</td>
+                                    <td>61~70%</td>
+                                    <td>71~80%</td>
+                                    <td>81~90%</td>
+                                    <td>91~100%</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="description_list">
+                            <dl>
+                                <dt>어휘 능력</dt>
+                                <dd>글 속에서 만나는 어휘의 뜻을 정확하게 알고, 글의 정보를 통해 낱말의 의미를 유추하는 능력</dd>
+                                <dd>글 속 상황이나 문맥에 맞게 어휘를 활용하는 능력</dd>
+                                <dt>사실적 이해 능력</dt>
+                                <dd>글 구조를 알거나 글에 나타나 있는 정보를 정확하게 파악하는 능력</dd>
+                                <dd>긴 글 속에서 더 중요한 정보나 중심 내용을 구분하고 정리하는 능력</dd>
+                                <dt>추론적 이해 능력</dt>
+                                <dd>글에 나와 있는 내용을 근거로 표현되지 않은 내용을 자신의 배경지식이나 경험을 바탕으로 추론하는 능력</dd>
+                                <dd>표면에 드러난 정보를 바탕으로 글쓴이의 의도나 목적을 짐작하는 능력</dd>
+                                <dt>비판적 이해 능력</dt>
+                                <dd>글의 내용과 표현, 구조 등이 적절한지 따져보고 판단하는 능력</dd>
+                                <dd>글 내용의 가치, 신념 등을 사회와 견주어 보고 수용 가능한 것인지 판단하는 능력</dd>
+                                <dt>통합 사고 능력</dt>
+                                <dd>서로 다른 내용이나 관점의 글을 읽으며 주제를 통합적으로 이해하는 능력</dd>
+                                <dd>서로 다른 형식의 자료를 종합하여 사고를 확장하고 주제를 자신의 언어로 재구성하는 능력</dd>
+                            </dl>
+                            <button class="btn _description"><span class="closed">용어설명닫기</span></button>
+                        </div>
+                    </div>                    
                 </div>
                 
                 <div class="cont_wrap">
-                    <h2>온라인 시험 유의사항</h2>
-                    <ul class="text_list">
-                        <li>시험 응시는 데스크탑, 노트북, 태블릿만 가능</li>
-                        <li>모바일은 응시 불가</li>
-                        <li>사전테스트는 실제 시험에 응시할 기기로 접속</li>
-                        <li>사전테스트 미응시로 인한 시험 당일 오류 발생 등 불이익은 응시자에게 있음</li>
-                        <li>Chrom 인터넷 브라우저로 접속 권장</li>
-                        <li>시험 시작 5분 전까지 온라인 시험장 접속</li>
-                    </ul>
+                    <h2>영역별 평가</h2>
+                    <div class="radar_chart">
+                        <!-- radar 차트가 그려질 부분-->
+                        <canvas id="radarChart"></canvas>
+                    </div>
+
+                    <div class="bar_chart">
+                        <!-- bar 차트가 그려질 부분-->
+                        <canvas id="barChart"></canvas>
+                    </div>
+                    
                 </div>
                 <div class="cont_wrap">
                     <h2>온라인 시험장 접속 방법</h2>
@@ -134,10 +190,9 @@
 
 <button class="btn __top"></button>
 
-
 <script defer src="../assets/js/jquery-3.4.1.min.js"></script>
 <script defer src="../assets/libs/swiper.min.js"></script>
-<script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
 <script defer src="../assets/js/ui.js"></script>
 </body>
 </html>
