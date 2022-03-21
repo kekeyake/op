@@ -297,7 +297,7 @@ $(function () {
     
     if ( $('#radarChart').length ) {
         var radarChart = document.getElementById('radarChart');
-        var radarChart = new Chart(radarChart, {
+        radarChart = new Chart(radarChart, {
             type:'radar',
             data:radarChartData,        
             options:{
@@ -333,20 +333,6 @@ $(function () {
             }
         });
     }
-    
-    var ChartHelper = {
-        chartColors: {
-            red: 'rgb(255, 99, 132)'
-            , orange: 'rgb(255, 159, 64)'
-            , yellow: 'rgb(255, 205, 86)'
-            , green: 'rgb(75, 192, 192)'
-            , blue: 'rgb(54, 162, 235)'
-            , purple: 'rgb(153, 102, 255)'
-            , grey: 'rgb(201, 203, 207)'
-        }
-    };
-
-    var color = Chart.helpers.color;
 
     var data1 = null;//개인
     var data2 = null;//평균
@@ -375,12 +361,8 @@ $(function () {
     };
     
     if ( $('#barChart').length ) {
-        var barChart = document.getElementById('barChart');
-        
-        
-
-        var colorNames = Object.keys(ChartHelper.chartColors);
-        var barChart = new Chart(barChart, {
+        var barChart = document.getElementById('barChart');        
+        barChart = new Chart(barChart, {
             type: 'bar',
             // 옆으로 누운 bar 차트를 쓰실 경우 바꾸시면 됩니다.
             //type: 'horizontalBar'

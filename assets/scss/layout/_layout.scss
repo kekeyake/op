@@ -554,7 +554,50 @@ main {
         letter-spacing: -0.03em;
     }
 }
-
+.paging {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    li {
+        display: inline-flex;
+        align-items: center;
+        a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: vw(24);
+            height: vw(24);
+            font-size: vw(15);
+            color:#999;
+            &:hover,
+            &.on {
+                color:#333;
+            }
+            &._next_end {
+                background: url(../img/ico_skip_next.svg) no-repeat 0 0 / cover;
+            }
+            &._next {
+                background: url(../img/ico_next.svg) no-repeat 0 0 / cover;
+            }
+            &._prev {
+                background: url(../img/ico_prev.svg) no-repeat 0 0 / cover;
+            }
+            &._prev_end {
+                background: url(../img/ico_skip_prev.svg) no-repeat 0 0 / cover;
+            }
+        }
+        &:nth-child(n + 3):nth-child(-n + 9) {
+            &::before {
+                display: block;
+                content: '';
+                width: 1px;
+                height: vw(14);
+                background-color: #ececed;
+            }
+            
+        }
+    }
+}
 @include desktop {
     .btn_main {
         margin:0 auto;
@@ -941,6 +984,24 @@ main {
         p {            
             line-height: 26px;
             font-size: 22px;
+        }
+    }
+
+    .paging {      
+        li {        
+            a {                
+                width: 24px;
+                height: 24px;
+                font-size: 16px;
+                &.num {
+                    padding:0 3px;
+                }  
+            }
+            &:nth-child(n + 3):nth-child(-n + 9) {
+                &::before {                    
+                    height: 14px;
+                }                
+            }            
         }
     }
 }
