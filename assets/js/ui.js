@@ -418,5 +418,11 @@ $(function () {
             }
         });
     }
+
+    if ( $('.faq_list').length ) {
+        $(this).find('li').on('click',function(){
+            $(this).toggleClass('open');
+        });
+    }
     
 });
