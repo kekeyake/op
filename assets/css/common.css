@@ -6137,16 +6137,260 @@ main > .tit {
   .result .result_foot a {
     display: block;
     text-align: center;
-    padding: 60px 0;
+    padding: 30px 0 0;
   }
   .result .result_foot a img {
-    width: 150px;
+    width: 200px;
+  }
+  .result.form {
+    padding-bottom: 40px;
+    margin-bottom: 0;
+    letter-spacing: -0.03em;
+  }
+  .result.form h2 {
+    padding-left: 10px;
+  }
+  .result.form .book_order_list {
+    border-top-color: #999;
+  }
+  .result.form .book_order_list b {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    min-width: 139px;
+    height: 69px;
+    padding: 0 0 0 30px;
+    color: #333;
+    border-left: 1px solid #999;
+    border-right: 1px solid #999;
+    background-color: #F4F5F7;
+  }
+  .result.form .book_order_list b:first-child {
+    border-left: 0 solid #000;
+  }
+  .result.form .book_order_list li {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .result.form .book_order_list li > div {
+    padding: 0 30px;
+    height: 69px;
+  }
+  .result.form .book_order_list li > div strong {
+    font-size: 22px;
+  }
+  .result.form .book_order_list.half ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .result.form .book_order_list.half li {
+    width: 50%;
+    border-bottom-color: #999;
+  }
+  .result.form .book_order_list.half li:nth-child(even) b {
+    border-left: 1px solid #999;
+  }
+  .result.form .chart_wrap {
+    padding: 0 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .result.form .chart_wrap .radar_chart {
+    padding: 0;
+    margin-top: 0;
+    width: 400px;
+  }
+  .result.form .chart_wrap .bar_chart {
+    margin-top: 0;
+    width: 450px;
+    height: 400px;
+  }
+  .result.form .assessment_tbl {
+    margin: 80px 0 0;
+  }
+  .result.form .assessment_tbl table {
+    font-size: 20px;
+  }
+  .result.form .assessment_tbl table th,
+  .result.form .assessment_tbl table td {
+    padding: 15px 0;
+  }
+  .result.form .assessment_tbl table tfoot td {
+    color: #666;
+  }
+  .result.form .assessment_list {
+    padding-top: 20px;
+  }
+  .result.form .assessment_list h3 {
+    font-size: 20px;
+    padding-left: 20px;
+    margin: 30px 0 12px;
+  }
+  .result.form .assessment_list h3::before {
+    content: '∙';
+    font-size: 30px;
+    left: 8px;
+    top: -10px;
+  }
+  .result.form .assessment_list p {
+    border: 1px solid #666;
+    margin: 0;
+    padding: 25px 30px;
+    background-color: #fff;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+  }
+  .result.form .item_evaluation {
+    margin: 16px 0 0;
+  }
+  .result.form .item_evaluation th {
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: 400;
+    background-color: #F4F5F7;
+    color: #000;
+    border-top: 1px solid #999;
+    border-bottom: 1px solid #999;
+    border-left: 1px solid #999;
+  }
+  .result.form .item_evaluation td {
+    font-size: 18px;
+    color: #000;
+  }
+  .result.form .item_evaluation td.judgment {
+    font-size: 24px;
+    line-height: 1;
+  }
+  .result.form .item_evaluation tbody td {
+    vertical-align: top;
+    background-color: #fff;
+    padding: 10px 0;
+    border-left: 1px solid #999;
+    border-bottom: 1px solid #999;
+  }
+  .result.form .item_evaluation tbody td:first-child {
+    border-left: 0 solid #000;
+  }
+  .result.form .item_evaluation tbody td:nth-child(even) {
+    background-color: #F4F5F7;
+  }
+  .result.form .item_evaluation tbody td.commentary {
+    background-color: #fff;
+    text-align: left;
+    padding: 10px 15px;
+    font-size: 18px;
+    color: #000;
+  }
+  .result.form .item_evaluation tbody td.commentary .t2 {
+    margin-top: 10px;
+    color: #333;
+    line-height: 1.4;
+  }
+  .result.form .description_wrap {
+    display: block;
+    padding-top: 0;
+  }
+  .result.form .description_wrap .description_txt {
+    font-size: 18px;
+    color: #333;
+    padding-left: 10px;
+  }
+  .result.form .description_wrap .description_txt::before {
+    font-size: 30px;
+    top: 0;
+    line-height: 20px;
+  }
+  .result.form .percentile_info {
+    margin-top: 20px;
+  }
+  .result.form .percentile_info th,
+  .result.form .percentile_info td {
+    padding: 10px 0;
+    color: #666;
+    font-size: 21px;
+  }
+  .result.form .percentile_info th {
+    padding: 5px 0;
+    font-weight: 500;
+    background-color: #F6F1FF;
+  }
+  .result.form .description_list {
+    margin: 30px 0 0;
+    background-color: #F4F5F7;
+    padding: 40px;
+  }
+  .result.form .description_list li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .result.form .description_list li + li {
+    margin-top: 13px;
+  }
+  .result.form .description_list li div {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  .result.form .description_list b {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    width: 140px;
+    height: 80px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #333;
+    border-radius: 10px;
+    border: 2px solid #c4c4c4;
+    background-color: #fff;
+    margin-right: 20px;
+    line-height: 1.2;
+  }
+  .result.form .description_list p {
+    font-size: 18px;
+    color: #333;
+    line-height: 1.4;
+    padding-left: 10px;
+    position: relative;
+  }
+  .result.form .description_list p + p {
+    margin-top: 5px;
+  }
+  .result.form .description_list p::before {
+    content: '-';
+    position: absolute;
+    left: 0;
   }
   .form_tit {
-    width: 395px;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
     margin: 60px auto;
-    padding: 10px 0;
-    border: 1px solid #555;
+    padding: 10px 5px;
+    border: 2px solid #c4c4c4;
     border-left: 0 solid #000;
     border-right: 0 solid #000;
     font-size: 30px;

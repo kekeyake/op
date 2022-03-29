@@ -150,10 +150,13 @@ $(function () {
     // 메뉴 활성화
     activeMenu();
 
+    var posLegend;
+
     if (navigator.platform) {
         if (filter.indexOf(navigator.platform.toLowerCase()) < 0) { //mobile
-
+            posLegend = 'bottom';
         } else { //pc
+            posLegend = 'top';
             titMargin();
             $('.__nav li').mouseenter(function () {
                 $(this).children('a').addClass('active');
@@ -377,7 +380,7 @@ $(function () {
                 responsive: true,   //auto size : true
                 maintainAspectRatio: false,
                 legend: {
-                    position: 'bottom',
+                    position: posLegend,
                     labels:{
                         boxWidth:15,
                         boxHeight:20
