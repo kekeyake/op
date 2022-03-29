@@ -263,6 +263,8 @@ $(function () {
             }
         });
     }
+
+    // mobile scree shot
     if ( $('.capture').length ) {
         $('.btn_save').on("click", function(){
             // 캡쳐 라이브러리를 통해서 canvas 오브젝트를 받고 이미지 파일로 리턴한다.
@@ -279,9 +281,8 @@ $(function () {
     });
     
     // radar style chart
-
     var radarChartData = {
-        labels: ['어휘','사실적 이해',['추론적','이해'],['비판적','이해'],['통합','사고']], // 줄바꿈 표현을 위해 배열처리
+        labels: ['어휘',['사실적','이해'],['추론적','이해'],['비판적','이해'],['통합','사고']], // 줄바꿈 표현을 위해 배열처리
         datasets: [{
             backgroundColor:'rgba(234, 85, 4, 0.15)',
             borderColor:'rgba(234, 85, 4, 1)',
@@ -349,13 +350,15 @@ $(function () {
                 label: '개인 득점', 
                 backgroundColor: '#A475FF', 
                 borderWidth: 0, 
-                data: data1
+                data: data1,
+                
             }, 
             {
                 label: '전체 평균', 
                 backgroundColor: '#FFCB40',
                 borderWidth: 0, 
-                data: data2
+                data: data2,
+                
             }
         ]
     };
@@ -372,6 +375,7 @@ $(function () {
                 // 브라우저의 크기를 변경해도 canvas를 감싸고 있는
                 // div의 크기에 따라 차트가 깨지지 않고 이쁘게 출력 됩니다. 
                 responsive: true,   //auto size : true
+                maintainAspectRatio: false,
                 legend: {
                     position: 'bottom',
                     labels:{
@@ -389,9 +393,8 @@ $(function () {
                             fontSize:0,
                             beginAtZero:true,
                             min:0,
-                            max:20,
-                            steps:1,                            
-                            stepSize:1,
+                            max:25,                       
+                            stepSize:1,                            
                             // Y 축 정수로 보여주기 
                             // 숫자가 작거나 또는 0인 경우 등 자동으로 보여주므로 소숫점으로 나타난다
                             callback: function (value) {
@@ -422,6 +425,16 @@ $(function () {
     if ( $('.faq_list').length ) {
         $(this).find('li').on('click',function(){
             $(this).toggleClass('open');
+        });
+    }
+
+    // 평가 결과 toggle
+    if ( $('.description_wrap').length ) {
+        $('#btnOpenDescription').on('click',function(){
+            $('.description_wrap').toggleClass('open');
+        });
+        $('#btnClosedDescription').on('click',function(){
+            $('.description_wrap').removeClass('open');
         });
     }
     

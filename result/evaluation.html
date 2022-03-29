@@ -87,7 +87,7 @@
                                 <b>백분위군</b>
                                 <div>
                                     <span>나군(상위 11~20%)</span>
-                                    <button class="btn _description"><span class="open">용어설명보기</span></button>
+                                    <button class="btn _description" id="btnOpenDescription"><span class="open">용어설명보기</span></button>
                                 </div>
                             </li>
                         </ul>
@@ -147,7 +147,7 @@
                                 <dd>서로 다른 내용이나 관점의 글을 읽으며 주제를 통합적으로 이해하는 능력</dd>
                                 <dd>서로 다른 형식의 자료를 종합하여 사고를 확장하고 주제를 자신의 언어로 재구성하는 능력</dd>
                             </dl>
-                            <button class="btn _description"><span class="closed">용어설명닫기</span></button>
+                            <button class="btn _description" id="btnClosedDescription"><span class="closed">용어설명닫기</span></button>
                         </div>
                     </div>                    
                 </div>
@@ -164,21 +164,131 @@
                         <canvas id="barChart"></canvas>
                     </div>
                     
+                    <div class="assessment_tbl">
+                        <table class="">
+                            <colgroup>
+                                <col style="width: 30%;">
+                                <col style="width: auto;">
+                                <col style="width: auto;">
+                                <col style="width: auto;">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>영역</th>
+                                    <th>배점</th>
+                                    <th>득점</th>
+                                    <th>평균</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>어휘</th>
+                                    <td>18</td>
+                                    <td class="point">15</td>
+                                    <td>14.2</td>
+                                </tr>
+                                <tr>
+                                    <th>사실적 이해</th>
+                                    <td>21</td>
+                                    <td class="point">18</td>
+                                    <td>16.1</td>
+                                </tr>
+                                <tr>
+                                    <th>추론적 이해</th>
+                                    <td>18</td>
+                                    <td class="point">12</td>
+                                    <td>14.2</td>
+                                </tr>
+                                <tr>
+                                    <th>비판적 이해</th>
+                                    <td>18</td>
+                                    <td class="point">15</td>
+                                    <td>14.2</td>
+                                </tr>
+                                <tr>
+                                    <th>통합 사고</th>
+                                    <td>25</td>
+                                    <td class="point">15</td>
+                                    <td>14.2</td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <th>합계</th>
+                                    <td>100</td>
+                                    <td class="point">79</td>
+                                    <td>72.4</td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                    
+                    <div class="assessment_list">
+                        <h3>어휘 능력</h3>
+                        <p>책을 읽을 때 의미를 이해하고 내용을 정확하게 전달하는 데 어려움을 겪을 수 있습니다. 일상생활에서도 비슷할 수 있는데, 기본적인 어휘력이 부족해서 일어나는 현상입니다. 하지만 아직 저학년이므로 꾸준히 노력한다면 어휘력을 향상시킬 수 있습니다. 잘 모르는 단어나 문장을 만났을 때 글의 앞뒤 내용을 통해 뜻을 짐작해 보거나 정확한 뜻을 찾아보는 습관을 갖는 것이 필요합니다. 놀이를 통해 어휘에 대한 관심을 높이는 것도 어휘력 향상에 도움이 됩니다.</p>
+
+                        <h3>사실적 이해 능력</h3>
+                        <p>책을 읽고 나서 잊은 내용이 있습니다. 많은 어린이들이 책을 읽은 후 시간이 지나면 내용을 잘 기억하지 못합니다. 이런 모습이 자주 나타날 때는 한 권의 책을 반복해서 읽거나 읽는 도중에 중심인물, 중요 사건, 정보 등에 표시를 하며 읽으면 도움이 됩니다. 또 읽은 후에 이야기 나누기를 통해 중요한 것과 중요하지 않은 것을 구별할 수 있도록 도와줄 필요가 있습니다.</p>
+
+                        <h3>추론적 이해 능력</h3>
+                        <p>겉으로 드러난 정보는 이해할 수 있으나 글 속에 숨겨진 의미를 이해하는 힘을 좀 더 길러야 합니다. 글 내용을 꼼꼼히 읽으며 내용과 내용 사이의 연관성에 대해 생각해보거나 예측하며 읽는 연습이 필요합니다. 이때 경험이 풍부하면 인물의 마음이나 상황을 이해하는 데 도움이 되므로 다양한 배경지식을 쌓도록 도와주세요. 특히 꾸준히 독서를 하는 것이 중요합니다.</p>
+
+                        <h3>비판적 이해 능력</h3>
+                        <p>책의 내용을 자신의 생각과 비교하며 읽는 연습이 필요합니다. 읽은 내용을 무조건 수용하기보다는 '나라면 어떻게 했을까?', '다른 방법은 없을까?'처럼 다시 한 번 따져 보며 읽는 것이 중요합니다. 책을 읽은 후 다른 사람과 대화하는 기회를 마련해서 다양한 관점을 익히거나, 등장인물 평가해 보기, 비슷한 내용의 책들을 비교해 보기 등의 활동을 하면 비판 능력을 향상시킬 수 있습니다.</p>
+
+                        <h3>통합 사고 능력</h3>
+                        <p>필독서의 내용을 이해했더라도 다른 책이나 자료를 통해 생각을 확장하려는 노력이 좀 더 필요합니다. 단편적인 사고가 아닌 다층적 사고를 할 수 있어야 창의적이고 통합적인 사고력이 길러집니다. 책을 읽은 후 자신의 생각을 발표하고 친구들의 다양한 의견을 듣는 경험, 다양한 독후 활동을 해 보는 것이 통합적 사고를 키우는 데 도움이 됩니다. </p>
+                    </div>
                 </div>
                 <div class="cont_wrap">
-                    <h2>온라인 시험장 접속 방법</h2>
-                    <ul class="text_list">
-                        <li>대회 홈페이지(www.독서올림피아드.kr) 접속</li>
-                        <li>온라인 시험장 접속 배너 클릭하여 입장</li>
-                    </ul>
-                </div>
-                <div class="cont_wrap">
-                    <h2>온라인 시험장 로그인 방법</h2>
-                    <ul class="text_list">
-                        <li><b>ID</b> : 응시번호 (예: 1234-5-6789)</li>
-                        <li><b>PW</b> : 생년월일 8자리 (예: 20030510)</li>
-                    </ul>
-                </div>
+                    <h2>문항별 평가</h2>
+                    <div class="item_evaluation">
+                        <table>
+                            <colgroup>
+                                <col style="width:13%;">
+                                <col style="width: 45%;">
+                                <col style="width: 20%;">
+                                <col style="width:auto;">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>번호</th>
+                                    <th>영역</th>
+                                    <th>배점</th>
+                                    <th>판정</th>
+                                </tr>
+                                <tr>
+                                    <th colspan="4">출제 의도</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>사실적 이해 능력</td>
+                                    <td class="point">3.0</td>
+                                    <td class="judgment">×</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="4" class="commentary">
+                                        <p class="t1">주인공 시점에서 내용 정리하기</p>
+                                        <p class="t2">필독서의 주요 내용을 주인공의 시점에서 정리하는 문제입니다. 책을 읽더라도 세부적인 내용을 눈여겨보지 않거나 쉽게 잊는 경우가 많으니 독서 퀴즈로 내용을 상기하면 좋습니다.</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>사실적 이해 능력</td>
+                                    <td class="point">3.0</td>
+                                    <td class="judgment">O</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="4" class="commentary">
+                                        <p class="t1">미디어 자료와 연계하여 다양한 감정 적용하기</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>                
                 <div class="result_foot">
                     <a href="#a"><img src="../assets/img/logo.svg" alt="한우리 독서올림피아드"></a>
                 </div>
@@ -193,6 +303,7 @@
 <script defer src="../assets/js/jquery-3.4.1.min.js"></script>
 <script defer src="../assets/libs/swiper.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+<script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>    
 <script defer src="../assets/js/ui.js"></script>
 </body>
 </html>
