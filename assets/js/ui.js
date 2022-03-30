@@ -86,7 +86,10 @@ function activeMenu() {
             $('.sub_bg').removeClass('active');
             break;
         
-    
+        case 'member':
+            $('.sub_bg').removeClass('active');
+            break;
+            
         case 'customer_notice': 
             $('[data-rel=customer]').addClass('active_on');
             $('[data-rel=notice]').addClass('active_on');
