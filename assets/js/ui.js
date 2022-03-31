@@ -89,7 +89,7 @@ function activeMenu() {
         case 'member':
             $('.sub_bg').removeClass('active');
             break;
-            
+
         case 'customer_notice': 
             $('[data-rel=customer]').addClass('active_on');
             $('[data-rel=notice]').addClass('active_on');
@@ -295,10 +295,10 @@ $(function () {
             fill: true,
             radius:2,
             pointRadius:4,
-            pointBorderWidth:1,
+            pointBorderWidth:2,
             pointBackgroundColor:'rgba(234, 85, 4, 1)',
             pointBorderColor:'rgba(234, 85, 4, 1)',
-            data: [1,2,4,2,3] // 총점 5로 환산해주세요
+            data: [1,2,5,2,3] // 총점 5로 환산해주세요
         }]
     }
     
@@ -327,7 +327,7 @@ $(function () {
                     ticks: {
                         begiaAtZero:true,
                         min:0,
-                        max:4,
+                        max:5,
                         stepSize:1,
                         fontSize:0,
                     },
