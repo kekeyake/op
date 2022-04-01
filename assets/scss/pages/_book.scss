@@ -174,63 +174,7 @@
             }
         }
     }
-    .book_select_box {
-        margin:0 vw(-15);
-        border-top: 1px solid #CACACA;
-        background-color: #F4F5F7;
-        padding:vw(18) vw(35);
-        .select_info_wrap {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            width: 100%;
-            select {
-                width: vw(112);
-                background:#fff url(../img/ico_select.svg) no-repeat right vw(9) top 50% / vw(16.75) vw(13);
-                border: 1px solid #c4c4c4;
-                height: vw(33);
-                padding-left: vw(7);
-                font-size: vw(16);
-            }
-            .input_box {
-                display: flex;
-                width: vw(110);
-                input {
-                    width: vw(46);
-                    height: vw(33);
-                    border: 1px solid #c4c4c4;
-                    text-align: center;
-                    font-size: vw(16);
-                }
-                button {
-                    display: block;
-                    flex: 1;
-                    width: vw(33);
-                    &.btn_minus {
-                        background: #fff url(../img/btn_minus.svg) no-repeat 0 0 / cover;
-                    }
-                    &.btn_plus {
-                        background: #777 url(../img/btn_plus.svg) no-repeat 0 0 / cover;
-                    }
-                }
-
-            }
-            > button {
-                width: vw(48);
-                height: vw(33);
-                background-color: #EA5504;
-                border-radius: 3px;
-                text-align: center;
-                color:#fff;
-                font-size: vw(15);
-                font-weight: 700;
-                letter-spacing: -0.03em;
-            }
-        }
-        .tit_box {
-            margin: vw(12) 0 0;
-        }
-    }
+    
     .book_select_list {
         border-top: 1px solid #CACACA;
         margin: 0 vw(-15);
@@ -242,53 +186,76 @@
                 padding: vw(14) vw(13);
                 color:#999;
                 background-color: #F4F5F7;
-                width: vw(85);
+                width: 28%;
                 height: 100%;
-                font-weight: 700;
+                font-weight: 700;                
                 box-sizing: border-box;
+                flex: 1;          
             }
             div {
                 display: flex;
                 align-items: center;
-                flex: 1;
-                padding:vw(13);
+                width: 72%;
+                padding:vw(10) vw(20);
                 justify-content: space-between;
+                > input {
+                    width: 50%;
+                    text-align: right;
+                    border: 0 solid #000;
+                    margin-right: vw(1);
+                    font-weight: 500;
+                    color:#333;
+                    font-size: vw(18);
+                    & + span {
+                        font-weight: 500;
+                        color:#333;
+                        font-size: vw(18);
+                    }
+                }
+                .input_box {
+                    display: flex;
+                    width: auto;
+                    justify-content: center;
+                    margin:0;
+                    padding:0;
+                    input {
+                        width: vw(46);
+                        height: vw(33);
+                        border: 1px solid #c4c4c4;
+                        text-align: center;
+                        font-size: vw(16);
+                        margin:0;
+                        letter-spacing: -0.05em;
+                    }
+                    button {
+                        display: block;
+                        width: vw(33);
+                        height: vw(33);
+                        &.btn_minus {
+                            background: #fff url(../img/btn_minus.svg) no-repeat 0 0 / cover;
+                        }
+                        &.btn_plus {
+                            background: #777 url(../img/btn_plus.svg) no-repeat 0 0 / cover;
+                        }
+                    }
+    
+                }
             }
         }
-        .add_option {
-            border-bottom: 1px solid #CACACA;
-            .btn_delete {
-                width: vw(20);
-                height: vw(20);
-                background:url(../img/btn_delete.svg) no-repeat 0 0 / cover;
-            }
+        .option_list {
+            border-bottom: 1px solid #CACACA;            
         }
-        & + .total_price {
-            margin: 0 vw(-15);
+        .total_price {
             border-bottom: 1px solid #CACACA;
-            background-color: #F4F5F7;
-            font-size: vw(16);
-            display: flex;
-            align-items: center;
-            b {
-                padding: vw(14) vw(13);
-                color:#999;
-                background-color: #F4F5F7;
-                width: vw(85);
-                height: 100%;
-                font-weight: 700;
-                box-sizing: border-box;
-            }
-            div {
-                display: flex;
-                align-items: center;
-                flex: 1;
-                padding:vw(13);
-                justify-content: space-between;
-                color:#EA5504;
-                font-weight: 700;
-                font-size: vw(18);
-                background-color: #fff;
+            background-color: #fff;            
+            div {                
+                justify-content: flex-end;                
+                input {
+                    color:#EA5504;
+                    & + span {
+                        color:#EA5504;
+                    }
+                }
             }            
         }        
     }
@@ -599,75 +566,50 @@
                 }
             }
         }
-        .book_select_box {
-            margin:0;
-            padding:18px 40px;
-            display: flex;
-            .select_info_wrap {
-                justify-content: flex-start;
-                flex: 1;
-                select {
-                    width: 114px;
-                    background:#fff url(../img/ico_select.svg) no-repeat right 13px top 50% / 10px 16px;
-                    height: 40px;
-                    padding-left:10px;
-                    font-size: 22px;
-                    margin-right: 15px;
-                }
-                .input_box {
-                    display: flex;
-                    width: 138px;
-                    margin-right: 15px;
-                    input {
-                        width: 60px;
-                        height: 40px;
-                        font-size:20px;
-                    }
-                    button {
-                        display: block;
-                        flex: 1;
-                        width: 40px;
-                    }
-
-                }
-                > button {
-                    width: 97px;
-                    height: 40px;
-                    font-size: 20px;
-                }
-            }
-            .tit_box {
-                margin: 0;
-            }
-        }
+       
         .book_select_list {
             margin: 0;
+            display: flex;
+            flex-wrap: wrap;
             > div {
+                width: 50%;
                 font-size: 22px;
                 b {
-                    padding: 17px 40px;
-                    width: 160px;
+                    padding: 17px 0 17px 40px;
+                    width: 174px;
                     letter-spacing: -0.03em;
+                    flex: 1;
                 }
                 div {
+                    width: 340px;
                     padding: 15px 30px;
+                    > input {
+                        width: 50%;                        
+                        margin-right: 0;
+                        font-size: 22px;
+                        & + span {
+                            font-size: 22px;
+                        }
+                    }
+                    .input_box {
+                        margin:0;
+                        input {
+                            width: 58px;
+                            height: 40px;
+                            font-size: 20px;
+                        }
+                        button {
+                            width: 40px;
+                            height: 40px;
+                        }
+                    }
                 }
-            }
-            .add_option {
-                div {
-                    justify-content: flex-start;
-                }
-                .btn_delete {
-                    width: 25px;
-                    height: 25px;
-                    margin-left: 10px;
-                }
-            }
-            & + .total_price {         
+            }            
+            .total_price {         
                 margin: 0;
                 b {
                     font-size: 22px;
-                    padding: 17px 40px;
+                    padding: 17px 0 17px 40px;
                     width: 160px;
                     letter-spacing: -0.03em;
                 }

@@ -86,10 +86,7 @@ function activeMenu() {
             $('.sub_bg').removeClass('active');
             break;
         
-        case 'member':
-            $('.sub_bg').removeClass('active');
-            break;
-
+    
         case 'customer_notice': 
             $('[data-rel=customer]').addClass('active_on');
             $('[data-rel=notice]').addClass('active_on');
@@ -152,12 +149,14 @@ $(function () {
 
     // 메뉴 활성화
     activeMenu();
-    
+
+    var posLegend;
+
     if (navigator.platform) {
         if (filter.indexOf(navigator.platform.toLowerCase()) < 0) { //mobile
-            
+            posLegend = 'bottom';
         } else { //pc
-            
+            posLegend = 'top';
             titMargin();
             $('.__nav li').mouseenter(function () {
                 $(this).children('a').addClass('active');
@@ -283,8 +282,7 @@ $(function () {
     $('.btn_coupon').on('click', function(){
         $(this).toggleClass('on');
     });
-        
-
+    
     if ( $('.faq_list').length ) {
         $(this).find('li').on('click',function(){
             $(this).toggleClass('open');

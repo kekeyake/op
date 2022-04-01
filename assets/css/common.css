@@ -3666,82 +3666,6 @@ main > .tit {
           transform: translateY(-1px);
 }
 
-.book .book_select_box {
-  margin: 0 -4.16667vw;
-  border-top: 1px solid #CACACA;
-  background-color: #F4F5F7;
-  padding: 5vw 9.72222vw;
-}
-
-.book .book_select_box .select_info_wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 100%;
-}
-
-.book .book_select_box .select_info_wrap select {
-  width: 31.11111vw;
-  background: #fff url(../img/ico_select.svg) no-repeat right 2.5vw top 50%/4.65278vw 3.61111vw;
-  border: 1px solid #c4c4c4;
-  height: 9.16667vw;
-  padding-left: 1.94444vw;
-  font-size: 4.44444vw;
-}
-
-.book .book_select_box .select_info_wrap .input_box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 30.55556vw;
-}
-
-.book .book_select_box .select_info_wrap .input_box input {
-  width: 12.77778vw;
-  height: 9.16667vw;
-  border: 1px solid #c4c4c4;
-  text-align: center;
-  font-size: 4.44444vw;
-}
-
-.book .book_select_box .select_info_wrap .input_box button {
-  display: block;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  width: 9.16667vw;
-}
-
-.book .book_select_box .select_info_wrap .input_box button.btn_minus {
-  background: #fff url(../img/btn_minus.svg) no-repeat 0 0/cover;
-}
-
-.book .book_select_box .select_info_wrap .input_box button.btn_plus {
-  background: #777 url(../img/btn_plus.svg) no-repeat 0 0/cover;
-}
-
-.book .book_select_box .select_info_wrap > button {
-  width: 13.33333vw;
-  height: 9.16667vw;
-  background-color: #EA5504;
-  border-radius: 3px;
-  text-align: center;
-  color: #fff;
-  font-size: 4.16667vw;
-  font-weight: 700;
-  letter-spacing: -0.03em;
-}
-
-.book .book_select_box .tit_box {
-  margin: 3.33333vw 0 0;
-}
-
 .book .book_select_list {
   border-top: 1px solid #CACACA;
   margin: 0 -4.16667vw;
@@ -3761,11 +3685,14 @@ main > .tit {
   padding: 3.88889vw 3.61111vw;
   color: #999;
   background-color: #F4F5F7;
-  width: 23.61111vw;
+  width: 28%;
   height: 100%;
   font-weight: 700;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 .book .book_select_list > div div {
@@ -3775,67 +3702,86 @@ main > .tit {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  padding: 3.61111vw;
+  width: 72%;
+  padding: 2.77778vw 5.55556vw;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
 
-.book .book_select_list .add_option {
-  border-bottom: 1px solid #CACACA;
-}
-
-.book .book_select_list .add_option .btn_delete {
-  width: 5.55556vw;
-  height: 5.55556vw;
-  background: url(../img/btn_delete.svg) no-repeat 0 0/cover;
-}
-
-.book .book_select_list + .total_price {
-  margin: 0 -4.16667vw;
-  border-bottom: 1px solid #CACACA;
-  background-color: #F4F5F7;
-  font-size: 4.44444vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.book .book_select_list + .total_price b {
-  padding: 3.88889vw 3.61111vw;
-  color: #999;
-  background-color: #F4F5F7;
-  width: 23.61111vw;
-  height: 100%;
-  font-weight: 700;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-.book .book_select_list + .total_price div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  padding: 3.61111vw;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  color: #EA5504;
-  font-weight: 700;
+.book .book_select_list > div div > input {
+  width: 50%;
+  text-align: right;
+  border: 0 solid #000;
+  margin-right: 0.27778vw;
+  font-weight: 500;
+  color: #333;
   font-size: 5vw;
+}
+
+.book .book_select_list > div div > input + span {
+  font-weight: 500;
+  color: #333;
+  font-size: 5vw;
+}
+
+.book .book_select_list > div div .input_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.book .book_select_list > div div .input_box input {
+  width: 12.77778vw;
+  height: 9.16667vw;
+  border: 1px solid #c4c4c4;
+  text-align: center;
+  font-size: 4.44444vw;
+  margin: 0;
+  letter-spacing: -0.05em;
+}
+
+.book .book_select_list > div div .input_box button {
+  display: block;
+  width: 9.16667vw;
+  height: 9.16667vw;
+}
+
+.book .book_select_list > div div .input_box button.btn_minus {
+  background: #fff url(../img/btn_minus.svg) no-repeat 0 0/cover;
+}
+
+.book .book_select_list > div div .input_box button.btn_plus {
+  background: #777 url(../img/btn_plus.svg) no-repeat 0 0/cover;
+}
+
+.book .book_select_list .option_list {
+  border-bottom: 1px solid #CACACA;
+}
+
+.book .book_select_list .total_price {
+  border-bottom: 1px solid #CACACA;
   background-color: #fff;
+}
+
+.book .book_select_list .total_price div {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.book .book_select_list .total_price div input {
+  color: #EA5504;
+}
+
+.book .book_select_list .total_price div input + span {
+  color: #EA5504;
 }
 
 .book .applicant_info .applicant_form {
@@ -4209,90 +4155,60 @@ main > .tit {
     margin-left: 5px;
     letter-spacing: -0.03em;
   }
-  .book .book_select_box {
-    margin: 0;
-    padding: 18px 40px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .book .book_select_box .select_info_wrap {
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
-  }
-  .book .book_select_box .select_info_wrap select {
-    width: 114px;
-    background: #fff url(../img/ico_select.svg) no-repeat right 13px top 50%/10px 16px;
-    height: 40px;
-    padding-left: 10px;
-    font-size: 22px;
-    margin-right: 15px;
-  }
-  .book .book_select_box .select_info_wrap .input_box {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 138px;
-    margin-right: 15px;
-  }
-  .book .book_select_box .select_info_wrap .input_box input {
-    width: 60px;
-    height: 40px;
-    font-size: 20px;
-  }
-  .book .book_select_box .select_info_wrap .input_box button {
-    display: block;
-    -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
-    width: 40px;
-  }
-  .book .book_select_box .select_info_wrap > button {
-    width: 97px;
-    height: 40px;
-    font-size: 20px;
-  }
-  .book .book_select_box .tit_box {
-    margin: 0;
-  }
   .book .book_select_list {
     margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .book .book_select_list > div {
+    width: 50%;
     font-size: 22px;
   }
   .book .book_select_list > div b {
-    padding: 17px 40px;
-    width: 160px;
+    padding: 17px 0 17px 40px;
+    width: 174px;
     letter-spacing: -0.03em;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
   }
   .book .book_select_list > div div {
+    width: 340px;
     padding: 15px 30px;
   }
-  .book .book_select_list .add_option div {
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+  .book .book_select_list > div div > input {
+    width: 50%;
+    margin-right: 0;
+    font-size: 22px;
   }
-  .book .book_select_list .add_option .btn_delete {
-    width: 25px;
-    height: 25px;
-    margin-left: 10px;
+  .book .book_select_list > div div > input + span {
+    font-size: 22px;
   }
-  .book .book_select_list + .total_price {
+  .book .book_select_list > div div .input_box {
     margin: 0;
   }
-  .book .book_select_list + .total_price b {
+  .book .book_select_list > div div .input_box input {
+    width: 58px;
+    height: 40px;
+    font-size: 20px;
+  }
+  .book .book_select_list > div div .input_box button {
+    width: 40px;
+    height: 40px;
+  }
+  .book .book_select_list .total_price {
+    margin: 0;
+  }
+  .book .book_select_list .total_price b {
     font-size: 22px;
-    padding: 17px 40px;
+    padding: 17px 0 17px 40px;
     width: 160px;
     letter-spacing: -0.03em;
   }
-  .book .book_select_list + .total_price div {
+  .book .book_select_list .total_price div {
     font-size: 26px;
     padding: 15px 30px;
   }
