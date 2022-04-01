@@ -3120,6 +3120,178 @@ main > .tit {
   top: 50%;
 }
 
+.member .privacy {
+  margin-top: 8.33333vw;
+  letter-spacing: -0.05em;
+}
+
+.member .privacy h2 {
+  text-align: left;
+  color: #000;
+  font-size: 4.44444vw;
+  margin-top: 4.44444vw;
+  margin-bottom: 3.88889vw;
+  font-weight: 500;
+  text-indent: -4.16667vw;
+  margin-left: 4.16667vw;
+  line-height: 1.2;
+}
+
+.member .privacy h2:first-child {
+  margin-top: 0;
+}
+
+.member .privacy h3 {
+  font-size: 4.16667vw;
+  color: #555;
+  line-height: 1.5;
+  margin-bottom: 1.38889vw;
+}
+
+.member .privacy p {
+  font-size: 3.88889vw;
+  color: #666;
+  line-height: 1.5;
+}
+
+.member .privacy p.t1 {
+  padding-left: 2.77778vw;
+  position: relative;
+}
+
+.member .privacy p.t1::before {
+  content: '-';
+  position: absolute;
+  left: 0.55556vw;
+  top: 0;
+}
+
+.member .privacy .num_list {
+  font-size: 3.88889vw;
+  color: #666;
+  line-height: 1.5;
+  counter-reset: num-counter;
+}
+
+.member .privacy .num_list > li {
+  position: relative;
+  padding-left: 3.61111vw;
+  counter-increment: num-counter;
+}
+
+.member .privacy .num_list > li::before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: counter(num-counter) ") ";
+}
+
+.member .privacy .num_list.type2 > li::before {
+  content: counter(num-counter) ". ";
+}
+
+.member .privacy .kor_list {
+  font-size: 3.33333vw;
+  color: #666;
+  line-height: 1.5;
+  margin-top: 1.38889vw;
+  margin-bottom: 2.77778vw;
+  padding-left: 4.16667vw;
+}
+
+.member .privacy .kor_list li {
+  position: relative;
+  padding-left: 0;
+}
+
+.member .privacy .kor_list li::before {
+  display: none;
+}
+
+.member .privacy .kor_list li:nth-child(1)::marker {
+  content: '가. ';
+}
+
+.member .privacy .kor_list li:nth-child(2)::marker {
+  content: '나. ';
+}
+
+.member .privacy .kor_list li:nth-child(3)::marker {
+  content: '다. ';
+}
+
+.member .privacy .kor_list li:nth-child(4)::marker {
+  content: '라. ';
+}
+
+.member .privacy .kor_list li:nth-child(5)::marker {
+  content: '마. ';
+}
+
+.member .privacy .kor_list li:nth-child(6)::marker {
+  content: '바. ';
+}
+
+.member .privacy .kor_list li:nth-child(7)::marker {
+  content: '사. ';
+}
+
+.member .privacy .kor_list li:nth-child(8)::marker {
+  content: '아. ';
+}
+
+.member .privacy .kor_list li:nth-child(9)::marker {
+  content: '자. ';
+}
+
+.member .privacy .kor_list li:nth-child(10)::marker {
+  content: '차. ';
+}
+
+.member .privacy .kor_list li:nth-child(11)::marker {
+  content: '카. ';
+}
+
+.member .privacy .kor_list li:nth-child(12)::marker {
+  content: '타. ';
+}
+
+.member .privacy .kor_list li:nth-child(13)::marker {
+  content: '파. ';
+}
+
+.member .privacy .kor_list li:nth-child(14)::marker {
+  content: '하. ';
+}
+
+.member .privacy .dot_list {
+  font-size: 3.88889vw;
+  color: #666;
+  line-height: 1.5;
+}
+
+.member .privacy .dot_list li {
+  position: relative;
+  padding-left: 3.33333vw;
+}
+
+.member .privacy .dot_list li::before {
+  position: absolute;
+  left: 0;
+  top: -1.38889vw;
+  font-size: 5.55556vw;
+  content: '·';
+}
+
+.member .privacy .mb {
+  margin-bottom: 5.55556vw;
+}
+
+.member .privacy a {
+  text-decoration: underline;
+  color: #666;
+}
+
 @media (min-width: 1030px) {
   .member {
     width: 1030px;
@@ -3216,6 +3388,56 @@ main > .tit {
     width: 3px;
     height: 3px;
     left: 3px;
+  }
+  .member .privacy {
+    margin-top: 60px;
+  }
+  .member .privacy h2 {
+    font-size: 24px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+  .member .privacy h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .member .privacy p {
+    font-size: 18px;
+  }
+  .member .privacy p.t1 {
+    padding-left: 10px;
+  }
+  .member .privacy p.t1::before {
+    left: 2px;
+    top: -1px;
+  }
+  .member .privacy .num_list {
+    font-size: 18px;
+  }
+  .member .privacy .num_list li {
+    padding-left: 20px;
+  }
+  .member .privacy .kor_list {
+    font-size: 18px;
+    margin-top: 5px;
+    padding-left: 22px;
+    margin-bottom: 20px;
+  }
+  .member .privacy .kor_list li {
+    padding-left: 0;
+  }
+  .member .privacy .dot_list {
+    font-size: 18px;
+  }
+  .member .privacy .dot_list li {
+    padding-left: 20px;
+  }
+  .member .privacy .dot_list li::before {
+    top: -11px;
+    font-size: 30px;
+  }
+  .member .privacy .mb {
+    margin-bottom: 20px;
   }
 }
 

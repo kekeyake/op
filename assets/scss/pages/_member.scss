@@ -147,6 +147,123 @@
             top:50%;
         }
     }
+
+    .privacy {
+        margin-top: vw(30);
+        letter-spacing: -0.05em;
+
+        h2 {
+            text-align: left;
+            color:#000;
+            font-size: vw(16);
+            margin-top: vw(16);
+            margin-bottom: vw(14);
+            font-weight: 500;
+            text-indent: vw(-15);
+            margin-left: vw(15);
+            line-height: 1.2;
+            &:first-child {
+                margin-top: 0;
+            }
+        }
+        h3 {
+            font-size: vw(15);
+            color:#555;
+            line-height: 1.5;
+            margin-bottom: vw(5);
+        }
+        p {
+            font-size: vw(14);
+            color:#666;
+            line-height: 1.5;
+            &.t1 {
+                padding-left: vw(10);
+                position: relative;
+                &::before {
+                    content: '-';
+                    position: absolute;
+                    left: vw(2);
+                    top:0;
+                }
+            }
+        }
+        .num_list {
+            font-size: vw(14);
+            color:#666;
+            line-height: 1.5;
+            counter-reset: num-counter;
+            > li {
+                position: relative;
+                padding-left: vw(13);
+                counter-increment: num-counter;
+                &::before {
+                    position: absolute;
+                    left: 0;
+                    top:0;
+                    content: counter(num-counter) ") ";
+                }
+            }
+            &.type2 {
+                > li {
+                    &::before {
+                        content: counter(num-counter) ". ";
+                    }
+                }
+            }
+        }
+        .kor_list {
+            font-size: vw(12);
+            color:#666;
+            line-height: 1.5;
+            margin-top: vw(5);
+            margin-bottom: vw(10);
+            padding-left: vw(15);
+            li {
+                position: relative;
+                padding-left: 0;
+                &::before {
+                    display: none;
+                }                             
+            }
+            li:nth-child(1)::marker {content: '가. ';}
+            li:nth-child(2)::marker {content: '나. ';}
+            li:nth-child(3)::marker {content: '다. ';}
+            li:nth-child(4)::marker {content: '라. ';}
+            li:nth-child(5)::marker {content: '마. ';}
+            li:nth-child(6)::marker {content: '바. ';}
+            li:nth-child(7)::marker {content: '사. ';}
+            li:nth-child(8)::marker {content: '아. ';}
+            li:nth-child(9)::marker {content: '자. ';}
+            li:nth-child(10)::marker {content: '차. ';}
+            li:nth-child(11)::marker {content: '카. ';}
+            li:nth-child(12)::marker {content: '타. ';}
+            li:nth-child(13)::marker {content: '파. ';}
+            li:nth-child(14)::marker {content: '하. ';}
+        }
+        .dot_list {
+            font-size: vw(14);
+            color:#666;
+            line-height: 1.5;
+            li {
+                position: relative;
+                padding-left: vw(12);
+                &::before {
+                    position: absolute;
+                    left: 0;
+                    top:vw(-5);
+                    font-size: vw(20);
+                    content: '·';
+                }
+            }
+        }
+        .mb {
+            margin-bottom: vw(20);
+        }
+        a {
+            text-decoration: underline;
+            color:#666;
+        }
+    }
 }
 @include desktop {
     .member {
@@ -234,6 +351,59 @@
                 width: 3px;
                 height: 3px;
                 left: 3px;
+            }
+        }
+
+        .privacy {
+            margin-top: 60px;
+            h2 {
+                font-size: 24px;
+                margin-top: 40px;
+                margin-bottom: 20px;
+            }
+            h3 {
+                font-size: 20px;
+                margin-bottom: 10px;
+            }
+            
+            p {
+                font-size: 18px;
+                &.t1 {
+                    padding-left: 10px;
+                    &::before {
+                        left: 2px;
+                        top:-1px;
+                    }
+                }
+            }
+            .num_list {
+                font-size: 18px;
+                li {
+                    padding-left: 20px;
+                }
+            }
+            .kor_list {
+                font-size: 18px;
+                margin-top: 5px;
+                padding-left: 22px;
+                margin-bottom: 20px;
+                li {
+                    padding-left: 0;
+                }
+
+            }
+            .dot_list {
+                font-size: 18px;                
+                li {
+                    padding-left: 20px;
+                    &::before {
+                        top:-11px;
+                        font-size: 30px;
+                    }
+                }
+            }
+            .mb {
+                margin-bottom: 20px;
             }
         }
     }
