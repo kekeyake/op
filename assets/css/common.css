@@ -6801,7 +6801,6 @@ main > .tit {
 
 .customer .btn_wrap .btn.disabled {
   opacity: .5;
-  cursor: none;
 }
 
 .customer .faq_wrap {
