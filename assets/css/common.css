@@ -5761,6 +5761,10 @@ main > .tit {
 .result.form .book_order_list b {
   font-weight: 500;
   color: #666;
+  -webkit-box-flex: 0;
+      -ms-flex: 0;
+          flex: 0;
+  min-width: 25vw;
 }
 
 .result.form .description_wrap {

@@ -18,7 +18,7 @@
             pointBorderWidth:1,
             pointBackgroundColor:'rgba(234, 85, 4, 1)',
             pointBorderColor:'rgba(234, 85, 4, 1)',
-            data: [rval1, rval2, rval3, rval4, rval5] // 총점 5로 환산해주세요
+            data: [1,2,3,4,5] // 총점 5로 환산해주세요
         }]
     }
     
@@ -61,7 +61,8 @@
         });
     }
 
-
+    var data1 = [15,18,12,11,23,79];
+    var data2 = [14.2,16,1,13.2,11.7,17.2,72.4];
     var barChartData = null;
     barChartData = {
         labels: ['어휘', ['사실적','이해'], ['추론적','이해'], ['비판적','이해'], ['통합','사고'],'합계'], 
