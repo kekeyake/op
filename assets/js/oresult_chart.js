@@ -1,9 +1,13 @@
     var is_pos = 'top';
+    var font_size;
 
     if (navigator.platform) {
         if (filter.indexOf(navigator.platform.toLowerCase()) < 0) { //mobile
 			is_pos = 'bottom';
-		}
+            font_size = 12;
+		} else {
+            font_size = 18;
+        }        
 	}
 	
 	// radar style chart
@@ -53,7 +57,7 @@
                         fontSize:0,
                     },
                     pointLabels: {
-                        fontSize:12,
+                        fontSize:font_size,
                         fontColor:'rgba(102, 102, 102, 1)',
                         lineHeight:1
                     }
@@ -91,22 +95,29 @@
             type: 'bar',
             // 옆으로 누운 bar 차트를 쓰실 경우 바꾸시면 됩니다.
             //type: 'horizontalBar'
-            data: barChartData,
+            data: barChartData,            
             options: {
                 // responsive, maintainAspectRatio의 설정이 아래와 같이 해야
                 // 브라우저의 크기를 변경해도 canvas를 감싸고 있는
                 // div의 크기에 따라 차트가 깨지지 않고 이쁘게 출력 됩니다. 
                 responsive: true,   //auto size : true
                 maintainAspectRatio: false,
-                scaleShowLabels: false,
+                scaleShowLabels: false,                
                 legend: {
                     position: is_pos,
+                    
                     labels:{
                         boxWidth:15,
-                        boxHeight:20
+                        boxHeight:20,
+                        fontSize:font_size,
                     }
                 },
-                scales: {                    
+                scales: {     
+                    xAxes: [{
+                        ticks: {
+                            fontSize:font_size,
+                        }                        
+                    }],               
                     yAxes: [{                        
                         labels:{
                             display:false

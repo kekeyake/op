@@ -6321,6 +6321,7 @@ main > .tit {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    border-bottom: 1px solid #999;
   }
   .result.form .book_order_list li > div {
     padding: 0 30px;
