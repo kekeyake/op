@@ -1745,6 +1745,70 @@ main > .tit {
   font-size: 5vw;
 }
 
+.survey_wrap {
+  margin: 0 -4.16667vw;
+  border-top: 1px solid #CACACA;
+  border-bottom: 1px solid #CACACA;
+  background-color: #F4F5F7;
+  padding: 5.55556vw;
+}
+
+.survey_wrap p {
+  font-size: 4.44444vw;
+  font-weight: 500;
+  color: #666;
+  letter-spacing: -0.03em;
+}
+
+.survey_wrap div {
+  margin-top: 2.77778vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.survey_wrap div button {
+  border: 2px solid #999999;
+  background-color: #fff;
+  height: 9.16667vw;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0 2.22222vw;
+  font-size: 4.44444vw;
+  font-weight: 500;
+  letter-spacing: -0.03em;
+  margin-top: 2.08333vw;
+  color: #777;
+}
+
+.survey_wrap div button:nth-child(-n + 4) {
+  margin-top: 0;
+}
+
+.survey_wrap div button.active {
+  border-color: #EA5504;
+  color: #EA5504;
+}
+
+.survey_wrap div input {
+  width: 100%;
+  border: 2px solid #999;
+  margin-top: 2.08333vw;
+  padding: 0 2.77778vw;
+  height: 9.16667vw;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 4.44444vw;
+  font-weight: 500;
+  letter-spacing: -0.03em;
+  color: #777;
+}
+
 .layer_pop {
   z-index: 1000;
   opacity: 0;
@@ -2313,6 +2377,30 @@ main > .tit {
   }
   .book_order_list li strong {
     font-size: 26px;
+  }
+  .survey_wrap {
+    margin: 0;
+    padding: 30px 35px;
+  }
+  .survey_wrap p {
+    font-size: 22px;
+  }
+  .survey_wrap div {
+    margin-top: 20px;
+  }
+  .survey_wrap div button {
+    font-weight: 400;
+    height: 40px;
+    padding: 0 18px;
+    font-size: 22px;
+    margin-top: 0;
+  }
+  .survey_wrap div input {
+    height: 40px;
+    padding: 0 22px;
+    font-size: 22px;
+    margin-top: 20px;
+    font-weight: 400;
   }
   .layer_pop {
     position: fixed;
@@ -4671,70 +4759,6 @@ main > .tit {
           transform: translateY(-1px);
 }
 
-.app .survey_wrap {
-  margin: 0 -4.16667vw;
-  border-top: 1px solid #CACACA;
-  border-bottom: 1px solid #CACACA;
-  background-color: #F4F5F7;
-  padding: 5.55556vw;
-}
-
-.app .survey_wrap p {
-  font-size: 4.44444vw;
-  font-weight: 500;
-  color: #666;
-  letter-spacing: -0.03em;
-}
-
-.app .survey_wrap div {
-  margin-top: 2.77778vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.app .survey_wrap div button {
-  border: 2px solid #999999;
-  background-color: #fff;
-  height: 9.16667vw;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  padding: 0 2.22222vw;
-  font-size: 4.44444vw;
-  font-weight: 500;
-  letter-spacing: -0.03em;
-  margin-top: 2.08333vw;
-  color: #777;
-}
-
-.app .survey_wrap div button:nth-child(-n + 4) {
-  margin-top: 0;
-}
-
-.app .survey_wrap div button.active {
-  border-color: #EA5504;
-  color: #EA5504;
-}
-
-.app .survey_wrap div input {
-  width: 100%;
-  border: 2px solid #999;
-  margin-top: 2.08333vw;
-  padding: 0 2.77778vw;
-  height: 9.16667vw;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  font-size: 4.44444vw;
-  font-weight: 500;
-  letter-spacing: -0.03em;
-  color: #777;
-}
-
 .app .tbl {
   margin: 0 -4.16667vw;
 }
@@ -5068,30 +5092,6 @@ main > .tit {
         -ms-flex: 0 300px;
             flex: 0 300px;
     width: 300px;
-  }
-  .app .survey_wrap {
-    margin: 0;
-    padding: 30px 35px;
-  }
-  .app .survey_wrap p {
-    font-size: 22px;
-  }
-  .app .survey_wrap div {
-    margin-top: 20px;
-  }
-  .app .survey_wrap div button {
-    font-weight: 400;
-    height: 40px;
-    padding: 0 18px;
-    font-size: 22px;
-    margin-top: 0;
-  }
-  .app .survey_wrap div input {
-    height: 40px;
-    padding: 0 22px;
-    font-size: 22px;
-    margin-top: 20px;
-    font-weight: 400;
   }
   .app .tbl {
     margin: 0;
@@ -6138,6 +6138,10 @@ main > .tit {
 .result .bar_chart {
   margin-top: 2.77778vw;
   height: 69.44444vw;
+}
+
+.result canvas {
+  width: 100%;
 }
 
 .form_tit {

@@ -248,57 +248,7 @@
                 transform: translateY(-1px);
             }
         }
-    }
-    .survey_wrap {
-        margin:0 vw(-15);
-        border-top: 1px solid #CACACA;
-        border-bottom: 1px solid #CACACA;
-        background-color: #F4F5F7;
-        padding:vw(20);
-        p {
-            font-size: vw(16);
-            font-weight: 500;
-            color:#666;
-            letter-spacing: -0.03em;
-        }
-        div {
-            margin-top: vw(10);
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            button {
-                border: 2px solid #999999;
-                background-color: #fff;
-                height: vw(33);
-                box-sizing: border-box;
-                padding:0 vw(8);
-                font-size: vw(16);
-                font-weight: 500;
-                letter-spacing: -0.03em;
-                margin-top: vw(7.5);
-                color:#777;
-                &:nth-child(-n + 4) {
-                    margin-top: 0;
-                }
-                &.active {
-                    border-color: #EA5504;
-                    color:#EA5504;
-                }
-            }
-            input {
-                width: 100%;
-                border: 2px solid #999;
-                margin-top: vw(7.5);
-                padding:0 vw(10);
-                height: vw(33);
-                box-sizing: border-box;
-                font-size: vw(16);
-                font-weight: 500;
-                letter-spacing: -0.03em;
-                color:#777;
-            }
-        }
-    }
+    }    
     .tbl {
         margin:0 vw(-15);
         table {
@@ -589,30 +539,7 @@
                 }
             }
         }
-        .survey_wrap {
-            margin:0;
-            padding:30px 35px;;
-            p {
-                font-size: 22px;
-            }
-            div {
-                margin-top: 20px;
-                button {
-                    font-weight: 400;
-                    height: 40px;
-                    padding:0 18px;
-                    font-size: 22px;
-                    margin-top: 0;
-                }
-                input {
-                    height: 40px;
-                    padding:0 22px;
-                    font-size: 22px;
-                    margin-top: 20px;
-                    font-weight: 400;
-                }
-            }
-        }
+        
         .tbl {
             margin:0;
             table {
