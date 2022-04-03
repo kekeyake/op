@@ -17,9 +17,9 @@
             backgroundColor:'rgba(234, 85, 4, 0.15)',
             borderColor:'rgba(234, 85, 4, 1)',
             fill: true,
-            radius:2,
-            pointRadius:4,
-            pointBorderWidth:1,
+            // radius:2,
+            // pointRadius:4,
+            // pointBorderWidth:1,
             pointBackgroundColor:'rgba(234, 85, 4, 1)',
             pointBorderColor:'rgba(234, 85, 4, 1)',
             data: [1,2,3,4,5] // 총점 5로 환산해주세요
@@ -55,6 +55,7 @@
                         max:5,
                         stepSize:1,
                         fontSize:0,
+                        display: false,
                     },
                     pointLabels: {
                         fontSize:font_size,

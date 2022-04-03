@@ -6142,7 +6142,6 @@ main > .tit {
 
 .result canvas {
   width: 100%;
-  border: 1px solid red;
 }
 
 .form_tit {
@@ -6173,7 +6172,7 @@ main > .tit {
   display: -ms-flexbox;
   display: flex;
   height: 14.44444vw;
-  margin: 0 -4.16667vw;
+  margin: 0;
   text-align: center;
   background: rgba(0, 0, 0, 0.6);
 }

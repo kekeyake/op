@@ -377,8 +377,7 @@
         height: vw(250);
     }
     canvas {
-        width: 100%;
-        border: 1px solid red;
+        width: 100%;        
     }
 }
 
@@ -399,7 +398,7 @@
 .btn_save {
     display: flex;
     height: vw(52);
-    margin:0 vw(-15);
+    margin:0;
     text-align: center;
     background: rgba(0, 0, 0, 0.6);
     span {
