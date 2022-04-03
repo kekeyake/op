@@ -28,6 +28,7 @@
             type:'radar',
             data:radarChartData,        
             options:{
+                scaleShowLabels: false,
                 responsive:true,
                 // maintainAspectRatio: false,
                 legend: {
@@ -97,6 +98,7 @@
                 // div의 크기에 따라 차트가 깨지지 않고 이쁘게 출력 됩니다. 
                 responsive: true,   //auto size : true
                 maintainAspectRatio: false,
+                scaleShowLabels: false,
                 legend: {
                     position: is_pos,
                     labels:{
