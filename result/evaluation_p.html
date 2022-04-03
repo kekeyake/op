@@ -25,72 +25,52 @@
             <section class="result form">
                 <div class="cont_wrap">
                     <h2>응시자 정보</h2>
-                    <div class="book_order_list half">
-                        <ul>
-                            <li>
-                                <b>응시번호</b>
-                                <div>
-                                    <span>2139-4-0186</span>
-                                </div>
-                            </li>
-                            <li>
-                                <b>응시자명</b>
-                                <div>
-                                    <span>박준서 (2011.02.28)</span>
-                                </div>
-                            </li>
-                            <li>
-                                <b>응시부문</b>
-                                <div>
-                                    <span>초등 4학년부</span>
-                                </div>
-                            </li>
-                            <li>
-                                <b>학교명</b>
-                                <div>
-                                    <span>동백초등학교</span>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
+                    <table class="tbl_p">                        
+                        <tbody>
+                            <tr>
+                                <th>응시번호</th>
+                                <td>2139-4-0186</td>
+                                <th>응시부문</th>
+                                <td>초등 4학년부</td>
+                            </tr>
+                            <tr>
+                                <th>응시자명</th>
+                                <td>박준서 (생년월일 2011.02.28)</td>
+                                <th>학교명</th>
+                                <td>서울대학교사범대학부설초등학교</td>
+                            </tr>
+                        </tbody>
+                    </table>                    
                 </div>
                 <div class="cont_wrap">
                     <h2>상장·부상 배부처</h2>
-                    <div class="book_order_list">
-                        <ul>
-                            <li>
-                                <b>배부처</b>
-                                <div>
-                                    <span>한우리 영등포지부 (02-1234-4567)</span>
-                                </div>
-                            </li>
-                            <li>
-                                <b>주소</b>
-                                <div>
-                                    <span>서울시 영등포구 당산로27길 16 한우리빌딩 2층</span>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
+                    <table class="tbl_p">
+                        <tbody>
+                            <tr>
+                                <th>배부처</th>
+                                <td>한우리 영등포지부 (02-1234-4567)</td>
+                            </tr>
+                            <tr>
+                                <th>주소</th>
+                                <td>서울시 영등포구 당산로27길 16 한우리빌딩 2층</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
                 <div class="cont_wrap">
                     <h2>종합 평가</h2>
-                    <div class="book_order_list">
-                        <ul>
-                            <li>
-                                <b>입상</b>
-                                <div>
-                                    <strong>은상</strong>
-                                </div>
-                            </li>
-                            <li>
-                                <b>백분위군</b>
-                                <div>
-                                    <span>나군(상위 11~20%)</span>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>                    
+                    <table class="tbl_p">
+                        <tbody>
+                            <tr>
+                                <th>입상</th>
+                                <td><b>은상</b></td>
+                            </tr>
+                            <tr>
+                                <th>백분위군</th>
+                                <td>나군(상위 11~20%)</td>
+                            </tr>
+                        </tbody>
+                    </table>                
                 </div>
                 <div class="cont_wrap">
                     <h2>영역별 평가</h2>
@@ -107,15 +87,7 @@
                     </div>
                                         
                     <div class="assessment_tbl">
-                        <table class="">
-                            <colgroup>
-                                <col style="width: auto">
-                                <col style="width: 150px;">
-                                <col style="width: 150px;">
-                                <col style="width: 150px;">
-                                <col style="width: 150px;">
-                                <col style="width: 150px;">
-                            </colgroup>
+                        <table class="">                            
                             <thead>
                                 <tr>
                                     <th>영역</th>
@@ -146,9 +118,7 @@
                                     <td class="point">18</td>
                                     <td class="point">18</td>
                                 </tr>                               
-                            </tbody>
-                            <tfoot>
-                                <tr>
+                                <tr class="tfoot">
                                     <th>합계</th>
                                     <td>14.2</td>
                                     <td>14.2</td>
@@ -157,7 +127,7 @@
                                     <td>14.2</td>
                                     <td>14.2</td>
                                 </tr>
-                            </tfoot>
+                            </tbody>
                         </table>
                     </div>
                     
@@ -328,8 +298,6 @@
         </div>
     </main>
 </div>
-
-<button class="btn __top"></button>
 
 <script defer src="../assets/js/jquery-3.4.1.min.js"></script>
 <script defer src="../assets/libs/swiper.min.js"></script>

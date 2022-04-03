@@ -5898,8 +5898,8 @@ main > .tit {
 }
 
 .result.form {
-  padding-bottom: 40px;
   margin-bottom: 0;
+  padding-bottom: 40px;
   letter-spacing: -0.03em;
 }
 
@@ -5909,9 +5909,15 @@ main > .tit {
 
 .result.form .book_order_list {
   border-top-color: #999;
+  color: #000;
 }
 
 .result.form .book_order_list b {
+  font-weight: 500;
+  color: #666;
+  -webkit-box-flex: 0;
+      -ms-flex: 0;
+          flex: 0;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -5991,16 +5997,37 @@ main > .tit {
 }
 
 .result.form .assessment_tbl table {
+  border-top: 1px solid #cacaca;
+  color: #666;
+  font-weight: 500;
   font-size: 20px;
 }
 
 .result.form .assessment_tbl table th,
 .result.form .assessment_tbl table td {
   padding: 15px 0;
+  border-bottom: 1px solid #cacaca;
+  border-left: 1px solid #cacaca;
+  text-align: center;
 }
 
-.result.form .assessment_tbl table tfoot td {
+.result.form .assessment_tbl table th:first-child,
+.result.form .assessment_tbl table td:first-child {
+  border-left: 0 solid #000;
+}
+
+.result.form .assessment_tbl table th {
+  color: #333;
+  background-color: #F4F5F7;
+}
+
+.result.form .assessment_tbl table .tfoot td {
+  background-color: #F4F5F7;
   color: #666;
+}
+
+.result.form .assessment_tbl table .point {
+  color: #EA5504;
 }
 
 .result.form .assessment_list {
@@ -6008,16 +6035,21 @@ main > .tit {
 }
 
 .result.form .assessment_list h3 {
+  font-weight: 500;
+  color: #000;
   font-size: 20px;
-  padding-left: 20px;
+  padding-left: 25px;
   margin: 30px 0 12px;
+  position: relative;
 }
 
 .result.form .assessment_list h3::before {
-  content: '∙';
+  content: '\00B7';
   font-size: 30px;
   left: 8px;
-  top: -10px;
+  top: -7px;
+  font-weight: 700;
+  position: absolute;
 }
 
 .result.form .assessment_list p {
@@ -6045,17 +6077,29 @@ main > .tit {
   border-left: 1px solid #999;
 }
 
+.result.form .item_evaluation th:first-child {
+  border-left: 0 solid #000;
+}
+
 .result.form .item_evaluation td {
+  text-align: center;
   font-size: 18px;
   color: #000;
+}
+
+.result.form .item_evaluation td.point {
+  color: #666;
 }
 
 .result.form .item_evaluation td.judgment {
   font-size: 24px;
   line-height: 1;
+  font-weight: 500;
+  color: #EA5504;
 }
 
 .result.form .item_evaluation tbody td {
+  background-color: #F4F5F7;
   vertical-align: top;
   background-color: #fff;
   padding: 10px 0;
@@ -6069,6 +6113,10 @@ main > .tit {
 
 .result.form .item_evaluation tbody td:nth-child(even) {
   background-color: #F4F5F7;
+}
+
+.result.form .item_evaluation tbody td.point {
+  color: #666;
 }
 
 .result.form .item_evaluation tbody td.commentary {
@@ -6104,6 +6152,7 @@ main > .tit {
 
 .result.form .percentile_info {
   margin-top: 20px;
+  border-top: 1px solid #cacaca;
 }
 
 .result.form .percentile_info th,
@@ -6111,6 +6160,14 @@ main > .tit {
   padding: 10px 0;
   color: #666;
   font-size: 21px;
+  border-bottom: 1px solid #cacaca;
+  border-left: 1px solid #cacaca;
+  text-align: center;
+}
+
+.result.form .percentile_info th:first-child,
+.result.form .percentile_info td:first-child {
+  border-left: 0 solid #000;
 }
 
 .result.form .percentile_info th {
@@ -6240,7 +6297,7 @@ main > .tit {
   .result .btn._description .closed {
     font-size: 3.61111vw;
     padding: 0 0 0 2.77778vw;
-    background: url(../img/ico_poly_up.svg) no-repeat 0 60%/2.22222vw 1.66667vw;
+    background: url(../img/ico_poly_up.svg) no-repeat 0 40%/2.22222vw 1.66667vw;
   }
   .result .award_list li {
     width: 100%;
@@ -6310,18 +6367,118 @@ main > .tit {
   }
   .result.form {
     margin-bottom: 0;
-    letter-spacing: -0.03em;
+  }
+  .result.form h2 {
+    padding-left: 0;
   }
   .result.form .book_order_list {
-    color: #000;
+    font-size: 4.44444vw;
   }
   .result.form .book_order_list b {
-    font-weight: 500;
-    color: #666;
+    width: auto;
+    min-width: 25vw;
     -webkit-box-flex: 0;
         -ms-flex: 0;
             flex: 0;
-    min-width: 25vw;
+    padding: 0 0 0 3.88889vw;
+    height: 12.22222vw;
+  }
+  .result.form .book_order_list li > div {
+    padding: 0 3.88889vw;
+    height: 12.22222vw;
+  }
+  .result.form .book_order_list li > div strong {
+    font-size: 4.44444vw;
+  }
+  .result.form .chart_wrap {
+    padding: 0 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .result.form .chart_wrap .radar_chart {
+    padding: 0;
+    margin-top: 0;
+    width: 400px;
+  }
+  .result.form .chart_wrap .bar_chart {
+    margin-top: 0;
+    width: 450px;
+    height: 400px;
+  }
+  .result.form .assessment_tbl {
+    margin: 9.72222vw -4.16667vw 0;
+  }
+  .result.form .assessment_tbl table {
+    font-size: 4.16667vw;
+  }
+  .result.form .assessment_tbl table th,
+  .result.form .assessment_tbl table td {
+    padding: 1.38889vw 0;
+  }
+  .result.form .assessment_tbl table .tfoot td {
+    color: #333;
+  }
+  .result.form .assessment_list {
+    padding-top: 2.77778vw;
+  }
+  .result.form .assessment_list h3 {
+    font-size: 4.44444vw;
+    padding-left: 4.16667vw;
+    margin: 4.44444vw 0 2.22222vw;
+  }
+  .result.form .assessment_list h3::before {
+    font-size: 6.94444vw;
+    left: 0;
+    top: -1.94444vw;
+  }
+  .result.form .assessment_list p {
+    margin: 0 -4.16667vw;
+    padding: 4.16667vw;
+    font-size: 4.16667vw;
+    background-color: #F4F5F7;
+    line-height: 1.4;
+    color: #666;
+  }
+  .result.form .item_evaluation {
+    margin: 0 -4.16667vw;
+  }
+  .result.form .item_evaluation th {
+    padding: 1.38889vw 0;
+    font-size: 4.44444vw;
+    font-weight: 700;
+    background-color: #979797;
+    color: #fff;
+    border-top: 1px solid #cacaca;
+    border-left: 1px solid #cacaca;
+    border-bottom: 0 solid #000;
+  }
+  .result.form .item_evaluation td {
+    font-size: 4.44444vw;
+    color: #333;
+  }
+  .result.form .item_evaluation td.point {
+    color: #666;
+  }
+  .result.form .item_evaluation td.judgment {
+    font-size: 5vw;
+  }
+  .result.form .item_evaluation tbody td {
+    padding: 1.38889vw 0;
+    border-left: 1px solid #cacaca;
+    border-bottom: 1px solid #cacaca;
+  }
+  .result.form .item_evaluation tbody td.commentary {
+    padding: 4.16667vw;
+    font-size: 4.16667vw;
+    color: #333;
+  }
+  .result.form .item_evaluation tbody td.commentary .t2 {
+    margin-top: 2.77778vw;
+    color: #666;
   }
   .result.form .description_wrap {
     display: none;
@@ -6350,24 +6507,11 @@ main > .tit {
   }
   .result.form .percentile_info {
     margin-top: 2.77778vw;
-    border-top: 1px solid #cacaca;
   }
   .result.form .percentile_info th,
   .result.form .percentile_info td {
     padding: 1.38889vw 0;
-    color: #666;
     font-size: 3.88889vw;
-    border-bottom: 1px solid #cacaca;
-    border-left: 1px solid #cacaca;
-    text-align: center;
-  }
-  .result.form .percentile_info th:first-child,
-  .result.form .percentile_info td:first-child {
-    border-left: 0 solid #000;
-  }
-  .result.form .percentile_info th {
-    font-weight: 500;
-    background-color: #F6F1FF;
   }
   .result.form .description_list {
     margin: 5.55556vw -4.16667vw 0;
@@ -6402,116 +6546,6 @@ main > .tit {
   }
   .result.form .description_list ._description {
     margin: 5.55556vw auto 0;
-  }
-  .result.form .assessment_tbl {
-    margin: 9.72222vw -4.16667vw 0;
-  }
-  .result.form .assessment_tbl table {
-    border-top: 1px solid #cacaca;
-    color: #666;
-    font-size: 4.16667vw;
-    font-weight: 500;
-  }
-  .result.form .assessment_tbl table th,
-  .result.form .assessment_tbl table td {
-    padding: 1.38889vw 0;
-    border-bottom: 1px solid #cacaca;
-    border-left: 1px solid #cacaca;
-    text-align: center;
-  }
-  .result.form .assessment_tbl table th:first-child,
-  .result.form .assessment_tbl table td:first-child {
-    border-left: 0 solid #000;
-  }
-  .result.form .assessment_tbl table th {
-    color: #333;
-    background-color: #F4F5F7;
-  }
-  .result.form .assessment_tbl table .point {
-    color: #EA5504;
-  }
-  .result.form .assessment_tbl table tfoot td {
-    color: #333;
-    background-color: #F4F5F7;
-  }
-  .result.form .assessment_list {
-    padding-top: 2.77778vw;
-  }
-  .result.form .assessment_list h3 {
-    font-size: 4.44444vw;
-    font-weight: 500;
-    color: #000;
-    padding-left: 2.77778vw;
-    position: relative;
-    margin: 4.44444vw 0 2.22222vw;
-  }
-  .result.form .assessment_list h3::before {
-    content: '∙';
-    font-size: 6.94444vw;
-    font-weight: 700;
-    position: absolute;
-    left: 0;
-    top: -1.94444vw;
-  }
-  .result.form .assessment_list p {
-    margin: 0 -4.16667vw;
-    padding: 4.16667vw;
-    background-color: #F4F5F7;
-    font-size: 4.16667vw;
-    line-height: 1.4;
-    color: #666;
-  }
-  .result.form .item_evaluation {
-    margin: 0 -4.16667vw;
-  }
-  .result.form .item_evaluation th {
-    padding: 1.38889vw 0;
-    font-size: 4.44444vw;
-    font-weight: 700;
-    background-color: #979797;
-    color: #fff;
-    border-top: 1px solid #cacaca;
-    border-left: 1px solid #cacaca;
-  }
-  .result.form .item_evaluation th:first-child {
-    border-left: 0 solid #000;
-  }
-  .result.form .item_evaluation td {
-    text-align: center;
-    font-size: 4.44444vw;
-    color: #333;
-  }
-  .result.form .item_evaluation td.point {
-    color: #666;
-  }
-  .result.form .item_evaluation td.judgment {
-    color: #EA5504;
-    font-size: 5vw;
-    font-weight: 500;
-  }
-  .result.form .item_evaluation tbody td {
-    background-color: #F4F5F7;
-    padding: 1.38889vw 0;
-    border-left: 1px solid #cacaca;
-    border-bottom: 1px solid #cacaca;
-  }
-  .result.form .item_evaluation tbody td:first-child {
-    border-left: 0 solid #000;
-  }
-  .result.form .item_evaluation tbody td.point {
-    color: #666;
-  }
-  .result.form .item_evaluation tbody td.commentary {
-    background-color: #fff;
-    text-align: left;
-    padding: 4.16667vw;
-    font-size: 4.16667vw;
-    color: #333;
-  }
-  .result.form .item_evaluation tbody td.commentary .t2 {
-    margin-top: 2.77778vw;
-    color: #666;
-    line-height: 1.4;
   }
   .form_tit {
     display: -webkit-box;
@@ -7386,7 +7420,19 @@ main > .tit {
   margin-top: 0;
 }
 
+._print .result.form {
+  margin-bottom: 0;
+  padding-bottom: 40px;
+}
+
+._print .result.form .tbl_p th {
+  width: 140px;
+}
+
 @media print {
+  ._print .form_tit {
+    font-size: 22px;
+  }
   ._print .myinfo h2 {
     margin: 20px 0 16px;
   }
@@ -7403,128 +7449,96 @@ main > .tit {
     width: 0;
     height: 0;
   }
-  ._print .result {
-    width: 100%;
-    margin: 0 auto;
-    padding: 0;
-  }
-  ._print .result h2 {
-    font-size: 24px;
-    margin: 10px 0 16px;
-  }
   ._print .result.form {
-    padding-bottom: 40px;
     margin-bottom: 0;
-    letter-spacing: -0.03em;
+    padding-bottom: 20px;
   }
   ._print .result.form h2 {
-    padding-left: 10px;
-  }
-  ._print .result.form .book_order_list {
-    border-top: 1px solid #999;
-    border-top-color: #999;
-  }
-  ._print .result.form .book_order_list b {
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    width: 100px;
-    height: 69px;
     font-size: 18px;
-    padding: 0 15px;
-    color: #333;
-    border-left: 1px solid #999;
-    border-right: 1px solid #999;
-    background-color: #F4F5F7;
+    margin: 15px 0 10px;
   }
-  ._print .result.form .book_order_list b:first-child {
-    border-left: 0 solid #000;
+  ._print .result.form .tbl_p th,
+  ._print .result.form .tbl_p td {
+    font-size: 16px;
+    padding: 10px 0 10px 10px;
   }
-  ._print .result.form .book_order_list li {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    border-bottom: 1px solid #999;
-    overflow: hidden;
-  }
-  ._print .result.form .book_order_list li > div {
-    padding: 0 30px;
-    height: 69px;
-    font-size: 18px;
-  }
-  ._print .result.form .book_order_list li > div strong {
-    font-size: 18px;
-  }
-  ._print .result.form .book_order_list.half ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  ._print .result.form .book_order_list.half li {
-    width: 50%;
-    border-bottom-color: #999;
-  }
-  ._print .result.form .book_order_list.half li:nth-child(even) b {
-    border-left: 1px solid #999;
+  ._print .result.form .tbl_p th {
+    width: 25mm;
   }
   ._print .result.form .chart_wrap {
-    padding: 0 30px;
+    padding: 0 40px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
   ._print .result.form .chart_wrap .radar_chart {
-    padding: 0;
-    margin-top: 0;
-    width: 400px;
+    width: 45%;
+  }
+  ._print .result.form .chart_wrap .radar_chart canvas {
+    width: 100% !important;
+    height: 45% !important;
   }
   ._print .result.form .chart_wrap .bar_chart {
-    margin-top: 0;
-    width: 450px;
-    height: 400px;
+    width: 48%;
+    height: 35% !important;
+  }
+  ._print .result.form .chart_wrap .bar_chart canvas {
+    width: 100% !important;
+    height: 100% !important;
   }
   ._print .result.form .assessment_tbl {
-    margin: 80px 0 0;
+    margin: 0;
   }
   ._print .result.form .assessment_tbl table {
-    font-size: 20px;
+    font-size: 14px;
   }
   ._print .result.form .assessment_tbl table th,
   ._print .result.form .assessment_tbl table td {
-    padding: 15px 0;
+    padding: 8px 0;
+  }
+  ._print .result.form .assessment_tbl table th {
+    color: #333;
+    background-color: #F4F5F7;
   }
   ._print .result.form .assessment_tbl table tfoot td {
+    background-color: #F4F5F7;
     color: #666;
   }
+  ._print .result.form .assessment_tbl table .point {
+    color: #EA5504;
+  }
   ._print .result.form .assessment_list {
-    padding-top: 20px;
+    margin-top: 20px;
+    margin-bottom: 5mm;
+    padding-top: 5mm;
   }
   ._print .result.form .assessment_list h3 {
-    font-size: 20px;
+    font-size: 16px;
     padding-left: 20px;
-    margin: 30px 0 12px;
+    margin: 15px 0 10px;
+    position: relative;
   }
   ._print .result.form .assessment_list h3::before {
-    content: '∙';
-    font-size: 30px;
-    left: 8px;
-    top: -10px;
+    content: '\00B7';
+    font-size: 20px;
+    left: 5px;
+    top: -5px;
+    font-weight: 700;
+    position: absolute;
   }
   ._print .result.form .assessment_list p {
     border: 1px solid #666;
     margin: 0;
-    padding: 25px 30px;
+    padding: 10px 15px;
     background-color: #fff;
-    font-size: 18px;
-    line-height: 1.6;
+    font-size: 14px;
+    line-height: 1.4;
     color: #333;
   }
   ._print .result.form .item_evaluation {
@@ -7532,23 +7546,24 @@ main > .tit {
   }
   ._print .result.form .item_evaluation th {
     padding: 10px 0;
-    font-size: 18px;
-    font-weight: 400;
-    background-color: #F4F5F7;
-    color: #000;
-    border-top: 1px solid #999;
-    border-bottom: 1px solid #999;
-    border-left: 1px solid #999;
+    font-size: 14px;
   }
   ._print .result.form .item_evaluation td {
-    font-size: 18px;
+    text-align: center;
+    font-size: 14px;
     color: #000;
   }
+  ._print .result.form .item_evaluation td.point {
+    color: #666;
+  }
   ._print .result.form .item_evaluation td.judgment {
-    font-size: 24px;
+    font-size: 20px;
     line-height: 1;
+    font-weight: 500;
+    color: #EA5504;
   }
   ._print .result.form .item_evaluation tbody td {
+    background-color: #F4F5F7;
     vertical-align: top;
     background-color: #fff;
     padding: 10px 0;
@@ -7561,11 +7576,14 @@ main > .tit {
   ._print .result.form .item_evaluation tbody td:nth-child(even) {
     background-color: #F4F5F7;
   }
+  ._print .result.form .item_evaluation tbody td.point {
+    color: #666;
+  }
   ._print .result.form .item_evaluation tbody td.commentary {
     background-color: #fff;
     text-align: left;
     padding: 10px 15px;
-    font-size: 18px;
+    font-size: 14px;
     color: #000;
   }
   ._print .result.form .item_evaluation tbody td.commentary .t2 {
@@ -7578,7 +7596,7 @@ main > .tit {
     padding-top: 0;
   }
   ._print .result.form .description_wrap .description_txt {
-    font-size: 18px;
+    font-size: 14px;
     color: #333;
     padding-left: 10px;
   }
@@ -7589,12 +7607,20 @@ main > .tit {
   }
   ._print .result.form .percentile_info {
     margin-top: 20px;
+    border-top: 1px solid #cacaca;
   }
   ._print .result.form .percentile_info th,
   ._print .result.form .percentile_info td {
     padding: 10px 0;
     color: #666;
-    font-size: 21px;
+    font-size: 14px;
+    border-bottom: 1px solid #cacaca;
+    border-left: 1px solid #cacaca;
+    text-align: center;
+  }
+  ._print .result.form .percentile_info th:first-child,
+  ._print .result.form .percentile_info td:first-child {
+    border-left: 0 solid #000;
   }
   ._print .result.form .percentile_info th {
     padding: 5px 0;
@@ -7604,7 +7630,7 @@ main > .tit {
   ._print .result.form .description_list {
     margin: 30px 0 0;
     background-color: #F4F5F7;
-    padding: 40px;
+    padding: 20px;
   }
   ._print .result.form .description_list li {
     display: -webkit-box;
@@ -7633,9 +7659,9 @@ main > .tit {
         -ms-flex-align: center;
             align-items: center;
     text-align: center;
-    width: 140px;
+    width: 120px;
     height: 80px;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 500;
     color: #333;
     border-radius: 10px;
@@ -7645,7 +7671,7 @@ main > .tit {
     line-height: 1.2;
   }
   ._print .result.form .description_list p {
-    font-size: 18px;
+    font-size: 14px;
     color: #333;
     line-height: 1.4;
     padding-left: 10px;
@@ -7661,6 +7687,15 @@ main > .tit {
   }
   ._print .result.form .btn_app {
     display: none;
+  }
+  ._print .result.form .result_foot {
+    margin-top: 0;
+  }
+  ._print .result.form .result_foot a {
+    margin-top: 0;
+  }
+  ._print .result.form .result_foot img {
+    width: 200px;
   }
 }
 

@@ -262,8 +262,23 @@
             }
         }
     }
+    .result {
+        &.form {
+            margin-bottom: 0;
+            padding-bottom: 40px;
+
+            .tbl_p {
+                th {
+                    width: 140px;
+                }
+            }
+        }
+    }
         
     @media print {
+        .form_tit {    
+            font-size: 22px;
+        }
         .myinfo { 
             h2 {
                 margin: 20px 0 16px;
@@ -283,148 +298,123 @@
             display: none;
             width: 0;
             height: 0;
-        }        
+        }
         .result {
-            width: 100%;
-            margin:0 auto;
-            padding:0;
-            h2 {
-                font-size: 24px;
-                margin: 10px 0 16px;
-            }
             &.form {
-                padding-bottom: 40px;
-                h2 {
-                    padding-left: 10px;
-                }
                 margin-bottom: 0;
-                letter-spacing: -0.03em;
-                .book_order_list {      
-                    border-top: 1px solid #999;
-                    border-top-color: #999;                  
-                    b {
-                        display: inline-flex;
-                        align-items: center;
-                        width: 100px;
-                        height: 69px;
-                        font-size: 18px;        
-                        padding: 0 15px;
-                        color:#333;                    
-                        border-left: 1px solid #999;
-                        border-right: 1px solid #999;
-                        background-color: #F4F5F7;
-                        &:first-child {
-                            border-left: 0 solid #000;
-                        }
+                padding-bottom: 20px;
+                h2 {
+                    font-size: 18px;
+                    margin:15px 0 10px;
+                }
+                .tbl_p {
+                    th,
+                    td {
+                        font-size: 16px;
+                        padding:10px 0 10px 10px;
                     }
-                    li {                                        
-                        align-items: center;
-                        border-bottom:1px solid #999;
-                        overflow: hidden;
-                        > div {
-                            padding:0 30px;
-                            height: 69px;
-                            font-size: 18px;        
-                            strong {
-                                font-size: 18px;
-                            }
-                        }
-                    }
-                    &.half {
-                        ul {
-                            display: flex;
-                            flex-wrap: wrap;
-                        }                    
-                        li {
-                            width: 50%;
-                            border-bottom-color:#999;
-                            &:nth-child(even) {
-                                b {
-                                    border-left: 1px solid #999;
-                                }
-                            }
-                            
-                        }
+                    th {
+                        width: 25mm;
                     }
                 }
-    
+        
                 .chart_wrap {
-                    padding:0 30px;
+                    padding:0 40px;
                     display: flex;
                     justify-content: space-between;
+                    align-items: flex-start;
                     .radar_chart {
-                        padding:0 ;
-                        margin-top: 0;
-                        width: 400px;
+                        width: 45%;
+                        canvas {
+                            width: 100% !important;
+                            height: 45% !important;
+                        }
                     }
                     .bar_chart {
-                        margin-top: 0;
-                        width: 450px;
-                        height: 400px;
+                        width: 48%;
+                        height: 35% !important;
+                        canvas {
+                            width: 100% !important;     
+                            height: 100% !important;                       
+                        }
                     }
                 }
                 
                 .assessment_tbl {
-                    margin: 80px 0 0;
+                    margin: 0;
                     table {
-                        font-size: 20px;
+                        font-size: 14px;
                         th,
                         td {
-                            padding:15px 0;
+                            padding:8px 0;
                         }
+                        th {
+                            color:#333;
+                            background-color: #F4F5F7;
+                        }   
                         tfoot {
                             td {
+                                background-color: #F4F5F7;
                                 color:#666;
                             }
+                        }
+                        .point {
+                            color:#EA5504;
                         }
                     }            
                 }
                 .assessment_list {
-                    padding-top: 20px;
+                    margin-top: 20px;
+                    margin-bottom: 5mm;
+                    padding-top: 5mm;
                     h3 {
-                        font-size: 20px;                    
+                        font-size: 16px;                    
                         padding-left: 20px;
-                        margin:30px 0 12px;
+                        margin:15px 0 10px;
+                        position: relative;
                         &::before {
-                            content: '∙';
-                            font-size: 30px;
-                            left: 8px;
-                            top:-10px;
+                            content: '\00B7';
+                            font-size: 20px;
+                            left: 5px;
+                            top:-5px;
+                            font-weight: 700;
+                            position: absolute;
                         }
                     }
                     p {
                         border: 1px solid #666;
                         margin:0;
-                        padding:25px 30px;
+                        padding:10px 15px;
                         background-color:#fff;
-                        font-size: 18px;
-                        line-height: 1.6;
+                        font-size: 14px;
+                        line-height: 1.4;
                         color:#333;
                     }
                 }
-    
+        
                 .item_evaluation {
                     margin:16px 0 0;
                     th {
                         padding:10px 0;
-                        font-size: 18px;
-                        font-weight: 400;
-                        background-color: #F4F5F7;
-                        color:#000;
-                        border-top: 1px solid #999;
-                        border-bottom: 1px solid #999;
-                        border-left: 1px solid #999;
+                        font-size: 14px;
                     }
                     td {
-                        font-size: 18px;
+                        text-align: center;
+                        font-size: 14px;
                         color:#000;
+                        &.point {
+                            color:#666;
+                        }
                         &.judgment {
-                            font-size: 24px;
+                            font-size: 20px;
                             line-height: 1;
+                            font-weight: 500;
+                            color:#EA5504;
                         }
                     }
                     tbody {
                         td {
+                            background-color: #F4F5F7;
                             vertical-align: top;
                             background-color: #fff;
                             padding:10px 0;
@@ -435,12 +425,15 @@
                             }
                             &:nth-child(even) {
                                 background-color: #F4F5F7;
-                            }                        
+                            }    
+                            &.point {
+                                color:#666;
+                            }                    
                             &.commentary {
                                 background-color: #fff;
                                 text-align: left;
                                 padding:10px 15px;
-                                font-size: 18px;
+                                font-size: 14px;
                                 color:#000;
                                 .t2 {
                                     margin-top: 10px;
@@ -451,12 +444,12 @@
                         }
                     }
                 }
-    
+        
                 .description_wrap {
                     display:block;
                     padding-top:0;
                     .description_txt {
-                        font-size: 18px;
+                        font-size: 14px;
                         color:#333;
                         padding-left: 10px;
                         &::before {                        
@@ -468,11 +461,18 @@
                 }
                 .percentile_info {
                     margin-top: 20px;
+                    border-top: 1px solid #cacaca;
                     th,
                     td {
                         padding:10px 0;
                         color:#666;
-                        font-size: 21px;
+                        font-size: 14px;
+                        border-bottom: 1px solid #cacaca;
+                        border-left: 1px solid #cacaca;
+                        text-align: center;
+                        &:first-child {
+                            border-left: 0 solid #000;
+                        }
                     }
                     th {
                         padding:5px 0;
@@ -483,7 +483,7 @@
                 .description_list {
                     margin:30px 0 0;
                     background-color: #F4F5F7;
-                    padding:40px;
+                    padding:20px;
                     li {
                         display: flex;
                         align-items: center;
@@ -499,9 +499,9 @@
                         justify-content: center;
                         align-items: center;
                         text-align: center;
-                        width: 140px;
+                        width: 120px;
                         height: 80px;
-                        font-size: 20px;
+                        font-size: 16px;
                         font-weight: 500;
                         color:#333;
                         border-radius: 10px;
@@ -512,7 +512,7 @@
                         
                     }
                     p {
-                        font-size: 18px;
+                        font-size: 14px;
                         color:#333;
                         line-height: 1.4;
                         padding-left: 10px;
@@ -527,9 +527,20 @@
                         }
                     }                
                 }
+            }
+            &.form {
                 .btn_app {
                     display: none;
                 }
+                .result_foot {
+                    margin-top: 0;
+                    a {
+                        margin-top: 0;
+                    }
+                    img {
+                        width: 200px;
+                    }
+                }                 
             }
         }
     }    
