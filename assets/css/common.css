@@ -6142,6 +6142,7 @@ main > .tit {
 
 .result canvas {
   width: 100%;
+  border: 1px solid red;
 }
 
 .form_tit {
