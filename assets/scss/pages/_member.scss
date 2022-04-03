@@ -212,12 +212,12 @@
             }
         }
         .kor_list {
-            font-size: vw(12);
+            font-size: vw(14);
             color:#666;
             line-height: 1.5;
             margin-top: vw(5);
             margin-bottom: vw(10);
-            padding-left: vw(15);
+            padding-left: vw(17);
             li {
                 position: relative;
                 padding-left: 0;
@@ -259,9 +259,12 @@
         .mb {
             margin-bottom: vw(20);
         }
-        a {
-            text-decoration: underline;
+        a {            
             color:#666;
+            &:hover {
+                text-decoration: underline;
+                color:#EA5504;
+            }
         }
     }
 }
