@@ -4,7 +4,7 @@ var font_size = 18;
 if (navigator.platform) {
     if (filter.indexOf(navigator.platform.toLowerCase()) < 0) { //mobile
         is_pos = 'bottom';
-        font_size = 12;
+        font_size = 14;
         console.log('mogile');
     } else {
         console.log('pc');

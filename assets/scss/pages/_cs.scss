@@ -45,7 +45,7 @@
                 display: flex;                
                 justify-content: space-between;
                 align-items: flex-start;
-                padding:vw(13) vw(14);
+                padding:vw(13) vw(14) vw(10);
                 letter-spacing: -0.05em;
             }
             b {
@@ -70,6 +70,14 @@
                     color:#EA5504;
                     font-weight: 500;
                 }
+            }
+            &.nodata {
+                display: flex;                
+                justify-content: center;
+                align-items: flex-start;
+                padding:vw(13) vw(14) vw(10);
+                letter-spacing: -0.05em;
+                font-size: vw(16);
             }
         }
     }
@@ -154,6 +162,10 @@
                 letter-spacing: -0.03em;
 
             }
+            &.disabled {
+                opacity: .5;
+                cursor: none;
+            }
         }
     }
 
@@ -202,7 +214,6 @@
     }
     .faq_list {
         li {
-            border-bottom: 1px solid #cacaca;
             letter-spacing: -0.05em;
             background: url(../img/ico_faq_down.svg) no-repeat right vw(5) top vw(9) / vw(36);
             &.open {
@@ -216,6 +227,14 @@
                     display: block;
                 }
             }
+            &.nodata {
+                border-bottom: 1px solid #cacaca;
+                padding:vw(15);
+                font-size: vw(16);
+                color:#333;
+                text-align: center;
+                background: none;
+            }
         }
         .question {
             border-bottom: 1px solid #cacaca;
@@ -228,6 +247,7 @@
         }
         .answer {
             display: none;
+            border-bottom: 1px solid #cacaca;
             background-color: #FBFBFB;
             padding:vw(10) vw(15) vw(20);
             font-size: vw(15);
@@ -264,7 +284,7 @@
             margin:0 0 36px;            
             li {                
                 a {                   
-                    padding:15px 40px;                    
+                    padding:15px 40px 12px;
                 }
                 b {
                     font-size: 22px;
@@ -274,7 +294,11 @@
                 .date {                    
                     font-size: 22px;
                     transform: translateY(0);
-                }                
+                }
+                &.nodata {
+                    padding:15px 40px 13px;
+                    font-size: 22px;
+                }
             }
         }
 
@@ -360,6 +384,10 @@
                             font-weight: 500;
                         }
                     }
+                }
+                &.nodata {
+                    padding:15px 40px;
+                    font-size: 22px;
                 }
             }
             .question {                

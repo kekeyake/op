@@ -58,6 +58,10 @@ function activeMenu() {
     menuSetting();
     
     switch(pageId) {
+        case 'main_cont':
+            $('.sub_bg').removeClass('active');
+            break;
+
         case 'contest_info':
             $('[data-rel=contest]').addClass('active_on');
             $('[data-rel=info]').addClass('active_on');
