@@ -962,9 +962,17 @@ header.header .inner .btn_user img {
     background: url(../img/ico_menu.svg) no-repeat 0 0/100%;
   }
   header.header .inner .btn_user {
-    margin-top: 30px;
     width: 32px;
     height: 32px;
+  }
+  header.header .inner .pc_f {
+    margin-top: 30px;
+    font-size: 18px;
+    color: #333;
+  }
+  header.header .inner .pc_f span {
+    text-decoration: underline;
+    margin-right: 10px;
   }
   .main_menu {
     padding: 0;
@@ -1498,21 +1506,33 @@ button {
   padding-top: 11.11111vw;
 }
 
-.side_nav .quick_menu_list li:nth-child(1) a {
-  background: url(../img/ico_login.svg) no-repeat 50% 0/10vw;
-}
-
-.side_nav .quick_menu_list li:nth-child(2) a {
-  background: url(../img/ico_join.svg) no-repeat 50% 0/10vw;
-}
-
-.side_nav .quick_menu_list li:nth-child(3) a {
-  background: url(../img/ico_pwfind.svg) no-repeat 50% 0/10vw;
-}
-
 .side_nav .quick_menu_list li:nth-child(2) {
   border-left: 1px solid #ECECEC;
   border-right: 1px solid #ECECEC;
+}
+
+.side_nav .quick_menu_list.__before li:nth-child(1) a {
+  background: url(../img/ico_login.svg) no-repeat 50% 0/10vw;
+}
+
+.side_nav .quick_menu_list.__before li:nth-child(2) a {
+  background: url(../img/ico_join.svg) no-repeat 50% 0/10vw;
+}
+
+.side_nav .quick_menu_list.__before li:nth-child(3) a {
+  background: url(../img/ico_pwfind.svg) no-repeat 50% 0/10vw;
+}
+
+.side_nav .quick_menu_list.__after li:nth-child(1) a {
+  background: url(../img/ico_logout.svg) no-repeat 50% 0/10vw;
+}
+
+.side_nav .quick_menu_list.__after li:nth-child(2) a {
+  background: url(../img/ico_books.svg) no-repeat 50% 0/10vw;
+}
+
+.side_nav .quick_menu_list.__after li:nth-child(3) a {
+  background: url(../img/ico_result.svg) no-repeat 50% 0/10vw;
 }
 
 .side_nav nav {
@@ -1991,7 +2011,7 @@ main > .tit {
 }
 
 .layer_pop.search_school .select_list {
-  height: 61.11111vw;
+  height: 41.66667vw;
   margin: 3.61111vw 0 4.44444vw;
   padding: 2.77778vw 3.33333vw;
   background: #F4F5F7;

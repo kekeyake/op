@@ -135,9 +135,17 @@ header.header {
                 background:url(../img/ico_menu.svg) no-repeat 0 0 / 100%;
             }
             .btn_user {
-                margin-top: 30px;
                 width: 32px;
                 height: 32px;
+            }
+            .pc_f {
+                margin-top: 30px;
+                font-size: 18px;
+                color:#333;
+                span  {
+                    text-decoration: underline;
+                    margin-right: 10px;
+                }
             }
         }
     }

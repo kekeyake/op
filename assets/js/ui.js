@@ -52,7 +52,7 @@ function titMargin() {
 // 메뉴 활성화
 function activeMenu() {    
     // navi active
-    var pageId = $('main > section').attr('id');
+    var pageId = $('main section').attr('id');
     // var subPageId = $('main > section').attr('id');
     //console.log(pageId);
     menuSetting();

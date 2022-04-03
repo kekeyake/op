@@ -183,19 +183,36 @@ button {
                 justify-content: center;
                 width: 100%;
                 padding-top: vw(40);
-            }
-            &:nth-child(1) a {
-                background: url(../img/ico_login.svg) no-repeat 50% 0 / vw(36);
-            }
-            &:nth-child(2) a {
-                background: url(../img/ico_join.svg) no-repeat 50% 0 / vw(36);
-            }
-            &:nth-child(3) a {
-                background: url(../img/ico_pwfind.svg) no-repeat 50% 0 / vw(36);
-            }
+            }            
             &:nth-child(2) {
                 border-left: 1px solid #ECECEC;
                 border-right: 1px solid #ECECEC;
+            }
+        }
+        &.__before {
+            li {
+                &:nth-child(1) a {
+                    background: url(../img/ico_login.svg) no-repeat 50% 0 / vw(36);
+                }
+                &:nth-child(2) a {
+                    background: url(../img/ico_join.svg) no-repeat 50% 0 / vw(36);
+                }
+                &:nth-child(3) a {
+                    background: url(../img/ico_pwfind.svg) no-repeat 50% 0 / vw(36);
+                }
+            }
+        }
+        &.__after {
+            li {
+                &:nth-child(1) a {
+                    background: url(../img/ico_logout.svg) no-repeat 50% 0 / vw(36);
+                }
+                &:nth-child(2) a {
+                    background: url(../img/ico_books.svg) no-repeat 50% 0 / vw(36);
+                }
+                &:nth-child(3) a {
+                    background: url(../img/ico_result.svg) no-repeat 50% 0 / vw(36);
+                }
             }
         }
     }
@@ -560,7 +577,7 @@ main {
             }
         }
         .select_list {
-            height: vw(220);
+            height: vw(150);
             margin:vw(13) 0 vw(16);
             padding:vw(10) vw(12);
             background: #F4F5F7;
