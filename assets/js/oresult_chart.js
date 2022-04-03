@@ -129,7 +129,8 @@
                             beginAtZero:true,
                             min:0,
                             max:25,                       
-                            stepSize:1,                            
+                            stepSize:1,     
+                            display: false,                       
                             // Y 축 정수로 보여주기 
                             // 숫자가 작거나 또는 0인 경우 등 자동으로 보여주므로 소숫점으로 나타난다
                             callback: function (value) {
