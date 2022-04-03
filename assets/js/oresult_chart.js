@@ -1,3 +1,4 @@
+$(function () {
     var is_pos = 'top';
     var font_size;
 
@@ -157,3 +158,4 @@
             }
         });
     }
+}):
