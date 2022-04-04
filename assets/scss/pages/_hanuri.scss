@@ -1,0 +1,323 @@
+#hanuri_greeting,
+#contest_sample {
+    margin-top: vw(59);
+    @include desktop {
+        margin-top: 0;
+    }
+}
+.hanuri {
+    margin-bottom: vw(50);
+    margin-top: vw(83);
+    padding:0 vw(15) 0;
+       
+    h2 {
+        font-size: vw(18);
+        text-align: left;
+        font-weight: 500;
+        letter-spacing: -0.05em;
+        margin: vw(32) 0 vw(10);
+        color:#000;
+    }
+    
+    .greeting {
+        .txt {
+            font-size: vw(15);
+            line-height: 1.5;
+            & + .txt {
+                margin-top: vw(10);
+            }
+            & + img {
+                width: calc(100% + 8.335vw);
+                margin:vw(20) vw(-15);
+            }            
+        }
+        .t1 {
+            text-align: right;
+            font-size: vw(15);
+            line-height: 1.5;
+            margin-top: vw(30);
+            b {
+                display: block;
+                font-size: vw(22);
+                font-family: serif;
+                font-weight: 700;
+                letter-spacing: 0.2em;
+                margin-top: vw(5);
+            }
+        }
+    }
+
+    .purpose {
+        &__top {
+            letter-spacing: -0.05em;
+            img {
+                width: vw(120);
+                margin:0 auto;
+            }
+            p {
+                line-height: 1.5;
+                margin-top: vw(20);
+                font-size: vw(15);
+            }
+        }
+        .ideology_list {
+            width: vw(320);
+            margin:0 auto;
+            font-size: vw(16);
+            font-weight: 700;
+            li {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: vw(40);
+                color:#fff;
+                border-radius: 30px;
+                margin-top: vw(8);
+                &:first-child {
+                    font-weight: 500;
+                    color:#333;
+                }
+                &:nth-child(2) {
+                    background-color: #FFBA4D;
+                    margin-top: 0;
+                }
+                &:nth-child(3) {
+                    background-color: #FFA24D;
+                }
+                &:nth-child(4) {
+                    background-color: #EA5504;
+                }
+            }
+        }
+
+        .values_list {
+            
+            margin: 0 vw(-15);
+            padding:vw(40) vw(20);
+            height: vw(280);
+            background-image: url(../img/hanuri/purpose_img2@2x.png);
+            background-image: image-set(
+                url(../img/hanuri/purpose_img2@2x.png) 2x,
+                url(../img/hanuri/purpose_img2@3x.png) 3x);
+            background-position: 0 0;
+            background-repeat: no-repeat;
+            background-size: cover;
+            li {
+                display: flex;
+                border-radius: 8px;
+                overflow: hidden;
+                & + li {
+                    margin-top: vw(10);
+                }
+                b {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: vw(90);
+                    font-size: vw(18);
+                    color:#fff;
+                    font-weight: 500;
+                    line-height: 1;
+                    text-align: center;
+                }
+                div {
+                    flex: 1;
+                    background-color: #fff;
+                    display: flex;
+                    align-items: center;
+                    padding:vw(10) vw(17);
+                    font-size: vw(15);
+                    line-height: 1.2;
+                }
+                &:nth-child(1) b {
+                    background-color: #A13CAA;
+                }
+                &:nth-child(2) b {
+                    background-color: #713BB9;
+                }
+                &:nth-child(3) b {
+                    background-color: #992851;
+                }
+            }
+        }
+
+        .principles_box {
+            margin:0 vw(-15);
+            padding:vw(10) vw(15);
+            box-sizing: border-box;
+            h3 {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: vw(160);
+                height: vw(30);
+                background-color: #666;
+                font-size: vw(16);
+                color:#fff;
+                font-weight: 700;
+                border-radius: 24px;
+                margin:0 auto vw(15);
+            }
+            img {
+                width: 100%;
+            }
+            & + .principles_box {
+                padding:vw(25) vw(20);
+                margin-top: vw(35);
+                background-color: #F4F5F7;
+            }
+        }
+    }
+    
+}
+@include desktop {
+    .hanuri {
+        width: 1030px;
+        margin:0 auto 100px;
+        padding:0;        
+        
+        h2 {
+            font-size: 24px;
+            margin: 60px 0 16px;
+        }
+
+        .greeting {
+            .txt {
+                font-size: 22px;
+                line-height: 1.8;
+                letter-spacing: -0.05em;
+                & + .txt {
+                    margin-top: 0;
+                }
+            }
+            img {
+                width: 100%;
+                margin:20px 0;
+            }    
+            .t1 {
+                text-align: right;
+                font-size: 22px;
+                line-height: 1.5;
+                margin-top: 40px;
+                letter-spacing: -0.05em;
+                b {
+                    display: inline-block;
+                    font-size: 30px;
+                    margin-top: 0;
+                    margin-left: 5px;
+                }
+            }
+        }
+
+        .purpose {
+            .text_list {
+                &.half {
+                    display: flex;
+                    flex-wrap: wrap;
+                    padding-bottom: 25px;
+                    li {
+                        width: 50%;            
+                    }
+                }                
+            }
+            &__top {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                img {
+                    width: 180px;
+                    margin:0 60px 0 0;
+                }
+                p {
+                    margin-top: 0;
+                    font-size: 22px;
+                }
+            }
+            .ideology_list {
+                width: 600px;
+                font-size: 24px;
+                li {                    
+                    height: 60px;
+                    margin-top: 14px;
+                }
+            }
+    
+            .values_list {
+                
+                margin: 0;
+                padding:85px 47px;
+                height: 330px;
+                background-image: url(../img/hanuri/purpose_img2.png);                
+                background-position: 0 0;
+                background-repeat: no-repeat;
+                background-size: cover;
+                border-radius: 10px;
+                overflow: hidden;
+                display: flex;
+                align-items: center;
+                li {
+                    width: 300px;                    
+                    border-radius: 8px;
+                    height: fit-content;
+                    overflow: hidden;
+                    display: block;
+                    text-align: center;
+                    &:nth-child(2) {
+                        margin:0 18px;
+                    }
+                    & + li {
+                        margin-top:0;
+                    }
+                    b {
+                        width: 100%;
+                        font-size: 24px;
+                        height: 56px;
+                    }
+                    div {
+                        width: 100%;
+                        flex: none;
+                        background-color: #fff;
+                        display: block;
+                        padding:20px 16px;
+                        font-size: 22px;
+                        color:#000;
+                        text-align: center;
+                        letter-spacing: -0.05em;
+                        border-bottom-left-radius: 8px;
+                        border-bottom-right-radius: 8px;
+                    }                    
+                }
+            }
+            .flex_box_pc {
+                background-color: #F4F5F7;
+                padding:50px 35px;
+            }
+            .principles_box {
+                width: 472px;
+                margin:0;
+                padding:0;
+                box-sizing: border-box;
+                h3 {                    
+                    width: 220px;
+                    height: 44px;
+                    font-size: 22px;
+                    border-radius: 24px;
+                    margin:0 auto 26px;
+                }
+                img {
+                    width: 100%;
+                }
+                & + .principles_box {
+                    width: 427px;
+                    padding:0;
+                    margin-top:0;
+                    background-color: #F4F5F7;
+                    h3 {
+                        margin-bottom: 11px;
+                    }
+                }
+            }
+        }
+        
+    }
+}

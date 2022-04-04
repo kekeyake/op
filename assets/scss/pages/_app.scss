@@ -522,13 +522,13 @@
                             & + input + span {
                                 font-size: 26px;
                                 font-weight: 500;
-                            }
-                            & + input + span + span {
-                                font-size: 18px;
-                                color:#777;
-                                transform: translateY(2px);
-                                margin-left: 10px;
-                            }
+                            }                            
+                        }
+                        .pc {
+                            font-size: 18px;
+                            color:#777;
+                            transform: translateY(2px);
+                            margin-left: 10px;
                         }
                         
                     }
