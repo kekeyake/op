@@ -3799,6 +3799,7 @@ main > .tit {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-color: #F4F5F7;
 }
 
 .book .book_select_list > div b {
@@ -3827,6 +3828,7 @@ main > .tit {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  background-color: #fff;
 }
 
 .book .book_select_list > div div > input {
@@ -3887,16 +3889,18 @@ main > .tit {
 
 .book .book_select_list .total_price {
   border-bottom: 1px solid #CACACA;
-  background-color: #fff;
+  background-color: #F4F5F7;
 }
 
 .book .book_select_list .total_price div {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  background-color: #fff;
 }
 
 .book .book_select_list .total_price div input {
+  height: 9.16667vw;
   color: #EA5504;
 }
 
@@ -3992,6 +3996,10 @@ main > .tit {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  margin-left: 2.77778vw;
+}
+
+.book .applicant_info .applicant_form li div span + .category_wrap {
   margin-left: 2.77778vw;
 }
 
@@ -4331,6 +4339,9 @@ main > .tit {
   .book .book_select_list .total_price div {
     font-size: 26px;
     padding: 15px 30px;
+  }
+  .book .book_select_list .total_price div input {
+    height: 40px;
   }
   .book .applicant_info .applicant_form {
     margin: 0;
