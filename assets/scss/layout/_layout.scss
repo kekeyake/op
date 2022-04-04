@@ -263,7 +263,7 @@ main {
             border-radius: 50%;
             position: absolute;
             left: 0;
-            top:vw(8);
+            top:vw(10);
         }
         b {
             font-weight: 500;
@@ -279,6 +279,12 @@ main {
             font-weight: 500;
             text-decoration: underline;
             color:#EA5504;
+        }
+        &.point {
+            color:#EA5504;
+            &::after {
+                background-color: #EA5504;
+            }
         }
     }
 }
@@ -838,7 +844,7 @@ main {
             &::after {
                 width: 3px;
                 height: 3px;
-                top:11px;
+                top:13px;
             }
             p {
                 margin-top: 0;

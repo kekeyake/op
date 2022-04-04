@@ -103,8 +103,7 @@ function activeMenu() {
             $('[data-rel=faq]').addClass('active_on');
             break;
 
-        case 'hanuri_greeting':
-            
+        case 'hanuri_greeting':            
             $('[data-rel=hanuri]').addClass('active_on');
             $('[data-rel=greeting]').addClass('active_on');
             break;
