@@ -76,13 +76,23 @@ function activeMenu() {
             break;
         
         case 'book':
+            //$('.sub_bg').removeClass('active');
+            $('[data-rel=bookbuy]').addClass('active_on');
             $('[data-rel=book]').addClass('active_on');
-            // $('.sub_bg').removeClass('active');
+            break;
+        case 'books1': 
+            $('[data-rel=bookbuy]').addClass('active_on');
+            $('[data-rel=books1]').addClass('active_on');
             break;
 
         case 'app':
+            //$('.sub_bg').removeClass('active');
+            $('[data-rel=testapp]').addClass('active_on');
             $('[data-rel=app]').addClass('active_on');
-            // $('.sub_bg').removeClass('active');
+            break;
+        case 'apps1': 
+            $('[data-rel=testapp]').addClass('active_on');
+            $('[data-rel=apps1]').addClass('active_on');
             break;
 
         case 'result':

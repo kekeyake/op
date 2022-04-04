@@ -58,6 +58,10 @@ function activeMenu() {
     menuSetting();
     
     switch(pageId) {
+        case 'main_cont':
+            $('.sub_bg').removeClass('active');
+            break;
+
         case 'contest_info':
             $('[data-rel=contest]').addClass('active_on');
             $('[data-rel=info]').addClass('active_on');
@@ -72,21 +76,34 @@ function activeMenu() {
             break;
         
         case 'book':
+           //$('.sub_bg').removeClass('active');
+            $('[data-rel=bookbuy]').addClass('active_on');
             $('[data-rel=book]').addClass('active_on');
-            // $('.sub_bg').removeClass('active');
+            break;
+        case 'books1': 
+            $('[data-rel=bookbuy]').addClass('active_on');
+            $('[data-rel=books1]').addClass('active_on');
             break;
 
         case 'app':
-            $('[data-rel=app]').addClass('active_on');
-            // $('.sub_bg').removeClass('active');
-            break;
+            //$('.sub_bg').removeClass('active');
+             $('[data-rel=testapp]').addClass('active_on');
+             $('[data-rel=app]').addClass('active_on');
+             break;
+        case 'apps1': 
+             $('[data-rel=testapp]').addClass('active_on');
+             $('[data-rel=apps1]').addClass('active_on');
+             break;
 
         case 'result':
             $('[data-rel=result]').addClass('active_on');
             $('.sub_bg').removeClass('active');
             break;
         
-    
+        case 'member':
+            $('.sub_bg').removeClass('active');
+            break;
+
         case 'customer_notice': 
             $('[data-rel=customer]').addClass('active_on');
             $('[data-rel=notice]').addClass('active_on');
@@ -150,13 +167,12 @@ $(function () {
     // 메뉴 활성화
     activeMenu();
 
-    var posLegend;
-
+    
     if (navigator.platform) {
         if (filter.indexOf(navigator.platform.toLowerCase()) < 0) { //mobile
-            posLegend = 'bottom';
+            
         } else { //pc
-            posLegend = 'top';
+            
             titMargin();
             $('.__nav li').mouseenter(function () {
                 $(this).children('a').addClass('active');
@@ -181,6 +197,9 @@ $(function () {
 
         } 
     }
+
+
+
     // sub menu
     $('.sub_nav a').hover(function () {
         $(this).addClass('active').siblings('a').removeClass('active');
@@ -282,7 +301,8 @@ $(function () {
     $('.btn_coupon').on('click', function(){
         $(this).toggleClass('on');
     });
-    
+
+
     if ( $('.faq_list').length ) {
         $(this).find('li').on('click',function(){
             $(this).toggleClass('open');
