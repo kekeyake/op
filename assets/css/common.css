@@ -7670,6 +7670,15 @@ main > .tit {
   background-color: #F4F5F7;
 }
 
+.hanuri .location {
+  margin: 0 -4.16667vw;
+}
+
+.hanuri .location .text_list {
+  background-color: #fff;
+  margin: 0;
+}
+
 @media (min-width: 1030px) {
   .hanuri {
     width: 1030px;
@@ -7825,6 +7834,9 @@ main > .tit {
   }
   .hanuri .purpose .principles_box + .principles_box h3 {
     margin-bottom: 11px;
+  }
+  .hanuri .location {
+    margin: 0 0;
   }
 }
 

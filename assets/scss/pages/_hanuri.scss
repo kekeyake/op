@@ -168,6 +168,14 @@
             }
         }
     }
+
+    .location {
+        margin:0 vw(-15);
+        .text_list {
+            background-color: #fff;
+            margin:0;
+        }        
+    }
     
 }
 @include desktop {
@@ -319,5 +327,8 @@
             }
         }
         
-    }
+        .location {
+            margin:0 0;
+        }        
+    }    
 }
