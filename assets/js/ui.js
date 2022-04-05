@@ -241,14 +241,21 @@ $(function () {
             loop: true,
             autoplay: {
                 delay: 3500,
-                disableOnInteraction: false,
+                disableOnInteraction: false,               
             },
+            pauseOnMouseEnter:true,
             pagination: {
                 el: ".main_banner .swiper-pagination",
                 clickable: true,
             },
             observer: true,
             observeParents: true,
+        });
+        $('.main_banner').on('mouseover', function(){
+            swiper.autoplay.stop();
+        });
+        $('.main_banner').on('mouseout', function(){
+            swiper.autoplay.start();
         });
     }
 
