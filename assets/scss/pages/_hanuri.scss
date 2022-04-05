@@ -190,7 +190,7 @@
             display: block;
             width: 1px;
             height: 100%;
-            background-color: #ddd;
+            background-color: #ececec;
             position: absolute;
             left:vw(37);
             top:0;
@@ -208,7 +208,6 @@
                 transform: translateY(-50%);
                 width: 100%;
                 text-align: center;
-                font-family: "NanumSquare";
                 font-size: vw(17);
                 letter-spacing: -0.05em;
                 line-height: 1.2;
@@ -216,12 +215,6 @@
             }
         }
         .history_wrap {
-            position: relative;            
-            &.first {
-                &::before {
-                    top:10vw;
-                }
-            }
             .__cont {
                 .years {
                     font-size: vw(22);
@@ -289,7 +282,7 @@
                     }
                 }
             }
-        }                
+        }
     }
     
 }
@@ -447,6 +440,93 @@
             .text_list {
                 padding:30px 20px;
             }    
-        }        
+        }
+
+        .history {
+            position: relative;
+            margin:00;
+            &::before {
+                width: 2px;
+                height: calc(100% - 220px);
+                left:119px;
+                top:auto;
+                bottom:0;
+            }
+            .img_tit {
+                position: relative;
+                p {
+                    font-size: 28px;
+                    font-weight: 500;
+                }
+            }
+            .history_wrap {
+                .__cont {
+                    display: flex;
+                    flex-wrap: wrap;
+                    padding:60px 0;
+                    .years {
+                        font-size: 36px;
+                        font-weight: 400;
+                        display: block;
+                        height: auto;
+                        line-height: 1;
+                        background-color: #fff;
+                        width: 119px;
+                        text-align: center;
+                        position: relative;
+                        &::before {
+                            content: '';
+                            display: block;
+                            width: 0px;
+                            height: 0px;
+                            border-left: 12px solid #EA5504;
+                            border-top: 8px solid transparent;
+                            border-bottom: 8px solid transparent;
+                            position: absolute;
+                            top:10px;
+                            right:-12px;
+                        }
+                    }
+                    .month {
+                        padding:0;
+                        width: calc(100% - 119px);
+                        & + .years {
+                            margin-top: 60px;
+                            & + .month {
+                                margin-top: 60px;
+                            }
+                        }
+                    }
+                    li {
+                        display: flex;
+                        margin-bottom: 20px;
+                        flex-wrap: wrap;
+                        padding-top: 2px;
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
+                        b {
+                            font-size: 22px;
+                            width: 71px;
+                        }
+                        div {
+                            padding:0;
+                            flex: 1;
+                        }
+                        p {
+                            font-size: 22px;
+                            line-height: 1.3;
+                            padding-top: 3px;
+                            & + p {
+                                margin-top: 20px;
+                            }
+                            &::before {
+                                display:none;                            
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }    
 }
