@@ -2824,7 +2824,7 @@ main > .tit {
 .main .cont3 dl dd::before {
   content: ":";
   font-weight: 400;
-  margin: 0 0.55556vw;
+  margin: 0 1.11111vw;
 }
 
 .main .cont4 {
@@ -6072,6 +6072,7 @@ main > .tit {
   padding: 0;
   margin-top: 0;
   width: 400px;
+  height: 400px;
 }
 
 .result.form .chart_wrap .bar_chart {
@@ -6184,6 +6185,7 @@ main > .tit {
   line-height: 1;
   font-weight: 500;
   color: #EA5504;
+  padding-top: 12px;
 }
 
 .result.form .item_evaluation tbody td {
@@ -6215,8 +6217,12 @@ main > .tit {
   color: #000;
 }
 
+.result.form .item_evaluation tbody td.commentary .t1 {
+  font-weight: 500;
+}
+
 .result.form .item_evaluation tbody td.commentary .t2 {
-  margin-top: 10px;
+  margin-top: 0px;
   color: #333;
   line-height: 1.4;
 }
@@ -6445,6 +6451,7 @@ main > .tit {
   .result .radar_chart {
     padding: 0 4.16667vw;
     margin-top: 5.55556vw;
+    height: 83.33333vw;
   }
   .result .bar_chart {
     margin-top: 2.77778vw;
@@ -6561,6 +6568,8 @@ main > .tit {
   }
   .result.form .item_evaluation td.judgment {
     font-size: 5vw;
+    padding-top: 1.38889vw;
+    vertical-align: middle;
   }
   .result.form .item_evaluation tbody td {
     padding: 1.38889vw 0;
@@ -6573,7 +6582,6 @@ main > .tit {
     color: #333;
   }
   .result.form .item_evaluation tbody td.commentary .t2 {
-    margin-top: 2.77778vw;
     color: #666;
   }
   .result.form .description_wrap {
@@ -8474,6 +8482,10 @@ main > .tit {
 @media print {
   ._print .form_tit {
     font-size: 22px;
+    margin-bottom: 20px;
+  }
+  ._print .myinfo {
+    margin-bottom: 0;
   }
   ._print .myinfo h2 {
     margin: 20px 0 16px;
@@ -8485,6 +8497,13 @@ main > .tit {
   ._print .myinfo .tbl_p td {
     font-size: 18px;
     padding: 10px 0 10px 30px;
+  }
+  ._print .myinfo .tbl_p th b,
+  ._print .myinfo .tbl_p td b {
+    font-weight: bold;
+  }
+  ._print .myinfo .btn_app {
+    display: none;
   }
   ._print .btn.__top {
     display: none;
@@ -8521,6 +8540,7 @@ main > .tit {
   }
   ._print .result.form .chart_wrap .radar_chart {
     width: 45%;
+    height: 40%;
   }
   ._print .result.form .chart_wrap .radar_chart canvas {
     width: 100% !important;
@@ -8535,7 +8555,7 @@ main > .tit {
     height: 100% !important;
   }
   ._print .result.form .assessment_tbl {
-    margin: 0;
+    margin: 20px 0;
   }
   ._print .result.form .assessment_tbl table {
     font-size: 14px;
@@ -8589,6 +8609,13 @@ main > .tit {
   ._print .result.form .item_evaluation th {
     padding: 10px 0;
     font-size: 14px;
+    color: #000;
+    border-top: 1px solid #999;
+    border-left: 1px solid #999;
+    border-bottom: 1px solid #999;
+  }
+  ._print .result.form .item_evaluation th:first-child {
+    border-left: 0 solid #000;
   }
   ._print .result.form .item_evaluation td {
     text-align: center;
@@ -8603,6 +8630,7 @@ main > .tit {
     line-height: 1;
     font-weight: 500;
     color: #EA5504;
+    vertical-align: top;
   }
   ._print .result.form .item_evaluation tbody td {
     background-color: #F4F5F7;
@@ -8628,8 +8656,11 @@ main > .tit {
     font-size: 14px;
     color: #000;
   }
+  ._print .result.form .item_evaluation tbody td.commentary .t1 {
+    font-weight: 500;
+  }
   ._print .result.form .item_evaluation tbody td.commentary .t2 {
-    margin-top: 10px;
+    margin-top: 0;
     color: #333;
     line-height: 1.4;
   }

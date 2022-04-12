@@ -224,6 +224,7 @@
                 padding:0 ;
                 margin-top: 0;
                 width: 400px;
+                height: 400px;
             }
             .bar_chart {
                 margin-top: 0;
@@ -320,6 +321,7 @@
                     line-height: 1;
                     font-weight: 500;
                     color:#EA5504;
+                    padding-top: 12px;
                 }
             }
             tbody {
@@ -345,8 +347,11 @@
                         padding:10px 15px;
                         font-size: 18px;
                         color:#000;
+                        .t1 {
+                            font-weight: 500;
+                        }
                         .t2 {
-                            margin-top: 10px;
+                            margin-top: 0px;
                             color:#333;
                             line-height: 1.4;
                         }
@@ -562,6 +567,7 @@
         .radar_chart {
             padding:0 vw(15);
             margin-top: vw(20);
+            height: vw(300);
         }
         .bar_chart {
             margin-top: vw(10);
@@ -675,7 +681,9 @@
                         color:#666;
                     }
                     &.judgment {                        
-                        font-size: vw(18);                        
+                        font-size: vw(18);    
+                        padding-top:vw(5);    
+                        vertical-align: middle;                
                     }
                 }
                 tbody {
@@ -687,8 +695,7 @@
                             padding:vw(15);
                             font-size: vw(15);
                             color:#333;
-                            .t2 {
-                                margin-top: vw(10);
+                            .t2 {                                
                                 color:#666;
                             }
                         }

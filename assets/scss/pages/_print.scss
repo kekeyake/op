@@ -278,8 +278,10 @@
     @media print {
         .form_tit {    
             font-size: 22px;
+            margin-bottom: 20px;
         }
         .myinfo { 
+            margin-bottom: 0;
             h2 {
                 margin: 20px 0 16px;
             }
@@ -291,7 +293,13 @@
                 td {
                     font-size: 18px;
                     padding:10px 0 10px 30px;
+                    b {
+                        font-weight: bold;
+                    }
                 }
+            }
+            .btn_app {
+                display: none;
             }
         }
         .btn.__top {
@@ -325,6 +333,7 @@
                     align-items: flex-start;
                     .radar_chart {
                         width: 45%;
+                        height: 40%;
                         canvas {
                             width: 100% !important;
                             height: 45% !important;
@@ -341,7 +350,7 @@
                 }
                 
                 .assessment_tbl {
-                    margin: 0;
+                    margin: 20px 0;
                     table {
                         font-size: 14px;
                         th,
@@ -397,6 +406,13 @@
                     th {
                         padding:10px 0;
                         font-size: 14px;
+                        color:#000;
+                        border-top: 1px solid #999;
+                        border-left: 1px solid #999;
+                        border-bottom: 1px solid #999;
+                        &:first-child {
+                            border-left: 0 solid #000;
+                        }
                     }
                     td {
                         text-align: center;
@@ -410,6 +426,7 @@
                             line-height: 1;
                             font-weight: 500;
                             color:#EA5504;
+                            vertical-align: top;
                         }
                     }
                     tbody {
@@ -435,8 +452,11 @@
                                 padding:10px 15px;
                                 font-size: 14px;
                                 color:#000;
+                                .t1 {
+                                    font-weight: 500;
+                                }
                                 .t2 {
-                                    margin-top: 10px;
+                                    margin-top: 0;
                                     color:#333;
                                     line-height: 1.4;
                                 }

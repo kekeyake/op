@@ -112,17 +112,27 @@ if ( $('#barChart').length ) {
                     boxWidth:15,
                     boxHeight:20,
                     fontSize:font_size,
+                    fontColor:'rgba(66, 66, 66, 1)',                    
                 }
             },
             scales: {     
                 xAxes: [{
                     ticks: {
                         fontSize:font_size,
-                    }                        
+                        fontColor:'rgba(66, 66, 66, 1)',
+                        lineHeight:1
+                    },
+                    gridLines:  {
+                        color:'#ccc'
+                    }
+                                            
                 }],               
                 yAxes: [{                        
                     labels:{
                         display:false
+                    },
+                    gridLines:  {
+                        color:'#ccc'
                     },
                     ticks: {
                         // Y 축 0부터 시작
