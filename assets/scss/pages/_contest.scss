@@ -59,8 +59,8 @@
     .text_list {
         li {
             display: flex;
-            b {
-                margin-right: vw(2);
+            b {                
+                margin-right: vw(2);                                                
             }
             span {
                 margin-left: vw(2);
@@ -68,7 +68,7 @@
             strong {
                 margin-left: vw(2);
             }
-        }
+        }        
     }
     .award_list {
         display: flex;
@@ -197,8 +197,7 @@
                         margin-left: vw(2);
                     }
                 }
-            }
-            
+            }           
         }
         
         .cont_wrap {

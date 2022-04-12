@@ -66,6 +66,16 @@ header.header {
             }
         }
     }
+    .__nav li.pc_menu {        
+        position: absolute;
+        left: 0;
+        top:0;
+        z-index: 10;
+        & > a {
+            display: none;
+        }
+    }
+    
     .sub_nav {
         position: absolute;
         height: vw(36);
@@ -79,6 +89,7 @@ header.header {
             margin-right: vw(12);
             color:#777;
             font-size: vw(15);
+            white-space: nowrap;
             &:last-child {
                 margin-right: 0;
             }
@@ -217,6 +228,12 @@ header.header {
                 & + .sub_nav {
                     display: block;
                 }
+            }
+        }
+        .__nav li.pc_menu {
+            position: relative;
+            & > a {
+                display: flex;
             }
         }
         .sub_nav {

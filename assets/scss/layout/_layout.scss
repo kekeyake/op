@@ -287,6 +287,28 @@ main {
             }
         }
     }
+    &.justfy {
+        li {
+            display: flex;
+            b {
+                width: vw(60);
+                text-align: justify;
+                line-height: 1.5;
+                height: vw(12);
+                margin-right: vw(2);
+                &::after {
+                    content: '';
+                    display: inline-block;
+                    width: 100%;
+                    height: 0;
+                    line-height: 0;
+                }
+            }
+            span {
+                margin-left: vw(2);
+            }
+        }
+    }
 }
 .info_list {
     margin: vw(12) 0 vw(40);
@@ -848,6 +870,14 @@ main {
             }
             p {
                 margin-top: 0;
+            }
+        }
+        &.justfy {
+            li {                
+                b {
+                    width: 80px;                        
+                    height: 18px;
+                }
             }
         }
     }
