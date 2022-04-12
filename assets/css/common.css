@@ -8048,7 +8048,7 @@ main > .tit {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-bottom: 20px;
+    margin-bottom: 18px;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     padding-top: 2px;
@@ -8072,7 +8072,7 @@ main > .tit {
     padding-top: 3px;
   }
   .hanuri .history .history_wrap .__cont li p + p {
-    margin-top: 20px;
+    margin-top: 8px;
   }
   .hanuri .history .history_wrap .__cont li p::before {
     display: none;
