@@ -4045,6 +4045,12 @@ main > .tit {
   letter-spacing: -0.03em;
 }
 
+.book .applicant_info .applicant_form li div input.readonly {
+  border: 0 solid #000;
+  background-color: transparent;
+  padding-left: 0;
+}
+
 .book .applicant_info .applicant_form li div input + input {
   margin-top: 1.94444vw;
 }
@@ -4752,6 +4758,12 @@ main > .tit {
       -ms-flex-align: center;
           align-items: center;
   padding-left: 1.94444vw;
+}
+
+.app .shipping_info .shipping_form li div input.readonly {
+  border: 0 solid #000;
+  background-color: transparent;
+  padding-left: 0;
 }
 
 .app .shipping_info .shipping_form li div input + input {

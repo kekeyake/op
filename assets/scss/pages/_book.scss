@@ -315,6 +315,12 @@
                         align-items: center;
                         padding:0 vw(7);
                         letter-spacing: -0.03em;
+                        &.readonly {
+                            border: 0 solid #000;
+                            background-color: transparent;
+                            padding-left: 0;
+
+                        }
                         & + input {
                             margin-top: vw(7);
                         }

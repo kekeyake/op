@@ -171,6 +171,12 @@
                         display: flex;
                         align-items: center;
                         padding-left: vw(7);
+                        &.readonly {
+                            border: 0 solid #000;
+                            background-color: transparent;
+                            padding-left: 0;
+
+                        }
                         & + input {
                             margin-top: vw(7);
                         }
