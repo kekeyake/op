@@ -295,7 +295,7 @@ main {
                 text-align: justify;
                 line-height: 1.5;
                 height: vw(12);
-                margin-right: vw(2);
+                margin-right: vw(4);
                 &::after {
                     content: '';
                     display: inline-block;
@@ -305,7 +305,7 @@ main {
                 }
             }
             span {
-                margin-left: vw(2);
+                margin-left: vw(4);
             }
         }
     }

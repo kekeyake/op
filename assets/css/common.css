@@ -1649,7 +1649,7 @@ main > .tit {
   text-align: justify;
   line-height: 1.5;
   height: 3.33333vw;
-  margin-right: 0.55556vw;
+  margin-right: 1.11111vw;
 }
 
 .text_list.justfy li b::after {
@@ -1661,7 +1661,7 @@ main > .tit {
 }
 
 .text_list.justfy li span {
-  margin-left: 0.55556vw;
+  margin-left: 1.11111vw;
 }
 
 .info_list {
@@ -6186,6 +6186,7 @@ main > .tit {
   font-weight: 500;
   color: #EA5504;
   padding-top: 12px;
+  font-family: Arial, Sans-serif;
 }
 
 .result.form .item_evaluation tbody td {
@@ -7266,15 +7267,15 @@ main > .tit {
 }
 
 .contest .text_list li b {
-  margin-right: 0.55556vw;
+  margin-right: 1.11111vw;
 }
 
 .contest .text_list li span {
-  margin-left: 0.55556vw;
+  margin-left: 1.11111vw;
 }
 
 .contest .text_list li strong {
-  margin-left: 0.55556vw;
+  margin-left: 1.11111vw;
 }
 
 .contest .award_list {
