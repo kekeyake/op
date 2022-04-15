@@ -7769,6 +7769,7 @@ main > .tit {
   position: absolute;
   left: 10.27778vw;
   top: 0;
+  z-index: -1;
 }
 
 .hanuri .history .img_tit {
@@ -8049,7 +8050,7 @@ main > .tit {
   }
   .hanuri .history::before {
     width: 2px;
-    height: calc(100% - 220px);
+    height: calc(100% - 150px);
     left: 119px;
     top: auto;
     bottom: 0;

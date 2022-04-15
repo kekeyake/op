@@ -194,6 +194,7 @@
             position: absolute;
             left:vw(37);
             top:0;
+            z-index: -1;
         }
         .img_tit {
             position: relative;
@@ -447,10 +448,11 @@
             margin:00;
             &::before {
                 width: 2px;
-                height: calc(100% - 220px);
+                height: calc(100% - 150px);
                 left:119px;
                 top:auto;
                 bottom:0;
+                
             }
             .img_tit {
                 position: relative;
